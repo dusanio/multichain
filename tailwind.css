@@ -8,4 +8,27 @@
   --darkgray: #101010;
   --lightercyan: #1794bf;
   --lightestcyan: #49e2ef;
+  --arrowcyan: #47dfed;
+}
+
+.swiper-button-prev {
+  margin-left: 180px !important;
+  color: var(--arrowcyan) !important;
+}
+.swiper-button-next {
+  margin-right: 180px !important;
+  color: var(--arrowcyan) !important;
+}
+
+.swiper-pagination-bullet {
+  width: 65px !important;
+  height: 8px !important;
+  border-radius: 0 !important;
+  color: white !important;
+  background: white !important;
+  opacity: 100% !important;
+}
+.swiper-pagination-bullet-active {
+  color: var(--arrowcyan) !important;
+  background: var(--arrowcyan) !important;
 }
