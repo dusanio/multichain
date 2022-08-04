@@ -10,6 +10,7 @@ module.exports = {
         darkcyan: "var(--darkcyan)",
         lightcyan: "var(--lightcyan)",
         darkgray: "var(--darkgray)",
+        lightgray: "var(--lightgray)",
         lightercyan: "var(--lightercyan)",
         lightestcyan: "var(--lightestcyan)",
         arrowcyan: "var(--arrowcyan)",

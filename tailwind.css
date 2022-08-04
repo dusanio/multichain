@@ -9,6 +9,7 @@
   --lightercyan: #1794bf;
   --lightestcyan: #49e2ef;
   --arrowcyan: #47dfed;
+  --lightgray: #d9d9d9;
 }
 
 .swiper-button-prev {
@@ -31,4 +32,12 @@
 .swiper-pagination-bullet-active {
   color: var(--arrowcyan) !important;
   background: var(--arrowcyan) !important;
+}
+
+.bgdarklight {
+  background: linear-gradient(
+    268.17deg,
+    rgba(217, 217, 217, 0.64) -34.85%,
+    rgba(217, 217, 217, 0) 102.07%
+  );
 }
