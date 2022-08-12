@@ -34,7 +34,15 @@
   background: var(--arrowcyan) !important;
 }
 
-.bgdarklight {
+.bgdarklight-right {
+  background: linear-gradient(
+    134.08deg,
+    rgba(217, 217, 217, 0.64) -34.85%,
+    rgba(217, 217, 217, 0) 102.07%
+  );
+}
+
+.bgdarklight-left {
   background: linear-gradient(
     268.17deg,
     rgba(217, 217, 217, 0.64) -34.85%,
