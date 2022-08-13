@@ -49,3 +49,11 @@
     rgba(217, 217, 217, 0) 102.07%
   );
 }
+
+.card-body {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  padding: var(--padding-card, 1rem);
+  gap: 0rem;
+}

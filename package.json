@@ -19,5 +19,8 @@
   "homepage": "https://github.com/dusanio/multichain#readme",
   "devDependencies": {
     "tailwindcss": "^3.1.7"
+  },
+  "dependencies": {
+    "daisyui": "^2.24.0"
   }
 }
