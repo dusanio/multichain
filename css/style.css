@@ -2753,6 +2753,14 @@ html {
   margin-bottom: 400px;
 }
 
+.ml-44 {
+  margin-left: 11rem;
+}
+
+.mb-40 {
+  margin-bottom: 10rem;
+}
+
 .block {
   display: block;
 }
@@ -2967,6 +2975,18 @@ html {
 
 .w-\[70px\] {
   width: 70px;
+}
+
+.w-\[50px\] {
+  width: 50px;
+}
+
+.w-\[590px\] {
+  width: 590px;
+}
+
+.w-\[80pz\] {
+  width: 80pz;
 }
 
 .grow {
@@ -3571,6 +3591,18 @@ html {
 
   .xl\:ml-14 {
     margin-left: 3.5rem;
+  }
+
+  .xl\:mt-40 {
+    margin-top: 10rem;
+  }
+
+  .xl\:mt-64 {
+    margin-top: 16rem;
+  }
+
+  .xl\:mb-64 {
+    margin-bottom: 16rem;
   }
 
   .xl\:block {
