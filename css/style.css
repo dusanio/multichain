@@ -2462,10 +2462,6 @@ html {
   margin-top: 10rem;
 }
 
-.ml-52 {
-  margin-left: 13rem;
-}
-
 .mt-3 {
   margin-top: 0.75rem;
 }
@@ -2478,16 +2474,12 @@ html {
   margin-left: 10rem;
 }
 
-.mr-4 {
-  margin-right: 1rem;
-}
-
-.mt-52 {
-  margin-top: 13rem;
-}
-
 .mt-48 {
   margin-top: 12rem;
+}
+
+.ml-52 {
+  margin-left: 13rem;
 }
 
 .block {
@@ -2548,28 +2540,12 @@ html {
   height: 141px;
 }
 
-.h-\[500px\] {
-  height: 500px;
-}
-
 .h-\[400px\] {
   height: 400px;
 }
 
-.h-\[450px\] {
-  height: 450px;
-}
-
-.h-\[430px\] {
-  height: 430px;
-}
-
 .h-\[327px\] {
   height: 327px;
-}
-
-.h-\[431px\] {
-  height: 431px;
 }
 
 .w-\[290px\] {
@@ -2614,32 +2590,16 @@ html {
   width: 169px;
 }
 
-.w-\[500px\] {
-  width: 500px;
-}
-
 .w-\[600px\] {
   width: 600px;
 }
 
-.w-\[700px\] {
-  width: 700px;
-}
-
-.w-\[650px\] {
-  width: 650px;
-}
-
-.w-\[630px\] {
-  width: 630px;
+.w-\[500px\] {
+  width: 500px;
 }
 
 .w-\[447px\] {
   width: 447px;
-}
-
-.w-\[327px\] {
-  width: 327px;
 }
 
 .w-\[431px\] {
@@ -3072,24 +3032,12 @@ html {
     margin-left: 4rem;
   }
 
+  .xl\:flex {
+    display: flex;
+  }
+
   .xl\:h-\[85px\] {
     height: 85px;
-  }
-
-  .xl\:h-\[400px\] {
-    height: 400px;
-  }
-
-  .xl\:h-\[500px\] {
-    height: 500px;
-  }
-
-  .xl\:h-\[550px\] {
-    height: 550px;
-  }
-
-  .xl\:h-\[450px\] {
-    height: 450px;
   }
 
   .xl\:h-\[480px\] {
@@ -3172,40 +3120,26 @@ html {
     width: 500px;
   }
 
-  .xl\:w-\[430px\] {
-    width: 430px;
-  }
-
   .xl\:w-\[440px\] {
     width: 440px;
-  }
-
-  .xl\:w-\[800px\] {
-    width: 800px;
-  }
-
-  .xl\:w-\[900px\] {
-    width: 900px;
-  }
-
-  .xl\:w-\[750px\] {
-    width: 750px;
-  }
-
-  .xl\:w-\[650px\] {
-    width: 650px;
-  }
-
-  .xl\:w-\[660px\] {
-    width: 660px;
-  }
-
-  .xl\:w-\[50px\] {
-    width: 50px;
   }
 
   .xl\:text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  .\32xl\:mr-\[400px\] {
+    margin-right: 400px;
+  }
+
+  .\32xl\:mr-\[2000px\] {
+    margin-right: 2000px;
+  }
+
+  .\32xl\:block {
+    display: block;
   }
 }
