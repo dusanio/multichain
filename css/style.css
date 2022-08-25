@@ -3544,6 +3544,10 @@ html {
     height: 350px;
   }
 
+  .md\:h-\[250px\] {
+    height: 250px;
+  }
+
   .md\:w-\[169px\] {
     width: 169px;
   }
