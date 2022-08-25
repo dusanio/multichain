@@ -3964,6 +3964,10 @@ html {
     padding-right: 24px;
   }
 
+  .xl\:text-left {
+    text-align: left;
+  }
+
   .xl\:text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
