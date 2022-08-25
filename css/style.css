@@ -2879,6 +2879,10 @@ html {
   height: 360px;
 }
 
+.h-\[65px\] {
+  height: 65px;
+}
+
 .w-\[290px\] {
   width: 290px;
 }
@@ -3011,6 +3015,14 @@ html {
 
 .w-\[320px\] {
   width: 320px;
+}
+
+.w-\[65px\] {
+  width: 65px;
+}
+
+.w-\[40x\] {
+  width: 40x;
 }
 
 .grow {
