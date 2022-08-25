@@ -81,3 +81,12 @@
     color: var(--arrowcyan) !important;
   }
 }
+@media (max-width: 1024px) {
+  .swiper-button-prev {
+    display: none !important;
+  }
+
+  .swiper-button-next {
+    display: none !important;
+  }
+}

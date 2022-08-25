@@ -17,670 +17,948 @@
   </head>
 
   <body class="bg-black font-poppins">
-    <div class="hidden lg:inline-block align-middle">
-      <a href="index.html">
-        <img
-          src="imgs/header-logo.png"
-          alt="Multichain logo"
-          class="sm:hidden lg:block ml-20 cursor-pointer"
-      /></a>
-    </div>
-    <div class="hidden lg:inline-block ml-10 p-6 align-middle">
-      <div class="inline-block">
-        <a href="services.html" target="_blank">
-          <h1
-            class="lg:text-sm xl:text-xs text-white lg:ml-0 xl:ml-0 hover:text-darkcyan"
-          >
-            Services
-          </h1>
-        </a>
-      </div>
-      <div class="inline-block">
-        <a href="about_us.html" target="_blank">
-          <h1
-            class="lg:text-sm xl:text-xs text-white lg:ml-0 xl:ml-16 hover:text-darkcyan"
-          >
-            Team
-          </h1>
-        </a>
-      </div>
-      <div class="inline-block">
-        <a href="#about">
-          <h1
-            class="lg:text-sm xl:text-xs text-white lg:ml-16 hover:text-darkcyan"
-          >
-            Our Methodology
-          </h1>
-        </a>
-      </div>
-
-      <div class="inline-block">
-        <a href="" target="_blank" id="mail">
-          <h1
-            class="lg:text-sm xl:text-xs text-white lg:ml-16 hover:text-darkcyan"
-          >
-            Contact
-          </h1>
-        </a>
-      </div>
-      <div class="ml-16 mr-10 inline-block">
-        <a href="" target="_blank">
-          <button
-            class="bg-gradient-to-r from-darkcyan to-lightcyan rounded-lg hover:opacity-70 border border-white"
-          >
-            <p
-              class="pt-4 pb-4 pl-6 pr-6 font-black text-xl items-center text-white"
-            >
-              Schedule A Call
-            </p>
-          </button>
-        </a>
-      </div>
-    </div>
-    <div class="mt-20 mb-20 flex justify-center">
-      <div class="inline-block align-top">
-        <p class="font-extrabold text-white text-[90px] xl:w-[600px]">
-          Your
-          <span
-            class="text-transparent bg-clip-text bg-gradient-to-r from-darkcyan to-lightcyan"
-            >First Link</span
-          >
-          In The Chain
-        </p>
-        <p class="font-bold text-base text-white xl:w-[700px] mt-2">
-          MultiChain Advisors Inc. specializes in strategy, growth, marketing,
-          community engagement, partnerships, capital raising, M&amp;A advisory
-          and collabs for growing projects in the Web 2.0 and 3.0 space.
-        </p>
-        <div class="mt-20">
-          <a href="" target="_blank">
-            <button
-              class="bg-gradient-to-r from-darkcyan to-lightcyan rounded-lg hover:opacity-70 border border-white"
-            >
-              <p
-                class="pt-4 pb-4 pl-6 pr-6 font-black text-xl items-center text-white"
-              >
-                Let's grow
-              </p>
-            </button>
-          </a>
-        </div>
-      </div>
-      <div class="inline-block">
-        <img src="imgs/header-ape.png" />
-      </div>
-    </div>
-    <div class="mt-20 reveal">
-      <p
-        class="text-center text-transparent bg-clip-text bg-gradient-to-r from-darkcyan to-lightcyan font-bold text-[40px] mb-10"
+    <div class="flex justify-between items-center pt-6 lg:hidden">
+      <img
+        src="imgs/multichain.png"
+        class="w-[70px] h-[90px] lg:hidden cursor-pointer ml-4 hover:opacity-70"
+      />
+      <button
+        class="bg-gradient-to-r from-darkcyan to-lightcyan rounded-lg hover:opacity-70 border border-white"
       >
-        Our Services
-      </p>
+        <a href="" target="_blank">
+          <p
+            class="font-bold pt-2 pb-2 pl-3 pr-3 text-base items-center text-white"
+          >
+            Schedule A Call
+          </p>
+        </a>
+      </button>
+      <div class="mt-1 float-right mr-4" onclick="mobileMenu();">
+        <button id="three-lines">
+          <img src="imgs/burger.png" class="w-[40px] h-[40px]" />
+        </button>
 
-      <!-- Slider main container -->
-      <div class="swiper">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-          <!-- Slides -->
-          <div class="swiper-slide flex justify-center items-center">
-            <div
-              class="bg-darkgray text-center rounded-[30px] w-[303px] h-[319px] inline-block"
-            >
-              <svg
-                class="ml-[116px] mr-[116px] mt-[33px]"
-                width="71"
-                height="71"
-                viewBox="0 0 71 71"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
+        <button id="x-button" class="hidden">
+          <img src="imgs/x-button.png" class="w-[40px] h-[40px]" />
+        </button>
+      </div>
+    </div>
+
+    <div class="hidden mt-10 ml-8" id="mobile-menu">
+      <div class="mb-8">
+        <h1 class="text-sm text-white font-bold font-bold hover:text-darkcyan">
+          <a href="services.html" target="_blank"> Services </a>
+        </h1>
+      </div>
+      <div class="mb-8">
+        <h1 class="text-sm text-white font-bold font-bold hover:text-darkcyan">
+          <a href="about_us.html"> Team </a>
+        </h1>
+      </div>
+      <div class="mb-8">
+        <h1 class="text-sm text-white font-bold font-bold hover:text-darkcyan">
+          <a href=""> Our Methodology </a>
+        </h1>
+      </div>
+      <div class="pb-[355px]">
+        <h1 class="text-sm text-white font-bold font-bold hover:text-darkcyan">
+          <a href="" target="_blank"> Contact </a>
+        </h1>
+      </div>
+    </div>
+    <div id="content">
+      <div class="hidden lg:flex items-center">
+        <a href="index.html">
+          <img
+            src="imgs/header-logo.png"
+            alt="Multichain logo"
+            class="sm:hidden lg:block ml-20 cursor-pointer"
+        /></a>
+        <div class="hidden lg:flex items-center ml-auto p-6">
+          <div>
+            <a href="services.html" target="_blank">
+              <h1
+                class="lg:text-sm xl:text-xs text-white lg:ml-0 xl:ml-0 hover:text-darkcyan"
               >
-                <circle
-                  cx="35.5"
-                  cy="35.5"
-                  r="35.5"
-                  fill="url(#paint0_linear_82_563)"
-                />
-                <defs>
-                  <linearGradient
-                    id="paint0_linear_82_563"
-                    x1="-5.5"
-                    y1="-1.42206e-06"
-                    x2="94"
-                    y2="71"
-                    gradientUnits="userSpaceOnUse"
-                  >
-                    <stop stop-color="#116E8F" />
-                    <stop offset="1" stop-color="#49E2EF" />
-                  </linearGradient>
-                </defs>
-                <image
-                  x="18"
-                  y="20"
-                  width="37.97"
-                  height="30.13"
-                  href="imgs/strategy.svg"
-                />
-              </svg>
-              <p class="text-white font-bold mt-[25px] text-xl">Strategy</p>
-              <div class="flex justify-center items-center">
-                <svg
-                  width="91"
-                  height="4"
-                  viewBox="0 0 91 4"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M0 0H91V4H0V0Z" fill="url(#paint0_linear_82_712)" />
-                  <defs>
-                    <linearGradient
-                      id="paint0_linear_82_712"
-                      x1="3.5"
-                      y1="3.67411e-05"
-                      x2="91.3443"
-                      y2="5.41128"
-                      gradientUnits="userSpaceOnUse"
-                    >
-                      <stop stop-color="#148EBC" />
-                      <stop offset="1" stop-color="#40D3E6" />
-                    </linearGradient>
-                  </defs>
-                </svg>
-              </div>
-              <p
-                class="text-white font-bold mt-2 text-sm xl:w-[220px] ml-auto mr-auto"
+                Services
+              </h1>
+            </a>
+          </div>
+          <div>
+            <a href="about_us.html" target="_blank">
+              <h1
+                class="lg:text-sm xl:text-xs text-white lg:ml-0 xl:ml-16 hover:text-darkcyan"
               >
-                Review create pre-mint strategy, full scale marketing strategy
-                to post mint strategy ideation / creation.
-              </p>
-            </div>
-            <div
-              class="ml-10 bg-gradient-to-br from-lightercyan to-lightestcyan text-center rounded-[30px] w-[303px] h-[319px] inline-block"
-            >
-              <svg
-                class="ml-[116px] mr-[116px] mt-[33px]"
-                width="71"
-                height="71"
-                viewBox="0 0 71 71"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
+                Team
+              </h1>
+            </a>
+          </div>
+          <div>
+            <a href="#about">
+              <h1
+                class="lg:text-sm xl:text-xs text-white lg:ml-16 hover:text-darkcyan"
               >
-                <circle cx="35.5" cy="35.5" r="35.5" fill="#101010" />
-                <image
-                  x="15"
-                  y="15"
-                  width="39.33"
-                  height="35.5"
-                  href="imgs/growth-and-go-to-market.svg"
-                />
-              </svg>
-              <p class="text-white font-bold mt-[25px] text-xl">
-                Growth & Go-To-Market
-              </p>
-              <div class="flex justify-center items-center">
-                <svg
-                  width="253"
-                  height="4"
-                  viewBox="0 0 253 4"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M0 0H253V4H0V0Z" fill="#101010" />
-                </svg>
-              </div>
-              <p
-                class="text-white font-bold mt-2 text-sm xl:w-[220px] ml-auto mr-auto"
-              >
-                Exponentially grow your project through customized growth
-                strategies & initiatives.
-              </p>
-            </div>
-            <div
-              class="ml-10 bg-darkgray text-center rounded-[30px] w-[303px] h-[319px] inline-block"
-            >
-              <svg
-                class="ml-[116px] mr-[116px] mt-[33px]"
-                width="71"
-                height="71"
-                viewBox="0 0 71 71"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <circle
-                  cx="35.5"
-                  cy="35.5"
-                  r="35.5"
-                  fill="url(#paint0_linear_82_563)"
-                />
-                <defs>
-                  <linearGradient
-                    id="paint0_linear_82_563"
-                    x1="-5.5"
-                    y1="-1.42206e-06"
-                    x2="94"
-                    y2="71"
-                    gradientUnits="userSpaceOnUse"
-                  >
-                    <stop stop-color="#116E8F" />
-                    <stop offset="1" stop-color="#49E2EF" />
-                  </linearGradient>
-                </defs>
-                <image
-                  x="15"
-                  y="15"
-                  width="51.88"
-                  height="45.36"
-                  href="imgs/branding.svg"
-                />
-              </svg>
-              <p class="text-white font-bold mt-[25px] text-xl">Branding</p>
-              <div class="flex justify-center items-center">
-                <svg
-                  width="91"
-                  height="4"
-                  viewBox="0 0 91 4"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M0 0H91V4H0V0Z" fill="url(#paint0_linear_82_712)" />
-                  <defs>
-                    <linearGradient
-                      id="paint0_linear_82_712"
-                      x1="3.5"
-                      y1="3.67411e-05"
-                      x2="91.3443"
-                      y2="5.41128"
-                      gradientUnits="userSpaceOnUse"
-                    >
-                      <stop stop-color="#148EBC" />
-                      <stop offset="1" stop-color="#40D3E6" />
-                    </linearGradient>
-                  </defs>
-                </svg>
-              </div>
-              <p
-                class="text-white font-bold mt-2 text-sm xl:w-[300px] ml-auto mr-auto"
-              >
-                Extensive marketing strategy review, recommendations and
-                creation to establish a strong brand identity
-              </p>
-            </div>
+                Our Methodology
+              </h1>
+            </a>
           </div>
 
-          <div class="swiper-slide flex justify-center items-center">
-            <div
-              class="bg-darkgray text-center rounded-[30px] w-[303px] h-[319px] inline-block"
-            >
-              <svg
-                class="ml-[116px] mr-[116px] mt-[33px]"
-                width="71"
-                height="71"
-                viewBox="0 0 71 71"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
+          <div>
+            <a href="" target="_blank" id="mail">
+              <h1
+                class="lg:text-sm xl:text-xs text-white lg:ml-16 hover:text-darkcyan"
               >
-                <circle
-                  cx="35.5"
-                  cy="35.5"
-                  r="35.5"
-                  fill="url(#paint0_linear_82_563)"
-                />
-                <defs>
-                  <linearGradient
-                    id="paint0_linear_82_563"
-                    x1="-5.5"
-                    y1="-1.42206e-06"
-                    x2="94"
-                    y2="71"
-                    gradientUnits="userSpaceOnUse"
-                  >
-                    <stop stop-color="#116E8F" />
-                    <stop offset="1" stop-color="#49E2EF" />
-                  </linearGradient>
-                </defs>
-                <image
-                  x="18"
-                  y="20"
-                  width="37.97"
-                  height="30.13"
-                  href="imgs/strategy.svg"
-                />
-              </svg>
-              <p class="text-white font-bold mt-[25px] text-xl">Strategy</p>
-              <div class="flex justify-center items-center">
-                <svg
-                  width="91"
-                  height="4"
-                  viewBox="0 0 91 4"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M0 0H91V4H0V0Z" fill="url(#paint0_linear_82_712)" />
-                  <defs>
-                    <linearGradient
-                      id="paint0_linear_82_712"
-                      x1="3.5"
-                      y1="3.67411e-05"
-                      x2="91.3443"
-                      y2="5.41128"
-                      gradientUnits="userSpaceOnUse"
-                    >
-                      <stop stop-color="#148EBC" />
-                      <stop offset="1" stop-color="#40D3E6" />
-                    </linearGradient>
-                  </defs>
-                </svg>
-              </div>
-              <p
-                class="text-white font-bold mt-2 text-sm xl:w-[220px] ml-auto mr-auto"
-              >
-                Review create pre-mint strategy, full scale marketing strategy
-                to post mint strategy ideation / creation.
-              </p>
-            </div>
-            <div
-              class="ml-10 bg-gradient-to-br from-lightercyan to-lightestcyan text-center rounded-[30px] w-[303px] h-[319px] inline-block"
-            >
-              <svg
-                class="ml-[116px] mr-[116px] mt-[33px]"
-                width="71"
-                height="71"
-                viewBox="0 0 71 71"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <circle cx="35.5" cy="35.5" r="35.5" fill="#101010" />
-                <image
-                  x="15"
-                  y="15"
-                  width="39.33"
-                  height="35.5"
-                  href="imgs/growth-and-go-to-market.svg"
-                />
-              </svg>
-              <p class="text-white font-bold mt-[25px] text-xl">
-                Growth & Go-To-Market
-              </p>
-              <div class="flex justify-center items-center">
-                <svg
-                  width="253"
-                  height="4"
-                  viewBox="0 0 253 4"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M0 0H253V4H0V0Z" fill="#101010" />
-                </svg>
-              </div>
-              <p
-                class="text-white font-bold mt-2 text-sm xl:w-[220px] ml-auto mr-auto"
-              >
-                Exponentially grow your project through customized growth
-                strategies & initiatives.
-              </p>
-            </div>
-            <div
-              class="ml-10 bg-darkgray text-center rounded-[30px] w-[303px] h-[319px] inline-block"
-            >
-              <svg
-                class="ml-[116px] mr-[116px] mt-[33px]"
-                width="71"
-                height="71"
-                viewBox="0 0 71 71"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <circle
-                  cx="35.5"
-                  cy="35.5"
-                  r="35.5"
-                  fill="url(#paint0_linear_82_563)"
-                />
-                <defs>
-                  <linearGradient
-                    id="paint0_linear_82_563"
-                    x1="-5.5"
-                    y1="-1.42206e-06"
-                    x2="94"
-                    y2="71"
-                    gradientUnits="userSpaceOnUse"
-                  >
-                    <stop stop-color="#116E8F" />
-                    <stop offset="1" stop-color="#49E2EF" />
-                  </linearGradient>
-                </defs>
-                <image
-                  x="15"
-                  y="15"
-                  width="51.88"
-                  height="45.36"
-                  href="imgs/branding.svg"
-                />
-              </svg>
-              <p class="text-white font-bold mt-[25px] text-xl">Branding</p>
-              <div class="flex justify-center items-center">
-                <svg
-                  width="91"
-                  height="4"
-                  viewBox="0 0 91 4"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M0 0H91V4H0V0Z" fill="url(#paint0_linear_82_712)" />
-                  <defs>
-                    <linearGradient
-                      id="paint0_linear_82_712"
-                      x1="3.5"
-                      y1="3.67411e-05"
-                      x2="91.3443"
-                      y2="5.41128"
-                      gradientUnits="userSpaceOnUse"
-                    >
-                      <stop stop-color="#148EBC" />
-                      <stop offset="1" stop-color="#40D3E6" />
-                    </linearGradient>
-                  </defs>
-                </svg>
-              </div>
-              <p
-                class="text-white font-bold mt-2 text-sm xl:w-[300px] ml-auto mr-auto"
-              >
-                Extensive marketing strategy review, recommendations and
-                creation to establish a strong brand identity
-              </p>
-            </div>
+                Contact
+              </h1>
+            </a>
           </div>
-          <div class="swiper-slide flex justify-center items-center">
-            <div
-              class="bg-darkgray text-center rounded-[30px] w-[303px] h-[319px] inline-block"
-            >
-              <svg
-                class="ml-[116px] mr-[116px] mt-[33px]"
-                width="71"
-                height="71"
-                viewBox="0 0 71 71"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
+          <div class="ml-16 mr-10">
+            <a href="" target="_blank">
+              <button
+                class="bg-gradient-to-r from-darkcyan to-lightcyan rounded-lg hover:opacity-70 border border-white"
               >
-                <circle
-                  cx="35.5"
-                  cy="35.5"
-                  r="35.5"
-                  fill="url(#paint0_linear_82_563)"
-                />
-                <defs>
-                  <linearGradient
-                    id="paint0_linear_82_563"
-                    x1="-5.5"
-                    y1="-1.42206e-06"
-                    x2="94"
-                    y2="71"
-                    gradientUnits="userSpaceOnUse"
-                  >
-                    <stop stop-color="#116E8F" />
-                    <stop offset="1" stop-color="#49E2EF" />
-                  </linearGradient>
-                </defs>
-                <image
-                  x="18"
-                  y="20"
-                  width="37.97"
-                  height="30.13"
-                  href="imgs/strategy.svg"
-                />
-              </svg>
-              <p class="text-white font-bold mt-[25px] text-xl">Strategy</p>
-              <div class="flex justify-center items-center">
-                <svg
-                  width="91"
-                  height="4"
-                  viewBox="0 0 91 4"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
+                <p
+                  class="pt-4 pb-4 pl-6 pr-6 font-black text-xl items-center text-white"
                 >
-                  <path d="M0 0H91V4H0V0Z" fill="url(#paint0_linear_82_712)" />
-                  <defs>
-                    <linearGradient
-                      id="paint0_linear_82_712"
-                      x1="3.5"
-                      y1="3.67411e-05"
-                      x2="91.3443"
-                      y2="5.41128"
-                      gradientUnits="userSpaceOnUse"
-                    >
-                      <stop stop-color="#148EBC" />
-                      <stop offset="1" stop-color="#40D3E6" />
-                    </linearGradient>
-                  </defs>
-                </svg>
-              </div>
-              <p
-                class="text-white font-bold mt-2 text-sm xl:w-[220px] ml-auto mr-auto"
-              >
-                Review create pre-mint strategy, full scale marketing strategy
-                to post mint strategy ideation / creation.
-              </p>
-            </div>
-            <div
-              class="ml-10 bg-gradient-to-br from-lightercyan to-lightestcyan text-center rounded-[30px] w-[303px] h-[319px] inline-block"
-            >
-              <svg
-                class="ml-[116px] mr-[116px] mt-[33px]"
-                width="71"
-                height="71"
-                viewBox="0 0 71 71"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <circle cx="35.5" cy="35.5" r="35.5" fill="#101010" />
-                <image
-                  x="15"
-                  y="15"
-                  width="39.33"
-                  height="35.5"
-                  href="imgs/growth-and-go-to-market.svg"
-                />
-              </svg>
-              <p class="text-white font-bold mt-[25px] text-xl">
-                Growth & Go-To-Market
-              </p>
-              <div class="flex justify-center items-center">
-                <svg
-                  width="253"
-                  height="4"
-                  viewBox="0 0 253 4"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M0 0H253V4H0V0Z" fill="#101010" />
-                </svg>
-              </div>
-              <p
-                class="text-white font-bold mt-2 text-sm xl:w-[220px] ml-auto mr-auto"
-              >
-                Exponentially grow your project through customized growth
-                strategies & initiatives.
-              </p>
-            </div>
-            <div
-              class="ml-10 bg-darkgray text-center rounded-[30px] w-[303px] h-[319px] inline-block"
-            >
-              <svg
-                class="ml-[116px] mr-[116px] mt-[33px]"
-                width="71"
-                height="71"
-                viewBox="0 0 71 71"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <circle
-                  cx="35.5"
-                  cy="35.5"
-                  r="35.5"
-                  fill="url(#paint0_linear_82_563)"
-                />
-                <defs>
-                  <linearGradient
-                    id="paint0_linear_82_563"
-                    x1="-5.5"
-                    y1="-1.42206e-06"
-                    x2="94"
-                    y2="71"
-                    gradientUnits="userSpaceOnUse"
-                  >
-                    <stop stop-color="#116E8F" />
-                    <stop offset="1" stop-color="#49E2EF" />
-                  </linearGradient>
-                </defs>
-                <image
-                  x="15"
-                  y="15"
-                  width="51.88"
-                  height="45.36"
-                  href="imgs/branding.svg"
-                />
-              </svg>
-              <p class="text-white font-bold mt-[25px] text-xl">Branding</p>
-              <div class="flex justify-center items-center">
-                <svg
-                  width="91"
-                  height="4"
-                  viewBox="0 0 91 4"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M0 0H91V4H0V0Z" fill="url(#paint0_linear_82_712)" />
-                  <defs>
-                    <linearGradient
-                      id="paint0_linear_82_712"
-                      x1="3.5"
-                      y1="3.67411e-05"
-                      x2="91.3443"
-                      y2="5.41128"
-                      gradientUnits="userSpaceOnUse"
-                    >
-                      <stop stop-color="#148EBC" />
-                      <stop offset="1" stop-color="#40D3E6" />
-                    </linearGradient>
-                  </defs>
-                </svg>
-              </div>
-              <p
-                class="text-white font-bold mt-2 text-sm xl:w-[300px] ml-auto mr-auto"
-              >
-                Extensive marketing strategy review, recommendations and
-                creation to establish a strong brand identity
-              </p>
-            </div>
+                  Schedule A Call
+                </p>
+              </button>
+            </a>
           </div>
         </div>
-        <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
-
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
       </div>
-      <!--<div class="flex justify-center items-center mt-14 mb-14">
+      <div class="ml-8 xl:ml-0 mt-20 mb-20 flex justify-center">
+        <div class="inline-block align-top">
+          <p
+            class="font-extrabold text-white text-5xl xl:text-[90px] w-[300px] xl:w-[600px]"
+          >
+            Your
+            <span
+              class="text-transparent bg-clip-text bg-gradient-to-r from-darkcyan to-lightcyan"
+              >First Link</span
+            >
+            In The Chain
+          </p>
+          <p
+            class="font-bold text-base text-white w-[330px] xl:w-[700px] mt-4 xl:mt-2"
+          >
+            MultiChain Advisors Inc. specializes in strategy, growth, marketing,
+            community engagement, partnerships, capital raising, M&amp;A
+            advisory and collabs for growing projects in the Web 2.0 and 3.0
+            space.
+          </p>
+          <div class="mt-10 xl:mt-20">
+            <a href="" target="_blank">
+              <button
+                class="bg-gradient-to-r from-darkcyan to-lightcyan rounded-lg hover:opacity-70 border border-white"
+              >
+                <p
+                  class="pt-4 pb-4 pl-6 pr-6 font-black text-xl items-center text-white"
+                >
+                  Let's grow
+                </p>
+              </button>
+            </a>
+          </div>
+        </div>
+        <div class="hidden xl:inline-block">
+          <img src="imgs/header-ape.png" />
+        </div>
+      </div>
+      <div class="mt-20 reveal">
+        <p
+          class="text-center text-transparent bg-clip-text bg-gradient-to-r from-darkcyan to-lightcyan font-bold text-3xl xl:text-[40px] mb-10"
+        >
+          Our Services
+        </p>
+        <div class="xl:hidden swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide flex justify-center items-center">
+              <div
+                class="bg-darkgray text-center rounded-[30px] w-[303px] h-[319px] inline-block"
+              >
+                <svg
+                  class="ml-[116px] mr-[116px] mt-[33px]"
+                  width="71"
+                  height="71"
+                  viewBox="0 0 71 71"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle
+                    cx="35.5"
+                    cy="35.5"
+                    r="35.5"
+                    fill="url(#paint0_linear_82_563)"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_82_563"
+                      x1="-5.5"
+                      y1="-1.42206e-06"
+                      x2="94"
+                      y2="71"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#116E8F" />
+                      <stop offset="1" stop-color="#49E2EF" />
+                    </linearGradient>
+                  </defs>
+                  <image
+                    x="18"
+                    y="20"
+                    width="37.97"
+                    height="30.13"
+                    href="imgs/strategy.svg"
+                  />
+                </svg>
+                <p class="text-white font-bold mt-[25px] text-xl">Strategy</p>
+                <div class="flex justify-center items-center">
+                  <svg
+                    width="91"
+                    height="4"
+                    viewBox="0 0 91 4"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0H91V4H0V0Z"
+                      fill="url(#paint0_linear_82_712)"
+                    />
+                    <defs>
+                      <linearGradient
+                        id="paint0_linear_82_712"
+                        x1="3.5"
+                        y1="3.67411e-05"
+                        x2="91.3443"
+                        y2="5.41128"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stop-color="#148EBC" />
+                        <stop offset="1" stop-color="#40D3E6" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </div>
+                <p
+                  class="text-white font-bold mt-2 text-sm xl:w-[220px] ml-auto mr-auto"
+                >
+                  Review create pre-mint strategy, full scale marketing strategy
+                  to post mint strategy ideation / creation.
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-slide flex justify-center items-center">
+              <div
+                class="bg-gradient-to-br from-lightercyan to-lightestcyan text-center rounded-[30px] w-[303px] h-[319px] inline-block"
+              >
+                <svg
+                  class="ml-[116px] mr-[116px] mt-[33px]"
+                  width="71"
+                  height="71"
+                  viewBox="0 0 71 71"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="35.5" cy="35.5" r="35.5" fill="#101010" />
+                  <image
+                    x="15"
+                    y="15"
+                    width="39.33"
+                    height="35.5"
+                    href="imgs/growth-and-go-to-market.svg"
+                  />
+                </svg>
+                <p class="text-white font-bold mt-[25px] text-xl">
+                  Growth & Go-To-Market
+                </p>
+                <div class="flex justify-center items-center">
+                  <svg
+                    width="253"
+                    height="4"
+                    viewBox="0 0 253 4"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M0 0H253V4H0V0Z" fill="#101010" />
+                  </svg>
+                </div>
+                <p
+                  class="text-white font-bold mt-2 text-sm xl:w-[220px] ml-auto mr-auto"
+                >
+                  Exponentially grow your project through customized growth
+                  strategies & initiatives.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide flex justify-center items-center">
+              <div
+                class="bg-darkgray text-center rounded-[30px] w-[303px] h-[319px] inline-block"
+              >
+                <svg
+                  class="ml-[116px] mr-[116px] mt-[33px]"
+                  width="71"
+                  height="71"
+                  viewBox="0 0 71 71"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle
+                    cx="35.5"
+                    cy="35.5"
+                    r="35.5"
+                    fill="url(#paint0_linear_82_563)"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_82_563"
+                      x1="-5.5"
+                      y1="-1.42206e-06"
+                      x2="94"
+                      y2="71"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#116E8F" />
+                      <stop offset="1" stop-color="#49E2EF" />
+                    </linearGradient>
+                  </defs>
+                  <image
+                    x="15"
+                    y="15"
+                    width="51.88"
+                    height="45.36"
+                    href="imgs/branding.svg"
+                  />
+                </svg>
+                <p class="text-white font-bold mt-[25px] text-xl">Branding</p>
+                <div class="flex justify-center items-center">
+                  <svg
+                    width="91"
+                    height="4"
+                    viewBox="0 0 91 4"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0H91V4H0V0Z"
+                      fill="url(#paint0_linear_82_712)"
+                    />
+                    <defs>
+                      <linearGradient
+                        id="paint0_linear_82_712"
+                        x1="3.5"
+                        y1="3.67411e-05"
+                        x2="91.3443"
+                        y2="5.41128"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stop-color="#148EBC" />
+                        <stop offset="1" stop-color="#40D3E6" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </div>
+                <p
+                  class="text-white font-bold mt-2 text-sm xl:w-[300px] ml-auto mr-auto"
+                >
+                  Extensive marketing strategy review, recommendations and
+                  creation to establish a strong brand identity
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+        <!-- Slider main container -->
+        <div class="hidden xl:block swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide flex justify-center items-center">
+              <div
+                class="bg-darkgray text-center rounded-[30px] w-[303px] h-[319px] inline-block"
+              >
+                <svg
+                  class="ml-[116px] mr-[116px] mt-[33px]"
+                  width="71"
+                  height="71"
+                  viewBox="0 0 71 71"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle
+                    cx="35.5"
+                    cy="35.5"
+                    r="35.5"
+                    fill="url(#paint0_linear_82_563)"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_82_563"
+                      x1="-5.5"
+                      y1="-1.42206e-06"
+                      x2="94"
+                      y2="71"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#116E8F" />
+                      <stop offset="1" stop-color="#49E2EF" />
+                    </linearGradient>
+                  </defs>
+                  <image
+                    x="18"
+                    y="20"
+                    width="37.97"
+                    height="30.13"
+                    href="imgs/strategy.svg"
+                  />
+                </svg>
+                <p class="text-white font-bold mt-[25px] text-xl">Strategy</p>
+                <div class="flex justify-center items-center">
+                  <svg
+                    width="91"
+                    height="4"
+                    viewBox="0 0 91 4"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0H91V4H0V0Z"
+                      fill="url(#paint0_linear_82_712)"
+                    />
+                    <defs>
+                      <linearGradient
+                        id="paint0_linear_82_712"
+                        x1="3.5"
+                        y1="3.67411e-05"
+                        x2="91.3443"
+                        y2="5.41128"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stop-color="#148EBC" />
+                        <stop offset="1" stop-color="#40D3E6" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </div>
+                <p
+                  class="text-white font-bold mt-2 text-sm xl:w-[220px] ml-auto mr-auto"
+                >
+                  Review create pre-mint strategy, full scale marketing strategy
+                  to post mint strategy ideation / creation.
+                </p>
+              </div>
+              <div
+                class="ml-10 bg-gradient-to-br from-lightercyan to-lightestcyan text-center rounded-[30px] w-[303px] h-[319px] inline-block"
+              >
+                <svg
+                  class="ml-[116px] mr-[116px] mt-[33px]"
+                  width="71"
+                  height="71"
+                  viewBox="0 0 71 71"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="35.5" cy="35.5" r="35.5" fill="#101010" />
+                  <image
+                    x="15"
+                    y="15"
+                    width="39.33"
+                    height="35.5"
+                    href="imgs/growth-and-go-to-market.svg"
+                  />
+                </svg>
+                <p class="text-white font-bold mt-[25px] text-xl">
+                  Growth & Go-To-Market
+                </p>
+                <div class="flex justify-center items-center">
+                  <svg
+                    width="253"
+                    height="4"
+                    viewBox="0 0 253 4"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M0 0H253V4H0V0Z" fill="#101010" />
+                  </svg>
+                </div>
+                <p
+                  class="text-white font-bold mt-2 text-sm xl:w-[220px] ml-auto mr-auto"
+                >
+                  Exponentially grow your project through customized growth
+                  strategies & initiatives.
+                </p>
+              </div>
+              <div
+                class="ml-10 bg-darkgray text-center rounded-[30px] w-[303px] h-[319px] inline-block"
+              >
+                <svg
+                  class="ml-[116px] mr-[116px] mt-[33px]"
+                  width="71"
+                  height="71"
+                  viewBox="0 0 71 71"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle
+                    cx="35.5"
+                    cy="35.5"
+                    r="35.5"
+                    fill="url(#paint0_linear_82_563)"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_82_563"
+                      x1="-5.5"
+                      y1="-1.42206e-06"
+                      x2="94"
+                      y2="71"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#116E8F" />
+                      <stop offset="1" stop-color="#49E2EF" />
+                    </linearGradient>
+                  </defs>
+                  <image
+                    x="15"
+                    y="15"
+                    width="51.88"
+                    height="45.36"
+                    href="imgs/branding.svg"
+                  />
+                </svg>
+                <p class="text-white font-bold mt-[25px] text-xl">Branding</p>
+                <div class="flex justify-center items-center">
+                  <svg
+                    width="91"
+                    height="4"
+                    viewBox="0 0 91 4"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0H91V4H0V0Z"
+                      fill="url(#paint0_linear_82_712)"
+                    />
+                    <defs>
+                      <linearGradient
+                        id="paint0_linear_82_712"
+                        x1="3.5"
+                        y1="3.67411e-05"
+                        x2="91.3443"
+                        y2="5.41128"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stop-color="#148EBC" />
+                        <stop offset="1" stop-color="#40D3E6" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </div>
+                <p
+                  class="text-white font-bold mt-2 text-sm xl:w-[300px] ml-auto mr-auto"
+                >
+                  Extensive marketing strategy review, recommendations and
+                  creation to establish a strong brand identity
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-slide flex justify-center items-center">
+              <div
+                class="bg-darkgray text-center rounded-[30px] w-[303px] h-[319px] inline-block"
+              >
+                <svg
+                  class="ml-[116px] mr-[116px] mt-[33px]"
+                  width="71"
+                  height="71"
+                  viewBox="0 0 71 71"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle
+                    cx="35.5"
+                    cy="35.5"
+                    r="35.5"
+                    fill="url(#paint0_linear_82_563)"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_82_563"
+                      x1="-5.5"
+                      y1="-1.42206e-06"
+                      x2="94"
+                      y2="71"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#116E8F" />
+                      <stop offset="1" stop-color="#49E2EF" />
+                    </linearGradient>
+                  </defs>
+                  <image
+                    x="18"
+                    y="20"
+                    width="37.97"
+                    height="30.13"
+                    href="imgs/strategy.svg"
+                  />
+                </svg>
+                <p class="text-white font-bold mt-[25px] text-xl">Strategy</p>
+                <div class="flex justify-center items-center">
+                  <svg
+                    width="91"
+                    height="4"
+                    viewBox="0 0 91 4"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0H91V4H0V0Z"
+                      fill="url(#paint0_linear_82_712)"
+                    />
+                    <defs>
+                      <linearGradient
+                        id="paint0_linear_82_712"
+                        x1="3.5"
+                        y1="3.67411e-05"
+                        x2="91.3443"
+                        y2="5.41128"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stop-color="#148EBC" />
+                        <stop offset="1" stop-color="#40D3E6" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </div>
+                <p
+                  class="text-white font-bold mt-2 text-sm xl:w-[220px] ml-auto mr-auto"
+                >
+                  Review create pre-mint strategy, full scale marketing strategy
+                  to post mint strategy ideation / creation.
+                </p>
+              </div>
+              <div
+                class="ml-10 bg-gradient-to-br from-lightercyan to-lightestcyan text-center rounded-[30px] w-[303px] h-[319px] inline-block"
+              >
+                <svg
+                  class="ml-[116px] mr-[116px] mt-[33px]"
+                  width="71"
+                  height="71"
+                  viewBox="0 0 71 71"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="35.5" cy="35.5" r="35.5" fill="#101010" />
+                  <image
+                    x="15"
+                    y="15"
+                    width="39.33"
+                    height="35.5"
+                    href="imgs/growth-and-go-to-market.svg"
+                  />
+                </svg>
+                <p class="text-white font-bold mt-[25px] text-xl">
+                  Growth & Go-To-Market
+                </p>
+                <div class="flex justify-center items-center">
+                  <svg
+                    width="253"
+                    height="4"
+                    viewBox="0 0 253 4"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M0 0H253V4H0V0Z" fill="#101010" />
+                  </svg>
+                </div>
+                <p
+                  class="text-white font-bold mt-2 text-sm xl:w-[220px] ml-auto mr-auto"
+                >
+                  Exponentially grow your project through customized growth
+                  strategies & initiatives.
+                </p>
+              </div>
+              <div
+                class="ml-10 bg-darkgray text-center rounded-[30px] w-[303px] h-[319px] inline-block"
+              >
+                <svg
+                  class="ml-[116px] mr-[116px] mt-[33px]"
+                  width="71"
+                  height="71"
+                  viewBox="0 0 71 71"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle
+                    cx="35.5"
+                    cy="35.5"
+                    r="35.5"
+                    fill="url(#paint0_linear_82_563)"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_82_563"
+                      x1="-5.5"
+                      y1="-1.42206e-06"
+                      x2="94"
+                      y2="71"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#116E8F" />
+                      <stop offset="1" stop-color="#49E2EF" />
+                    </linearGradient>
+                  </defs>
+                  <image
+                    x="15"
+                    y="15"
+                    width="51.88"
+                    height="45.36"
+                    href="imgs/branding.svg"
+                  />
+                </svg>
+                <p class="text-white font-bold mt-[25px] text-xl">Branding</p>
+                <div class="flex justify-center items-center">
+                  <svg
+                    width="91"
+                    height="4"
+                    viewBox="0 0 91 4"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0H91V4H0V0Z"
+                      fill="url(#paint0_linear_82_712)"
+                    />
+                    <defs>
+                      <linearGradient
+                        id="paint0_linear_82_712"
+                        x1="3.5"
+                        y1="3.67411e-05"
+                        x2="91.3443"
+                        y2="5.41128"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stop-color="#148EBC" />
+                        <stop offset="1" stop-color="#40D3E6" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </div>
+                <p
+                  class="text-white font-bold mt-2 text-sm xl:w-[300px] ml-auto mr-auto"
+                >
+                  Extensive marketing strategy review, recommendations and
+                  creation to establish a strong brand identity
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide flex justify-center items-center">
+              <div
+                class="bg-darkgray text-center rounded-[30px] w-[303px] h-[319px] inline-block"
+              >
+                <svg
+                  class="ml-[116px] mr-[116px] mt-[33px]"
+                  width="71"
+                  height="71"
+                  viewBox="0 0 71 71"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle
+                    cx="35.5"
+                    cy="35.5"
+                    r="35.5"
+                    fill="url(#paint0_linear_82_563)"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_82_563"
+                      x1="-5.5"
+                      y1="-1.42206e-06"
+                      x2="94"
+                      y2="71"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#116E8F" />
+                      <stop offset="1" stop-color="#49E2EF" />
+                    </linearGradient>
+                  </defs>
+                  <image
+                    x="18"
+                    y="20"
+                    width="37.97"
+                    height="30.13"
+                    href="imgs/strategy.svg"
+                  />
+                </svg>
+                <p class="text-white font-bold mt-[25px] text-xl">Strategy</p>
+                <div class="flex justify-center items-center">
+                  <svg
+                    width="91"
+                    height="4"
+                    viewBox="0 0 91 4"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0H91V4H0V0Z"
+                      fill="url(#paint0_linear_82_712)"
+                    />
+                    <defs>
+                      <linearGradient
+                        id="paint0_linear_82_712"
+                        x1="3.5"
+                        y1="3.67411e-05"
+                        x2="91.3443"
+                        y2="5.41128"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stop-color="#148EBC" />
+                        <stop offset="1" stop-color="#40D3E6" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </div>
+                <p
+                  class="text-white font-bold mt-2 text-sm xl:w-[220px] ml-auto mr-auto"
+                >
+                  Review create pre-mint strategy, full scale marketing strategy
+                  to post mint strategy ideation / creation.
+                </p>
+              </div>
+              <div
+                class="ml-10 bg-gradient-to-br from-lightercyan to-lightestcyan text-center rounded-[30px] w-[303px] h-[319px] inline-block"
+              >
+                <svg
+                  class="ml-[116px] mr-[116px] mt-[33px]"
+                  width="71"
+                  height="71"
+                  viewBox="0 0 71 71"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="35.5" cy="35.5" r="35.5" fill="#101010" />
+                  <image
+                    x="15"
+                    y="15"
+                    width="39.33"
+                    height="35.5"
+                    href="imgs/growth-and-go-to-market.svg"
+                  />
+                </svg>
+                <p class="text-white font-bold mt-[25px] text-xl">
+                  Growth & Go-To-Market
+                </p>
+                <div class="flex justify-center items-center">
+                  <svg
+                    width="253"
+                    height="4"
+                    viewBox="0 0 253 4"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M0 0H253V4H0V0Z" fill="#101010" />
+                  </svg>
+                </div>
+                <p
+                  class="text-white font-bold mt-2 text-sm xl:w-[220px] ml-auto mr-auto"
+                >
+                  Exponentially grow your project through customized growth
+                  strategies & initiatives.
+                </p>
+              </div>
+              <div
+                class="ml-10 bg-darkgray text-center rounded-[30px] w-[303px] h-[319px] inline-block"
+              >
+                <svg
+                  class="ml-[116px] mr-[116px] mt-[33px]"
+                  width="71"
+                  height="71"
+                  viewBox="0 0 71 71"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle
+                    cx="35.5"
+                    cy="35.5"
+                    r="35.5"
+                    fill="url(#paint0_linear_82_563)"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_82_563"
+                      x1="-5.5"
+                      y1="-1.42206e-06"
+                      x2="94"
+                      y2="71"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#116E8F" />
+                      <stop offset="1" stop-color="#49E2EF" />
+                    </linearGradient>
+                  </defs>
+                  <image
+                    x="15"
+                    y="15"
+                    width="51.88"
+                    height="45.36"
+                    href="imgs/branding.svg"
+                  />
+                </svg>
+                <p class="text-white font-bold mt-[25px] text-xl">Branding</p>
+                <div class="flex justify-center items-center">
+                  <svg
+                    width="91"
+                    height="4"
+                    viewBox="0 0 91 4"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0H91V4H0V0Z"
+                      fill="url(#paint0_linear_82_712)"
+                    />
+                    <defs>
+                      <linearGradient
+                        id="paint0_linear_82_712"
+                        x1="3.5"
+                        y1="3.67411e-05"
+                        x2="91.3443"
+                        y2="5.41128"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stop-color="#148EBC" />
+                        <stop offset="1" stop-color="#40D3E6" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </div>
+                <p
+                  class="text-white font-bold mt-2 text-sm xl:w-[300px] ml-auto mr-auto"
+                >
+                  Extensive marketing strategy review, recommendations and
+                  creation to establish a strong brand identity
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+        <!--<div class="flex justify-center items-center mt-14 mb-14">
         <svg
           width="232"
           height="8"
@@ -693,961 +971,1014 @@
           <rect x="167" width="65" height="8" fill="white" />
         </svg>
       </div>-->
-    </div>
-    <div
-      class="mt-20 reveal ml-auto mr-auto bg-gradient-to-r from-darkcyan to-darkgray border-2 border-darkcyan rounded-[30px] w-[1140px] h-[215px]"
-    >
-      <p
-        class="inline-block text-white text-4xl font-bold xl:w-[400px] mt-[51px] mb-[56px] ml-8"
-      >
-        Smarter, faster, and wiser way to mint
-        <span
-          class="text-transparent bg-clip-text bg-gradient-to-r from-darkcyan to-lightcyan"
-          >out.</span
-        >
-      </p>
-      <div class="inline-block ml-[156px]">
-        <p class="text-white font-bold text-sm xl:w-[350px]">
-          Launch Your NFT Project Into The Stratosphere With Unbeatable NFT
-          Marketing Services.
-        </p>
-        <p
-          class="text-white font-bold text-sm xl:w-[350px] mt-4 hover:text-darkcyan cursor-pointer"
-        >
-          Check it out
-        </p>
-        <svg
-          width="91"
-          height="4"
-          viewBox="0 0 91 4"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path d="M0 0H91V4H0V0Z" fill="url(#paint0_linear_82_711)" />
-          <defs>
-            <linearGradient
-              id="paint0_linear_82_711"
-              x1="3.5"
-              y1="3.67411e-05"
-              x2="91.3443"
-              y2="5.41128"
-              gradientUnits="userSpaceOnUse"
-            >
-              <stop stop-color="#148EBC" />
-              <stop offset="1" stop-color="#40D3E6" />
-            </linearGradient>
-          </defs>
-        </svg>
       </div>
-    </div>
-    <div class="mt-20 reveal">
-      <p
-        class="text-center text-transparent bg-clip-text bg-gradient-to-r from-darkcyan to-lightcyan font-bold text-[40px] mb-10"
-      >
-        Our Success Stories
-      </p>
-
-      <div class="swiper-slide flex justify-center items-center">
-        <div
-          class="border-2 border-darkcyan bgdarklight-left rounded-[30px] w-[356px] h-[362px] inline-block"
-        >
-          <img
-            src="imgs/smart-sea-society.png"
-            class="mt-[23px] ml-[26px] inline-block align-top"
-          />
-          <p
-            class="inline-block text-white font-bold mt-[23px] text-sm ml-[18px] mr-[20px]"
-          >
-            <span
-              class="text-transparent bg-clip-text bg-gradient-to-r from-darkcyan to-lightcyan"
-              >Smart Sea Society </span
-            ><br />4444*1.7 = total sol 7555)<br />
-            (Price of sol May 29 $46)
-          </p>
-
-          <div class="ml-[26px] mt-[25px]">
-            <svg
-              class="inline-block"
-              width="10"
-              height="10"
-              viewBox="0 0 10 10"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <circle cx="5" cy="5" r="5" fill="#4AE5F0" />
-            </svg>
-
-            <p class="text-white font-bold text-sm xl:w-[220px] inline-block">
-              Raised
-              <span class="text-lightcyan text-base">$347,500 15 minutes</span>
-            </p>
-          </div>
-          <div class="ml-[26px] mt-2">
-            <svg
-              class="inline-block"
-              width="10"
-              height="10"
-              viewBox="0 0 10 10"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <circle cx="5" cy="5" r="5" fill="#4AE5F0" />
-            </svg>
-
-            <p
-              class="text-white font-bold text-sm xl:w-[300px] inline-block align-top"
-            >
-              $1,000,000~ Total Trade Volume or 28.2 k Sol Trading Volume
-            </p>
-          </div>
-          <div class="ml-[26px] mt-2">
-            <svg
-              class="inline-block"
-              width="10"
-              height="10"
-              viewBox="0 0 10 10"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <circle cx="5" cy="5" r="5" fill="#4AE5F0" />
-            </svg>
-
-            <p
-              class="text-white font-bold text-sm xl:w-[300px] inline-block align-top"
-            >
-              In the Top Collections NFT page on ME for 2 weeks post mint
-            </p>
-          </div>
-          <div class="ml-[26px] mt-2">
-            <svg
-              class="inline-block"
-              width="10"
-              height="10"
-              viewBox="0 0 10 10"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <circle cx="5" cy="5" r="5" fill="#4AE5F0" />
-            </svg>
-
-            <p
-              class="text-white font-bold text-sm xl:w-[300px] inline-block align-top"
-            >
-              2x floor price 1 month after mint in bear market
-            </p>
-          </div>
-          <div class="ml-[26px] mt-2">
-            <svg
-              class="inline-block"
-              width="10"
-              height="10"
-              viewBox="0 0 10 10"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <circle cx="5" cy="5" r="5" fill="#4AE5F0" />
-            </svg>
-
-            <p class="text-white font-bold text-sm xl:w-[220px] inline-block">
-              Hit a peak of 3x mint price
-            </p>
-          </div>
-        </div>
-        <div
-          class="ml-10 border-2 border-darkcyan bgdarklight-left rounded-[30px] w-[356px] h-[362px] inline-block"
-        >
-          <img
-            src="imgs/melt-labs.png"
-            class="mt-[23px] ml-[26px] inline-block align-top"
-          />
-          <p
-            class="inline-block text-white font-bold mt-[23px] text-sm ml-[18px] mr-[20px]"
-          >
-            <span
-              class="text-transparent bg-clip-text bg-gradient-to-r from-darkcyan to-lightcyan"
-              >MeltLabs </span
-            ><br />
-            (2.5 k supply 2 sol mint -<br />
-            raised 5,000 sol) (May 12<br />
-            $44 sol price)
-          </p>
-
-          <div class="ml-[26px] mt-[25px]">
-            <svg
-              class="inline-block"
-              width="10"
-              height="10"
-              viewBox="0 0 10 10"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <circle cx="5" cy="5" r="5" fill="#4AE5F0" />
-            </svg>
-
-            <p
-              class="text-white font-bold mt-2 text-sm xl:w-[300px] inline-block"
-            >
-              Currently 3x mint price in bear market
-            </p>
-          </div>
-          <div class="ml-[26px] mt-2">
-            <svg
-              class="inline-block"
-              width="10"
-              height="10"
-              viewBox="0 0 10 10"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <circle cx="5" cy="5" r="5" fill="#4AE5F0" />
-            </svg>
-
-            <p
-              class="text-white font-bold text-sm xl:w-[300px] inline-block align-top"
-            >
-              Hit a peak of <span class="text-lightcyan">4x mint price </span>
-            </p>
-          </div>
-          <div class="ml-[26px] mt-2">
-            <svg
-              class="inline-block"
-              width="10"
-              height="10"
-              viewBox="0 0 10 10"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <circle cx="5" cy="5" r="5" fill="#4AE5F0" />
-            </svg>
-
-            <p
-              class="text-white font-bold text-sm xl:w-[300px] inline-block align-top"
-            >
-              Trade volume of $700,000~ or 14.5k Sol Trading volume
-            </p>
-          </div>
-          <div class="ml-[26px] mt-2">
-            <svg
-              class="inline-block"
-              width="10"
-              height="10"
-              viewBox="0 0 10 10"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <circle cx="5" cy="5" r="5" fill="#4AE5F0" />
-            </svg>
-
-            <p
-              class="text-white font-bold text-sm xl:w-[300px] inline-block align-top"
-            >
-              Raised $220,000 in mint or 5k sol raised
-            </p>
-          </div>
-          <div class="ml-[26px] mt-2">
-            <svg
-              class="inline-block"
-              width="10"
-              height="10"
-              viewBox="0 0 10 10"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <circle cx="5" cy="5" r="5" fill="#4AE5F0" />
-            </svg>
-
-            <p class="text-white font-bold text-sm xl:w-[220px] inline-block">
-              Hit a peak of 3x mint price
-            </p>
-          </div>
-        </div>
-        <div
-          class="ml-10 border-2 border-darkcyan bgdarklight-left text-center rounded-[30px] w-[356px] h-[362px] inline-block"
-        >
-          <p
-            class="m-auto text-white font-bold text-xl mt-[103px] ml-[25px] mr-[25px]"
-          >
-            Advised Renty through the VC & capital raise process, created the
-            valuation model & pitch deck NFT platform & tools (move points
-            higher)
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="mt-20 reveal">
-      <p
-        class="text-center text-transparent bg-clip-text bg-gradient-to-r from-darkcyan to-lightcyan font-bold text-[40px] mb-10"
-      >
-        Our Partners
-      </p>
-
-      <div class="flex justify-center items-center">
-        <img src="imgs/magic-eden.png" class="inline-block" />
-        <img src="imgs/leaves.png" class="inline-block ml-12" />
-        <img src="imgs/fire.png" class="inline-block ml-12" />
-        <img src="imgs/hexa.png" class="inline-block ml-12" />
-      </div>
-    </div>
-    <div class="flex justify-center items-center mt-20 reveal">
-      <div class="inline-block">
-        <img src="imgs/crypto-nft.png" />
-      </div>
-      <div class="inline-block">
-        <div
-          class="ml-10 border-2 border-darkcyan bgdarklight-right text-center rounded-[30px] w-[508px] h-[115px]"
-        >
-          <p class="text-white font-bold text-xl ml-[25px] mr-[25px] mt-10">
-            Proven discord & twitter growth strategies
-          </p>
-        </div>
-        <div
-          class="ml-10 mt-[30px] border-2 border-darkcyan bgdarklight-right text-center rounded-[30px] w-[508px] h-[115px]"
-        >
-          <p class="text-white font-bold text-xl ml-[25px] mr-[25px] mt-10">
-            10 previous successful mints
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="mt-20 reveal flex justify-center items-center">
       <div
-        class="bg-gradient-to-r from-darkcyan to-darkgray border-2 border-darkcyan rounded-[30px] w-[1215px] h-[346xpx]"
+        class="mt-20 reveal ml-auto mr-auto bg-gradient-to-r from-darkcyan to-darkgray border-2 border-darkcyan rounded-[30px] w-[360px] h-[200px] xl:w-[1140px] xl:h-[215px]"
       >
         <p
-          class="text-center ml-auto mr-auto text-white text-[40px] font-bold xl:w-[400px] mt-[51px]"
+          class="inline-block text-white text-2xl xl:text-4xl font-bold xl:w-[400px] mt-4 xl:mt-[51px] mb-4 xl:mb-[56px] ml-8"
         >
-          Don’t miss a beat
-        </p>
-        <p
-          class="text-center ml-auto mr-auto text-white text-sm font-bold mt-[19px] xl:w-[510px]"
-        >
-          Get a Free 30 mins consulting session with our industry experts. Clear
-          your doubts, know where your project can be improved, take everything
-          to the next level and much more!
-        </p>
-        <div class="flex justify-center items-center mt-10 mb-12">
-          <a href="" target="_blank">
-            <button
-              class="bg-gradient-to-r from-darkcyan to-lightcyan rounded-lg hover:opacity-70 xl:w-[249px] xl:h-[85px] border border-black"
-            >
-              <p
-                class="pt-[25px] pb-[25px] pl-[50px] pr-[50px] font-black text-2xl items-center text-white"
-              >
-                Let's Chat
-              </p>
-            </button>
-          </a>
-        </div>
-      </div>
-    </div>
-    <div class="mt-20 reveal flex justify-center items-center ml-10 mb-20">
-      <div class="inline-block align-top mr-20">
-        <p class="font-bold text-white text-base">
-          Full Service So You Win Every Battle
-        </p>
-        <p class="font-bold text-[40px] text-white xl:w-[400px] mt-4">
+          Smarter, faster, and wiser way to mint
           <span
             class="text-transparent bg-clip-text bg-gradient-to-r from-darkcyan to-lightcyan"
-            >Grow </span
-          >and
-          <span
-            class="text-transparent bg-clip-text bg-gradient-to-r from-darkcyan to-lightcyan"
-            >Promote</span
-          >
-          Your Project.
-        </p>
-        <div class="mt-20">
-          <a href="" target="_blank">
-            <button
-              class="bg-gradient-to-r from-darkcyan to-lightcyan rounded-lg hover:opacity-70 border border-white"
-            >
-              <p
-                class="pt-[19px] pb-[19px] pl-[47px] pr-[47px] font-black text-xl items-center text-white"
-              >
-                Let's Talk
-              </p>
-            </button>
-          </a>
-        </div>
-      </div>
-      <div class="inline-block ml-20">
-        <img src="imgs/grow-and-promote-your-project.png" />
-      </div>
-    </div>
-    <div class="mt-40 reveal flex justify-center">
-      <div class="inline-block">
-        <div>
-          <div class="inline-block">
-            <svg
-              width="86"
-              height="86"
-              viewBox="0 0 86 86"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <circle cx="43" cy="43" r="42.5" stroke="white" />
-              <image
-                x="18"
-                y="18"
-                width="53"
-                height="47"
-                href="imgs/join-multichain-fam.svg"
-              />
-            </svg>
-            <p
-              class="text-transparent bg-clip-text bg-gradient-to-r from-darkcyan to-lightcyan mt-4 font-bold text-base"
-            >
-              Join the MultiChain Family
-            </p>
-            <p class="text-white mt-3 text-xs xl:w-[250px]">
-              Network related benefit (Multi-chain offers access to private
-              discord of past and current client founders/core team to
-              connect/network & collaborate to launchpad your success ) +
-              Multi-chain has solid connections with well known people in the
-              space
-            </p>
-          </div>
-          <div class="ml-20 inline-block align-top">
-            <svg
-              width="86"
-              height="86"
-              viewBox="0 0 86 86"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <circle cx="43" cy="43" r="42.5" stroke="white" />
-              <image
-                x="17"
-                y="17"
-                width="53"
-                height="47"
-                href="imgs/market-knowledge.svg"
-              />
-            </svg>
-            <p
-              class="text-transparent bg-clip-text bg-gradient-to-r from-darkcyan to-lightcyan mt-4 font-bold text-base"
-            >
-              Market Knowledge
-            </p>
-            <p class="text-white mt-3 text-xs xl:w-[230px]">
-              Experienced team of talented and qualified members with a majority
-              working full time in Mulit-chain Inc. and web 3 space.
-            </p>
-          </div>
-        </div>
-        <div class="mt-10">
-          <div class="inline-block">
-            <svg
-              width="86"
-              height="86"
-              viewBox="0 0 86 86"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <circle cx="43" cy="43" r="42.5" stroke="white" />
-              <image
-                x="17"
-                y="17"
-                width="53"
-                height="47"
-                href="imgs/custom-reports.svg"
-              />
-            </svg>
-            <p
-              class="text-transparent bg-clip-text bg-gradient-to-r from-darkcyan to-lightcyan mt-4 font-bold text-base"
-            >
-              Custom Reports
-            </p>
-            <p class="text-white mt-3 text-xs xl:w-[230px]">
-              Prelimary reports provided on overview of current efforts and how
-              they compare to overall key goals.
-            </p>
-          </div>
-          <div class="ml-[100px] inline-block align-top">
-            <svg
-              width="86"
-              height="86"
-              viewBox="0 0 86 86"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <circle cx="43" cy="43" r="42.5" stroke="white" />
-              <image
-                x="17"
-                y="17"
-                width="53"
-                height="47"
-                href="imgs/pay-for-performance.svg"
-              />
-            </svg>
-            <p
-              class="text-transparent bg-clip-text bg-gradient-to-r from-darkcyan to-lightcyan mt-4 font-bold text-base"
-            >
-              Pay For Performance
-            </p>
-            <p class="text-white mt-3 text-xs xl:w-[220px]">
-              Proven track record, results orientated team, selective and high
-              project acceptance standards, and component of pay by performance.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="ml-28 inline-block align-top">
-        <p class="text-white font-bold text-[40px] xl:w-[300px]">
-          <span
-            class="text-transparent bg-clip-text bg-gradient-to-r from-darkcyan to-lightcyan"
-            >A-Z</span
-          >
-          Blueprint
-          <span
-            class="text-transparent bg-clip-text bg-gradient-to-r from-darkcyan to-lightcyan"
-            >Web 3.0</span
-          >
-          Focus
-        </p>
-        <p class="text-white font-bold text-sm xl:w-[410px] mt-10">
-          As a full service Web 3.0 advisory firm, we offer a comprehensive
-          range of services to support your mission at every stage of
-          development. From start to finish, we will work closely with you to
-          illuminate project’s vision or goal, and determine your Go-to-market
-          strategy to successfully launch your project and achieve success.
-        </p>
-        <div class="mt-20">
-          <a href="" target="_blank">
-            <button
-              class="bg-gradient-to-r from-darkcyan to-lightcyan rounded-lg hover:opacity-70 border border-white"
-            >
-              <p
-                class="pt-[19px] pb-[19px] pl-[24px] pr-[24px] font-black text-xl items-center text-white"
-              >
-                Schedule A Call
-              </p>
-            </button>
-          </a>
-        </div>
-      </div>
-    </div>
-    <div class="mt-20 reveal flex justify-center items-center">
-      <div class="inline-block">
-        <p class="text-white font-bold text-[40px] xl:w-[450px]">
-          In 2022, We Partnered with
-          <span
-            class="text-transparent bg-clip-text bg-gradient-to-r from-darkcyan to-lightcyan"
-            >20 Clients</span
+            >out.</span
           >
         </p>
-        <p class="text-white font-bold text-sm mt-4 xl:w-[410px]">
-          Consult With Industry Leading Crypto & NFT Experts, get an A-Z
-          blueprint to grow your project & kickstart your project with the help
-          of well connected specialists.
-        </p>
-        <div>
-          <div class="mt-10">
-            <div
-              class="inline-block border-2 border-darkcyan bgdarklight-right rounded-[30px] h-[141px] w-[169px]"
-            >
-              <p
-                class="mt-6 text-transparent bg-clip-text bg-gradient-to-r from-darkcyan to-lightcyan font-bold text-[40px] text-center"
-              >
-                95%
-              </p>
-              <p class="text-white font-bold text-sm text-center">
-                Mint out rate on average
-              </p>
-            </div>
-            <div
-              class="ml-10 align-top inline-block border-2 border-darkcyan bgdarklight-right rounded-[30px] h-[141px] w-[169px]"
-            >
-              <p
-                class="mt-6 text-transparent bg-clip-text bg-gradient-to-r from-darkcyan to-lightcyan font-bold text-[40px] text-center"
-              >
-                100%
-              </p>
-              <p class="text-white font-bold text-sm text-center">
-                Client satisfaction
-              </p>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div class="mt-6">
-            <div
-              class="inline-block border-2 border-darkcyan bgdarklight-right rounded-[30px] h-[141px] w-[169px]"
-            >
-              <p
-                class="mt-6 text-transparent bg-clip-text bg-gradient-to-r from-darkcyan to-lightcyan font-bold text-[40px] text-center"
-              >
-                200%
-              </p>
-              <p class="text-white font-bold text-sm text-center">
-                Oversubscribed pipeline
-              </p>
-            </div>
-            <div
-              class="ml-10 align-top inline-block border-2 border-darkcyan bgdarklight-right rounded-[30px] h-[141px] w-[169px]"
-            >
-              <p
-                class="mt-6 text-transparent bg-clip-text bg-gradient-to-r from-darkcyan to-lightcyan font-bold text-[40px] text-center"
-              >
-                1480%
-              </p>
-              <p class="text-white font-bold text-sm text-center">
-                Organic growth in socials on average
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="inline-block ml-20">
-        <img src="imgs/saturn.png" />
-      </div>
-    </div>
-    <div class="mt-20 reveal">
-      <p
-        class="text-center text-transparent bg-clip-text bg-gradient-to-r from-darkcyan to-lightcyan font-bold text-[40px] mb-10"
-      >
-        Meet The Team
-      </p>
-      <div class="card card-side bg-white w-fit h-fit ml-auto mr-auto mt-10">
-        <figure class="bg-[#d5bad9]">
-          <img src="imgs/crypto-ape.png" class="bg-cryptoape" />
-        </figure>
-        <div class="card-body">
-          <p class="text-black font-bold text-sm mb-2">CEO (CryptoApe)</p>
-          <p class="text-black font-bold text-[10px] xl:w-[220px]">
-            Founder and CEO of MultiChain Advisors
+        <div class="block xl:inline-block ml-8 xl:ml-[156px]">
+          <p class="text-white font-bold text-xs xl:text-sm xl:w-[350px]">
+            Launch Your NFT Project Into The Stratosphere With Unbeatable NFT
+            Marketing Services.
           </p>
-          <p class="text-black font-bold text-[10px] xl:w-[220px]">
-            CPA & Management Consultant with 10 years of experience in Web 2 and
-            Web 3
+          <p
+            class="text-white font-bold text-xs xl:text-sm xl:w-[350px] mt-4 hover:text-darkcyan cursor-pointer"
+          >
+            Check it out
           </p>
           <svg
-            width="21"
-            height="18"
-            viewBox="0 0 21 18"
+            width="91"
+            height="4"
+            viewBox="0 0 91 4"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <path
-              d="M2.64083 10.0509L9.59344 16.5821C9.83294 16.8071 9.95269 16.9196 10.0939 16.9473C10.1575 16.9598 10.2229 16.9598 10.2864 16.9473C10.4276 16.9196 10.5474 16.8071 10.7869 16.5821L17.7395 10.0509C19.6957 8.21324 19.9332 5.18925 18.288 3.06871L17.9786 2.66999C16.0104 0.133229 12.0598 0.558663 10.6768 3.4563C10.4815 3.86561 9.89884 3.86561 9.70349 3.4563C8.32053 0.558663 4.36988 0.133233 2.4017 2.66999L2.09235 3.06872C0.447105 5.18925 0.684655 8.21324 2.64083 10.0509Z"
-              stroke="#41D5E7"
-              stroke-width="2"
-            />
+            <path d="M0 0H91V4H0V0Z" fill="url(#paint0_linear_82_711)" />
+            <defs>
+              <linearGradient
+                id="paint0_linear_82_711"
+                x1="3.5"
+                y1="3.67411e-05"
+                x2="91.3443"
+                y2="5.41128"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="#148EBC" />
+                <stop offset="1" stop-color="#40D3E6" />
+              </linearGradient>
+            </defs>
           </svg>
         </div>
       </div>
-      <div class="flex justify-center items-center">
-        <div class="card w-[253px] h-[335px] bg-white mt-10">
-          <figure class="bg-[#edc2dd]">
-            <img src="imgs/creative-strategist.png" />
-          </figure>
-          <div class="card-body">
-            <p class="text-black font-bold text-sm mb-2">Creative Strategist</p>
-            <p class="text-black font-bold text-[10px] xl:w-[220px]">
-              Well experienced marketing professional, withan education in
-              Integrated Marketing and experience in a digital agency.
-            </p>
 
-            <div>
-              <svg
-                class="float-right"
-                width="21"
-                height="18"
-                viewBox="0 0 21 18"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M2.64083 10.0509L9.59344 16.5821C9.83294 16.8071 9.95269 16.9196 10.0939 16.9473C10.1575 16.9598 10.2229 16.9598 10.2864 16.9473C10.4276 16.9196 10.5474 16.8071 10.7869 16.5821L17.7395 10.0509C19.6957 8.21324 19.9332 5.18925 18.288 3.06871L17.9786 2.66999C16.0104 0.133229 12.0598 0.558663 10.6768 3.4563C10.4815 3.86561 9.89884 3.86561 9.70349 3.4563C8.32053 0.558663 4.36988 0.133233 2.4017 2.66999L2.09235 3.06872C0.447105 5.18925 0.684655 8.21324 2.64083 10.0509Z"
-                  stroke="#41D5E7"
-                  stroke-width="2"
-                />
-              </svg>
-            </div>
-          </div>
-        </div>
-        <div class="card w-[253px] h-[335px] bg-white mt-10 ml-4">
-          <figure class="bg-[#d3d1c2]">
-            <img src="imgs/collab-expert.png" />
-          </figure>
-          <div class="card-body">
-            <p class="text-black font-bold text-sm mb-2">Collab Expert</p>
-            <p class="text-black font-bold text-[10px] xl:w-[245px]">
-              Deep connections to countless DAOs. Experienced in strategies &
-              collaborations.
-            </p>
-
-            <div>
-              <svg
-                class="inline-block float-right"
-                width="21"
-                height="18"
-                viewBox="0 0 21 18"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M2.64083 10.0509L9.59344 16.5821C9.83294 16.8071 9.95269 16.9196 10.0939 16.9473C10.1575 16.9598 10.2229 16.9598 10.2864 16.9473C10.4276 16.9196 10.5474 16.8071 10.7869 16.5821L17.7395 10.0509C19.6957 8.21324 19.9332 5.18925 18.288 3.06871L17.9786 2.66999C16.0104 0.133229 12.0598 0.558663 10.6768 3.4563C10.4815 3.86561 9.89884 3.86561 9.70349 3.4563C8.32053 0.558663 4.36988 0.133233 2.4017 2.66999L2.09235 3.06872C0.447105 5.18925 0.684655 8.21324 2.64083 10.0509Z"
-                  stroke="#41D5E7"
-                  stroke-width="2"
-                />
-              </svg>
-            </div>
-          </div>
-        </div>
-        <div class="card w-[253px] h-[335px] bg-white mt-10 ml-4">
-          <figure class="bg-[#848484]">
-            <img src="imgs/community-strategist.png" />
-          </figure>
-          <div class="card-body">
-            <p class="text-black font-bold text-sm mb-2">
-              Community Strategist
-            </p>
-            <p class="text-black font-bold text-[10px] xl:w-[180px]">
-              Experienced Community Manager with a background in project
-              management & strategy.
-            </p>
-
-            <div>
-              <svg
-                class="inline-block float-right"
-                width="21"
-                height="18"
-                viewBox="0 0 21 18"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M2.64083 10.0509L9.59344 16.5821C9.83294 16.8071 9.95269 16.9196 10.0939 16.9473C10.1575 16.9598 10.2229 16.9598 10.2864 16.9473C10.4276 16.9196 10.5474 16.8071 10.7869 16.5821L17.7395 10.0509C19.6957 8.21324 19.9332 5.18925 18.288 3.06871L17.9786 2.66999C16.0104 0.133229 12.0598 0.558663 10.6768 3.4563C10.4815 3.86561 9.89884 3.86561 9.70349 3.4563C8.32053 0.558663 4.36988 0.133233 2.4017 2.66999L2.09235 3.06872C0.447105 5.18925 0.684655 8.21324 2.64083 10.0509Z"
-                  stroke="#41D5E7"
-                  stroke-width="2"
-                />
-              </svg>
-            </div>
-          </div>
-        </div>
-        <div class="card w-[253px] h-[335px] bg-white mt-10 ml-4">
-          <figure class="bg-[#ecb179]">
-            <img src="imgs/brand-strategist.png" />
-          </figure>
-          <div class="card-body">
-            <p class="text-black font-bold text-sm mb-2">Brand Strategist</p>
-            <p class="text-black font-bold text-[10px] xl:w-[230px]">
-              Specialist in branding and PR strategy withextensive experience in
-              creating maketing campaigns & audits.
-            </p>
-
-            <!--<p class="text-black font-bold text-xs mt-4">Price</p>-->
-            <div>
-              <!-- <img src="imgs/atom.png" class="inline-block" />
-              <p class="text-black font-bold text-xs inline-block">455,133</p>-->
-              <svg
-                class="inline-block float-right"
-                width="21"
-                height="18"
-                viewBox="0 0 21 18"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M2.64083 10.0509L9.59344 16.5821C9.83294 16.8071 9.95269 16.9196 10.0939 16.9473C10.1575 16.9598 10.2229 16.9598 10.2864 16.9473C10.4276 16.9196 10.5474 16.8071 10.7869 16.5821L17.7395 10.0509C19.6957 8.21324 19.9332 5.18925 18.288 3.06871L17.9786 2.66999C16.0104 0.133229 12.0598 0.558663 10.6768 3.4563C10.4815 3.86561 9.89884 3.86561 9.70349 3.4563C8.32053 0.558663 4.36988 0.133233 2.4017 2.66999L2.09235 3.06872C0.447105 5.18925 0.684655 8.21324 2.64083 10.0509Z"
-                  stroke="#41D5E7"
-                  stroke-width="2"
-                />
-              </svg>
-            </div>
-          </div>
-        </div>
-        <div class="card w-[253px] h-[335px] bg-white mt-10 ml-4">
-          <figure class="bg-[#e6e8a7]">
-            <img src="imgs/discord-nft-specialist.png" />
-          </figure>
-          <div class="card-body">
-            <p class="text-black font-bold text-sm mb-2">
-              Discord & NFT Specialist
-            </p>
-            <p class="text-black font-bold text-[10px] xl:w-[180px]">
-              Experienced community manager. Collab expert & Discord security
-              specialist.
-            </p>
-
-            <div>
-              <svg
-                class="inline-block float-right"
-                width="21"
-                height="18"
-                viewBox="0 0 21 18"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M2.64083 10.0509L9.59344 16.5821C9.83294 16.8071 9.95269 16.9196 10.0939 16.9473C10.1575 16.9598 10.2229 16.9598 10.2864 16.9473C10.4276 16.9196 10.5474 16.8071 10.7869 16.5821L17.7395 10.0509C19.6957 8.21324 19.9332 5.18925 18.288 3.06871L17.9786 2.66999C16.0104 0.133229 12.0598 0.558663 10.6768 3.4563C10.4815 3.86561 9.89884 3.86561 9.70349 3.4563C8.32053 0.558663 4.36988 0.133233 2.4017 2.66999L2.09235 3.06872C0.447105 5.18925 0.684655 8.21324 2.64083 10.0509Z"
-                  stroke="#41D5E7"
-                  stroke-width="2"
-                />
-              </svg>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="flex justify-center itemsc-center mt-1">
-        <div class="card w-[253px] h-[335px] bg-white mt-10 ml-4">
-          <figure class="bg-[#d6d6d6]">
-            <img src="imgs/strategist-operations.png" />
-          </figure>
-          <div class="card-body">
-            <p class="text-black font-bold text-sm mb-2">
-              Strategist / Operations
-            </p>
-            <p class="text-black font-bold text-[10px] xl:w-[180px]">
-              OG crypto investor, assists with overall strategy for clients.
-            </p>
-
-            <div>
-              <svg
-                class="inline-block float-right"
-                width="21"
-                height="18"
-                viewBox="0 0 21 18"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M2.64083 10.0509L9.59344 16.5821C9.83294 16.8071 9.95269 16.9196 10.0939 16.9473C10.1575 16.9598 10.2229 16.9598 10.2864 16.9473C10.4276 16.9196 10.5474 16.8071 10.7869 16.5821L17.7395 10.0509C19.6957 8.21324 19.9332 5.18925 18.288 3.06871L17.9786 2.66999C16.0104 0.133229 12.0598 0.558663 10.6768 3.4563C10.4815 3.86561 9.89884 3.86561 9.70349 3.4563C8.32053 0.558663 4.36988 0.133233 2.4017 2.66999L2.09235 3.06872C0.447105 5.18925 0.684655 8.21324 2.64083 10.0509Z"
-                  stroke="#41D5E7"
-                  stroke-width="2"
-                />
-              </svg>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="mt-20 reveal 2xl:flex 2xl:justify-center">
-      <div class="inline-block">
-        <img src="imgs/arrow.png" />
-      </div>
-      <div class="ml-40 inline-block">
-        <p class="text-white font-bold text-[40px]">Does this look familiar?</p>
+      <div class="mt-20 reveal">
         <p
-          class="text-transparent bg-clip-text bg-gradient-to-r from-darkcyan to-lightcyan text-[40px] font-bold"
+          class="text-center text-transparent bg-clip-text bg-gradient-to-r from-darkcyan to-lightcyan font-bold text-3xl xl:text-[40px] mb-10"
         >
-          Let's fix it together
+          Our Success Stories
         </p>
-        <div class="mt-10">
-          <a href="" target="_blank">
-            <button
-              class="bg-gradient-to-r from-darkcyan to-lightcyan rounded-lg hover:opacity-70 border border-white"
+
+        <div class="block ml-6 xl:ml-0 xl:flex justify-center items-center">
+          <div
+            class="xl:ml-0 ml-4 border-2 border-darkcyan bgdarklight-left rounded-[30px] w-[300px] h-[330px] xl:w-[356px] xl:h-[362px] block xl:inline-block"
+          >
+            <img
+              src="imgs/smart-sea-society.png"
+              class="ml-4 mt-4 w-[80px] h-[80px] xl:w-[90px] xl:h-[90px] xl:mt-[23px] xl:ml-[26px] inline-block align-top"
+            />
+            <p
+              class="inline-block text-white font-bold mt-4 xl:mt-[23px] text-xs xl:text-sm ml-[18px] mr-[20px]"
             >
-              <p
-                class="pt-4 pb-4 pl-6 pr-6 font-black text-xl items-center text-white"
+              <span
+                class="text-transparent bg-clip-text bg-gradient-to-r from-darkcyan to-lightcyan"
+                >Smart Sea Society </span
+              ><br />4444*1.7 = total sol 7555)<br />
+              (Price of sol May 29 $46)
+            </p>
+
+            <div class="ml-4 mt-10 xl:ml-[26px] xl:mt-[25px]">
+              <svg
+                class="inline-block"
+                width="10"
+                height="10"
+                viewBox="0 0 10 10"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                Schedule A Call
+                <circle cx="5" cy="5" r="5" fill="#4AE5F0" />
+              </svg>
+
+              <p
+                class="text-white font-bold text-xs xl:text-sm xl:w-[220px] inline-block"
+              >
+                Raised
+                <span class="text-lightcyan text-sm xl:text-base"
+                  >$347,500 15 minutes</span
+                >
               </p>
-            </button>
-          </a>
+            </div>
+            <div class="ml-4 xl:ml-[26px] mt-2">
+              <svg
+                class="inline-block"
+                width="10"
+                height="10"
+                viewBox="0 0 10 10"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="5" cy="5" r="5" fill="#4AE5F0" />
+              </svg>
+
+              <p
+                class="text-white font-bold text-xs xl:text-sm w-[250px] xl:w-[300px] inline-block align-top"
+              >
+                $1,000,000~ Total Trade Volume or 28.2 k Sol Trading Volume
+              </p>
+            </div>
+            <div class="ml-4 xl:ml-[26px] mt-2">
+              <svg
+                class="inline-block"
+                width="10"
+                height="10"
+                viewBox="0 0 10 10"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="5" cy="5" r="5" fill="#4AE5F0" />
+              </svg>
+
+              <p
+                class="text-white font-bold text-xs xl:text-sm w-[250px] xl:w-[300px] inline-block align-top"
+              >
+                In the Top Collections NFT page on ME for 2 weeks post mint
+              </p>
+            </div>
+            <div class="ml-4 xl:ml-[26px] mt-2">
+              <svg
+                class="inline-block"
+                width="10"
+                height="10"
+                viewBox="0 0 10 10"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="5" cy="5" r="5" fill="#4AE5F0" />
+              </svg>
+
+              <p
+                class="text-white font-bold text-xs xl:text-sm w-[250px] xl:w-[300px] inline-block align-top"
+              >
+                2x floor price 1 month after mint in bear market
+              </p>
+            </div>
+            <div class="ml-4 xl:ml-[26px] mt-2">
+              <svg
+                class="inline-block"
+                width="10"
+                height="10"
+                viewBox="0 0 10 10"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="5" cy="5" r="5" fill="#4AE5F0" />
+              </svg>
+
+              <p
+                class="text-white font-bold text-xs xl:text-sm xl:w-[220px] inline-block"
+              >
+                Hit a peak of 3x mint price
+              </p>
+            </div>
+          </div>
+          <div
+            class="mt-8 xl:mt-0 ml-4 xl:ml-10 border-2 border-darkcyan bgdarklight-left rounded-[30px] w-[300px] h-[330px] xl:w-[357px] xl:h-[362px] block xl:inline-block"
+          >
+            <img
+              src="imgs/melt-labs.png"
+              class="mt-4 ml-4 w-[80px] h-[80px] xl:w-[90px] xl:h-[90px] xl:mt-[23px] xl:ml-[26px] inline-block align-top"
+            />
+            <p
+              class="inline-block text-white font-bold mt-4 xl:mt-[23px] text-xs xl:text-sm ml-4 xl:ml-[18px] mr-[20px]"
+            >
+              <span
+                class="text-transparent bg-clip-text bg-gradient-to-r from-darkcyan to-lightcyan"
+                >MeltLabs </span
+              ><br />
+              (2.5 k supply 2 sol mint -<br />
+              raised 5,000 sol) (May 12<br />
+              $44 sol price)
+            </p>
+
+            <div class="ml-4 mt-8 xl:ml-[26px] xl:mt-[25px]">
+              <svg
+                class="inline-block"
+                width="10"
+                height="10"
+                viewBox="0 0 10 10"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="5" cy="5" r="5" fill="#4AE5F0" />
+              </svg>
+
+              <p
+                class="text-white font-bold mt-2 text-xs xl:text-sm w-[250px] xl:w-[300px] inline-block"
+              >
+                Currently 3x mint price in bear market
+              </p>
+            </div>
+            <div class="ml-4 xl:ml-[26px] mt-2">
+              <svg
+                class="inline-block"
+                width="10"
+                height="10"
+                viewBox="0 0 10 10"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="5" cy="5" r="5" fill="#4AE5F0" />
+              </svg>
+
+              <p
+                class="text-white font-bold text-xs xl:text-sm w-[250px] xl:w-[300px] inline-block align-middle"
+              >
+                Hit a peak of <span class="text-lightcyan">4x mint price </span>
+              </p>
+            </div>
+            <div class="ml-4 xl:ml-[26px] mt-2">
+              <svg
+                class="inline-block"
+                width="10"
+                height="10"
+                viewBox="0 0 10 10"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="5" cy="5" r="5" fill="#4AE5F0" />
+              </svg>
+
+              <p
+                class="text-white font-bold text-xs xl:text-sm w-[250px] xl:w-[300px] inline-block align-top"
+              >
+                Trade volume of $700,000~ or 14.5k Sol Trading volume
+              </p>
+            </div>
+            <div class="ml-4 xl:ml-[26px] mt-2">
+              <svg
+                class="inline-block"
+                width="10"
+                height="10"
+                viewBox="0 0 10 10"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="5" cy="5" r="5" fill="#4AE5F0" />
+              </svg>
+
+              <p
+                class="text-white font-bold text-xs text-sm w-[250px] xl:w-[300px] inline-block align-top"
+              >
+                Raised $220,000 in mint or 5k sol raised
+              </p>
+            </div>
+            <div class="ml-4 xl:ml-[26px] mt-2">
+              <svg
+                class="inline-block"
+                width="10"
+                height="10"
+                viewBox="0 0 10 10"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="5" cy="5" r="5" fill="#4AE5F0" />
+              </svg>
+
+              <p
+                class="text-white font-bold text-xs xl:text-sm w-[250px] xl:w-[220px] inline-block"
+              >
+                Hit a peak of 3x mint price
+              </p>
+            </div>
+          </div>
+          <div
+            class="mt-8 xl:mt-0 ml-4 xl:ml-10 border-2 border-darkcyan bgdarklight-left text-center rounded-[30px] w-[300px] h-[330px] xl:w-[356px] xl:h-[362px] block xl:inline-block"
+          >
+            <p
+              class="m-auto text-white font-bold text-lg xl:text-xl mt-[103px] ml-[25px] mr-[25px]"
+            >
+              Advised Renty through the VC & capital raise process, created the
+              valuation model & pitch deck NFT platform & tools (move points
+              higher)
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="mt-20">
-      <hr class="bg-white h-0" />
-    </div>
-    <div class="mt-10">
-      <div class="inline-block align-middle">
-        <img src="imgs/footer-logo.png" class="mt-0 ml-20" />
-
-        <p class="text-white text-xs font-bold ml-24">
-          © Multichain Advisors Inc.
+      <div class="mt-20 reveal">
+        <p
+          class="text-center text-transparent bg-clip-text bg-gradient-to-r from-darkcyan to-lightcyan font-bold text-3xl xl:text-[40px] mb-10"
+        >
+          Our Partners
         </p>
+
+        <div class="flex justify-center items-center">
+          <img
+            src="imgs/magic-eden.png"
+            class="inline-block w-[80px] h-[80px] xl:w-[137px] xl:h-[137px]"
+          />
+          <img
+            src="imgs/leaves.png"
+            class="inline-block ml-2 xl:ml-12 w-[80px] h-[80px] xl:w-[137px] xl:h-[137px]"
+          />
+          <img
+            src="imgs/fire.png"
+            class="inline-block ml-2 xl:ml-12 w-[80px] h-[80px] xl:w-[130px] xl:h-[130px]"
+          />
+          <img
+            src="imgs/hexa.png"
+            class="inline-block ml-2 xl:ml-12 w-[80px] h-[80px] xl:w-[140px] xl:h-[130px]"
+          />
+        </div>
       </div>
-      <div class="block lg:inline-block ml-14 2xl:ml-[1100px] mb-20">
-        <div class="inline-block ml-10 align-top">
-          <p
-            class="text-transparent bg-clip-text bg-gradient-to-r from-darkcyan to-lightcyan font-bold text-base"
-          >
-            Community
-          </p>
-
-          <a href="" target="_blank">
-            <p class="text-sm text-white font-bold hover:text-darkcyan mt-2">
-              Twitter
-            </p>
-          </a>
-          <a href="" target="_blank">
-            <p class="text-sm text-white font-bold hover:text-darkcyan mt-2">
-              Youtube
-            </p> </a
-          ><a href="" target="_blank">
-            <p class="text-sm text-white font-bold hover:text-darkcyan mt-2">
-              Medium
-            </p> </a
-          ><a href="" target="_blank">
-            <p class="text-sm text-white font-bold hover:text-darkcyan mt-2">
-              Spotify
-            </p>
-          </a>
+      <div class="flex justify-center items-center mt-20 reveal">
+        <div class="xl:inline-block hidden">
+          <img src="imgs/crypto-nft.png" />
         </div>
-        <div class="inline-block ml-20 align-top">
-          <p
-            class="text-transparent bg-clip-text bg-gradient-to-r from-darkcyan to-lightcyan font-bold text-base"
+        <div class="inline-block">
+          <div
+            class="ml-0 xl:ml-10 border-2 border-darkcyan bgdarklight-right text-center rounded-[30px] w-[330px] h-[150px] xl:w-[508px] xl:h-[115px]"
           >
-            About
-          </p>
-
-          <a href="" target="_blank">
-            <p class="text-sm text-white font-bold hover:text-darkcyan mt-2">
-              Pitch Deck
+            <p class="text-white font-bold text-xl ml-[25px] mr-[25px] mt-10">
+              Proven discord & twitter growth strategies
             </p>
-          </a>
-          <a href="" target="_blank">
-            <p class="text-sm text-white font-bold hover:text-darkcyan mt-2">
-              One-Pager
-            </p> </a
-          ><a href="" target="_blank">
-            <p class="text-sm text-white font-bold hover:text-darkcyan mt-2">
-              Team
-            </p> </a
-          ><a href="" target="_blank">
-            <p class="text-sm text-white font-bold hover:text-darkcyan mt-2">
-              Statistics
+          </div>
+          <div
+            class="ml-0 xl:ml-10 mt-[30px] border-2 border-darkcyan bgdarklight-right text-center rounded-[30px] w-[330px] h-[150px] xl:w-[508px] xl:h-[115px]"
+          >
+            <p class="text-white font-bold text-xl ml-[25px] mr-[25px] mt-10">
+              10 previous successful mints
             </p>
-          </a>
+          </div>
         </div>
-        <div class="inline-block ml-32 align-top">
-          <p
-            class="text-transparent bg-clip-text bg-gradient-to-r from-darkcyan to-lightcyan font-bold text-base"
-          >
-            Products
-          </p>
+      </div>
 
-          <a href="" target="_blank">
-            <p class="text-sm text-white font-bold hover:text-darkcyan mt-2">
-              Refferal Program
-            </p>
-          </a>
+      <div class="mt-20 reveal flex justify-center items-center">
+        <div
+          class="bg-gradient-to-r from-darkcyan to-darkgray border-2 border-darkcyan rounded-[30px] w-[350px] h-[300px] xl:w-[1215px] xl:h-[346xpx]"
+        >
+          <p
+            class="text-center ml-auto mr-auto text-white text-3xl xl:text-[40px] font-bold xl:w-[400px] mt-[51px]"
+          >
+            Don’t miss a beat
+          </p>
+          <p
+            class="text-center ml-auto mr-auto text-white text-xs xl:text-sm font-bold mt-4 w-[300px] xl:mt-[19px] xl:w-[510px]"
+          >
+            Get a Free 30 mins consulting session with our industry experts.
+            Clear your doubts, know where your project can be improved, take
+            everything to the next level and much more!
+          </p>
+          <div class="flex justify-center items-center mt-10 mb-12">
+            <a href="" target="_blank">
+              <button
+                class="bg-gradient-to-r from-darkcyan to-lightcyan rounded-lg hover:opacity-70 w-[150px] h-[50px] xl:w-[249px] xl:h-[85px] border border-black"
+              >
+                <p
+                  class="pt-2 pb-2 xl:pt-[25px] xl:pb-[25px] xl:pl-[50px] xl:pr-[50px] font-black text-xl xl:text-2xl items-center text-white"
+                >
+                  Let's Chat
+                </p>
+              </button>
+            </a>
+          </div>
         </div>
-        <div class="inline-block ml-20 align-top">
+      </div>
+      <div
+        class="mt-20 reveal flex justify-center items-center ml-8 xl:ml-10 mb-20"
+      >
+        <div class="inline-block align-top xl:mr-20">
+          <p class="font-bold text-white text-sm xl:text-base">
+            Full Service So You Win Every Battle
+          </p>
           <p
-            class="text-transparent bg-clip-text bg-gradient-to-r from-darkcyan to-lightcyan font-bold text-base"
+            class="font-bold text-3xl xl:text-[40px] text-white w-[350px] xl:w-[400px] mt-4"
           >
-            For Business Inquiries
+            <span
+              class="text-transparent bg-clip-text bg-gradient-to-r from-darkcyan to-lightcyan"
+              >Grow </span
+            >and
+            <span
+              class="text-transparent bg-clip-text bg-gradient-to-r from-darkcyan to-lightcyan"
+              >Promote</span
+            >
+            Your Project.
           </p>
 
-          <a href="" target="_blank">
-            <p class="text-sm text-white font-bold hover:text-darkcyan mt-2">
-              Partnerships
+          <div class="mt-10 xl:mt-20">
+            <a href="" target="_blank">
+              <button
+                class="bg-gradient-to-r from-darkcyan to-lightcyan rounded-lg hover:opacity-70 border border-white"
+              >
+                <p
+                  class="pt-2 pb-2 pl-4 pr-4 xl:pt-[19px] xl:pb-[19px] xl:pl-[47px] xl:pr-[47px] font-black text-lg xl:text-xl items-center text-white"
+                >
+                  Let's Talk
+                </p>
+              </button>
+            </a>
+          </div>
+        </div>
+        <div class="hidden xl:inline-block ml-20">
+          <img src="imgs/grow-and-promote-your-project.png" />
+        </div>
+      </div>
+      <div
+        class="ml-8 xl:ml-0 mt-20 xl:mt-40 reveal block xl:flex justify-center"
+      >
+        <div class="inline-block">
+          <div>
+            <div class="block xl:inline-block">
+              <svg
+                width="86"
+                height="86"
+                viewBox="0 0 86 86"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="43" cy="43" r="42.5" stroke="white" />
+                <image
+                  x="18"
+                  y="18"
+                  width="53"
+                  height="47"
+                  href="imgs/join-multichain-fam.svg"
+                />
+              </svg>
+              <p
+                class="text-transparent bg-clip-text bg-gradient-to-r from-darkcyan to-lightcyan mt-4 font-bold text-base"
+              >
+                Join the MultiChain Family
+              </p>
+              <p class="text-white mt-3 text-xs w-[230px] xl:w-[250px]">
+                Network related benefit (Multi-chain offers access to private
+                discord of past and current client founders/core team to
+                connect/network & collaborate to launchpad your success ) +
+                Multi-chain has solid connections with well known people in the
+                space
+              </p>
+            </div>
+            <div class="mt-10 xl:mt-0 xl:ml-20 block xl:inline-block align-top">
+              <svg
+                width="86"
+                height="86"
+                viewBox="0 0 86 86"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="43" cy="43" r="42.5" stroke="white" />
+                <image
+                  x="17"
+                  y="17"
+                  width="53"
+                  height="47"
+                  href="imgs/market-knowledge.svg"
+                />
+              </svg>
+              <p
+                class="text-transparent bg-clip-text bg-gradient-to-r from-darkcyan to-lightcyan mt-4 font-bold text-base"
+              >
+                Market Knowledge
+              </p>
+              <p class="text-white mt-3 text-xs w-[230px] xl:w-[230px]">
+                Experienced team of talented and qualified members with a
+                majority working full time in Mulit-chain Inc. and web 3 space.
+              </p>
+            </div>
+          </div>
+          <div class="mt-10">
+            <div class="inline-block">
+              <svg
+                width="86"
+                height="86"
+                viewBox="0 0 86 86"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="43" cy="43" r="42.5" stroke="white" />
+                <image
+                  x="17"
+                  y="17"
+                  width="53"
+                  height="47"
+                  href="imgs/custom-reports.svg"
+                />
+              </svg>
+              <p
+                class="text-transparent bg-clip-text bg-gradient-to-r from-darkcyan to-lightcyan mt-4 font-bold text-base"
+              >
+                Custom Reports
+              </p>
+              <p class="text-white mt-3 text-xs w-[230px] xl:w-[230px]">
+                Prelimary reports provided on overview of current efforts and
+                how they compare to overall key goals.
+              </p>
+            </div>
+            <div class="mt-10 xl:mt-0 xl:ml-[100px] inline-block align-top">
+              <svg
+                width="86"
+                height="86"
+                viewBox="0 0 86 86"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="43" cy="43" r="42.5" stroke="white" />
+                <image
+                  x="17"
+                  y="17"
+                  width="53"
+                  height="47"
+                  href="imgs/pay-for-performance.svg"
+                />
+              </svg>
+              <p
+                class="text-transparent bg-clip-text bg-gradient-to-r from-darkcyan to-lightcyan mt-4 font-bold text-base"
+              >
+                Pay For Performance
+              </p>
+              <p class="text-white mt-3 text-xs w-[230px] xl:w-[220px]">
+                Proven track record, results orientated team, selective and high
+                project acceptance standards, and component of pay by
+                performance.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="mt-10 xl:mt-0 ml-0 block xl:ml-28 xl:inline-block align-top"
+        >
+          <p
+            class="text-white font-bold text-3xl w-[250px] xl:text-[40px] xl:w-[300px]"
+          >
+            <span
+              class="text-transparent bg-clip-text bg-gradient-to-r from-darkcyan to-lightcyan"
+              >A-Z</span
+            >
+            Blueprint
+            <span
+              class="text-transparent bg-clip-text bg-gradient-to-r from-darkcyan to-lightcyan"
+              >Web 3.0</span
+            >
+            Focus
+          </p>
+          <p
+            class="text-white font-bold text-xs xl:text-sm w-[330px] xl:w-[410px] mt-10"
+          >
+            As a full service Web 3.0 advisory firm, we offer a comprehensive
+            range of services to support your mission at every stage of
+            development. From start to finish, we will work closely with you to
+            illuminate project’s vision or goal, and determine your Go-to-market
+            strategy to successfully launch your project and achieve success.
+          </p>
+          <div class="mt-10 xl:mt-20">
+            <a href="" target="_blank">
+              <button
+                class="bg-gradient-to-r from-darkcyan to-lightcyan rounded-lg hover:opacity-70 border border-white"
+              >
+                <p
+                  class="pl-4 pr-4 pb-2 pt-2 xl:pt-[19px] xl:pb-[19px] xl:pl-[24px] xl:pr-[24px] font-black text-lg xl:text-xl items-center text-white"
+                >
+                  Schedule A Call
+                </p>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="xl:ml-0 mt-20 reveal flex justify-center items-center">
+        <div class="inline-block">
+          <p
+            class="text-white font-bold text-3xl w-[330px] xl:text-[40px] xl:w-[450px]"
+          >
+            In 2022, We Partnered with
+            <span
+              class="text-transparent bg-clip-text bg-gradient-to-r from-darkcyan to-lightcyan"
+              >20 Clients</span
+            >
+          </p>
+          <p class="text-white font-bold text-sm mt-4 w-[330px] xl:w-[410px]">
+            Consult With Industry Leading Crypto & NFT Experts, get an A-Z
+            blueprint to grow your project & kickstart your project with the
+            help of well connected specialists.
+          </p>
+          <div>
+            <div class="mt-10">
+              <div
+                class="block xl:inline-block border-2 border-darkcyan bgdarklight-right rounded-[30px] h-[141px] w-[169px]"
+              >
+                <p
+                  class="mt-6 text-transparent bg-clip-text bg-gradient-to-r from-darkcyan to-lightcyan font-bold text-[40px] text-center"
+                >
+                  95%
+                </p>
+                <p class="text-white font-bold text-sm text-center">
+                  Mint out rate on average
+                </p>
+              </div>
+              <div
+                class="mt-6 xl:mt-0 xl:ml-10 align-top xl:inline-block border-2 border-darkcyan bgdarklight-right rounded-[30px] h-[141px] w-[169px]"
+              >
+                <p
+                  class="mt-6 text-transparent bg-clip-text bg-gradient-to-r from-darkcyan to-lightcyan font-bold text-[40px] text-center"
+                >
+                  100%
+                </p>
+                <p class="text-white font-bold text-sm text-center">
+                  Client satisfaction
+                </p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="mt-6">
+              <div
+                class="xl:inline-block border-2 border-darkcyan bgdarklight-right rounded-[30px] h-[141px] w-[169px]"
+              >
+                <p
+                  class="mt-6 text-transparent bg-clip-text bg-gradient-to-r from-darkcyan to-lightcyan font-bold text-[40px] text-center"
+                >
+                  200%
+                </p>
+                <p class="text-white font-bold text-sm text-center">
+                  Oversubscribed pipeline
+                </p>
+              </div>
+              <div
+                class="mt-6 xl:mt-0 xl:ml-10 align-top inline-block border-2 border-darkcyan bgdarklight-right rounded-[30px] h-[141px] w-[169px]"
+              >
+                <p
+                  class="mt-6 text-transparent bg-clip-text bg-gradient-to-r from-darkcyan to-lightcyan font-bold text-[40px] text-center"
+                >
+                  1480%
+                </p>
+                <p class="text-white font-bold text-sm text-center">
+                  Organic growth in socials on average
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hidden xl:inline-block ml-20">
+          <img src="imgs/saturn.png" />
+        </div>
+      </div>
+      <div class="hidden xl:block mt-20 reveal">
+        <p
+          class="text-center text-transparent bg-clip-text bg-gradient-to-r from-darkcyan to-lightcyan font-bold text-3xl xl:text-[40px] mb-10"
+        >
+          Meet The Team
+        </p>
+        <div class="card card-side bg-white w-fit h-fit ml-auto mr-auto mt-10">
+          <figure class="bg-[#d5bad9]">
+            <img src="imgs/crypto-ape.png" class="bg-cryptoape" />
+          </figure>
+          <div class="card-body">
+            <p class="text-black font-bold text-sm mb-2">CEO (CryptoApe)</p>
+            <p class="text-black font-bold text-[10px] xl:w-[220px]">
+              Founder and CEO of MultiChain Advisors
             </p>
-          </a>
-          <a href="" target="_blank">
-            <p class="text-sm text-white font-bold hover:text-darkcyan mt-2">
-              Join Twitter Spaces
-            </p> </a
-          ><a href="" target="_blank">
-            <p class="text-sm text-white font-bold hover:text-darkcyan mt-2">
-              Become a client
+            <p class="text-black font-bold text-[10px] xl:w-[220px]">
+              CPA & Management Consultant with 10 years of experience in Web 2
+              and Web 3
             </p>
-          </a>
+            <svg
+              width="21"
+              height="18"
+              viewBox="0 0 21 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M2.64083 10.0509L9.59344 16.5821C9.83294 16.8071 9.95269 16.9196 10.0939 16.9473C10.1575 16.9598 10.2229 16.9598 10.2864 16.9473C10.4276 16.9196 10.5474 16.8071 10.7869 16.5821L17.7395 10.0509C19.6957 8.21324 19.9332 5.18925 18.288 3.06871L17.9786 2.66999C16.0104 0.133229 12.0598 0.558663 10.6768 3.4563C10.4815 3.86561 9.89884 3.86561 9.70349 3.4563C8.32053 0.558663 4.36988 0.133233 2.4017 2.66999L2.09235 3.06872C0.447105 5.18925 0.684655 8.21324 2.64083 10.0509Z"
+                stroke="#41D5E7"
+                stroke-width="2"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="block xl:flex justify-center items-center">
+          <div class="card w-[253px] h-[335px] bg-white mt-10">
+            <figure class="bg-[#edc2dd]">
+              <img src="imgs/creative-strategist.png" />
+            </figure>
+            <div class="card-body">
+              <p class="text-black font-bold text-sm mb-2">
+                Creative Strategist
+              </p>
+              <p class="text-black font-bold text-[10px] xl:w-[220px]">
+                Well experienced marketing professional, withan education in
+                Integrated Marketing and experience in a digital agency.
+              </p>
+
+              <div>
+                <svg
+                  class="float-right"
+                  width="21"
+                  height="18"
+                  viewBox="0 0 21 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2.64083 10.0509L9.59344 16.5821C9.83294 16.8071 9.95269 16.9196 10.0939 16.9473C10.1575 16.9598 10.2229 16.9598 10.2864 16.9473C10.4276 16.9196 10.5474 16.8071 10.7869 16.5821L17.7395 10.0509C19.6957 8.21324 19.9332 5.18925 18.288 3.06871L17.9786 2.66999C16.0104 0.133229 12.0598 0.558663 10.6768 3.4563C10.4815 3.86561 9.89884 3.86561 9.70349 3.4563C8.32053 0.558663 4.36988 0.133233 2.4017 2.66999L2.09235 3.06872C0.447105 5.18925 0.684655 8.21324 2.64083 10.0509Z"
+                    stroke="#41D5E7"
+                    stroke-width="2"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="card w-[253px] h-[335px] bg-white mt-10 ml-4">
+            <figure class="bg-[#d3d1c2]">
+              <img src="imgs/collab-expert.png" />
+            </figure>
+            <div class="card-body">
+              <p class="text-black font-bold text-sm mb-2">Collab Expert</p>
+              <p class="text-black font-bold text-[10px] xl:w-[245px]">
+                Deep connections to countless DAOs. Experienced in strategies &
+                collaborations.
+              </p>
+
+              <div>
+                <svg
+                  class="inline-block float-right"
+                  width="21"
+                  height="18"
+                  viewBox="0 0 21 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2.64083 10.0509L9.59344 16.5821C9.83294 16.8071 9.95269 16.9196 10.0939 16.9473C10.1575 16.9598 10.2229 16.9598 10.2864 16.9473C10.4276 16.9196 10.5474 16.8071 10.7869 16.5821L17.7395 10.0509C19.6957 8.21324 19.9332 5.18925 18.288 3.06871L17.9786 2.66999C16.0104 0.133229 12.0598 0.558663 10.6768 3.4563C10.4815 3.86561 9.89884 3.86561 9.70349 3.4563C8.32053 0.558663 4.36988 0.133233 2.4017 2.66999L2.09235 3.06872C0.447105 5.18925 0.684655 8.21324 2.64083 10.0509Z"
+                    stroke="#41D5E7"
+                    stroke-width="2"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="card w-[253px] h-[335px] bg-white mt-10 ml-4">
+            <figure class="bg-[#848484]">
+              <img src="imgs/community-strategist.png" />
+            </figure>
+            <div class="card-body">
+              <p class="text-black font-bold text-sm mb-2">
+                Community Strategist
+              </p>
+              <p class="text-black font-bold text-[10px] xl:w-[180px]">
+                Experienced Community Manager with a background in project
+                management & strategy.
+              </p>
+
+              <div>
+                <svg
+                  class="inline-block float-right"
+                  width="21"
+                  height="18"
+                  viewBox="0 0 21 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2.64083 10.0509L9.59344 16.5821C9.83294 16.8071 9.95269 16.9196 10.0939 16.9473C10.1575 16.9598 10.2229 16.9598 10.2864 16.9473C10.4276 16.9196 10.5474 16.8071 10.7869 16.5821L17.7395 10.0509C19.6957 8.21324 19.9332 5.18925 18.288 3.06871L17.9786 2.66999C16.0104 0.133229 12.0598 0.558663 10.6768 3.4563C10.4815 3.86561 9.89884 3.86561 9.70349 3.4563C8.32053 0.558663 4.36988 0.133233 2.4017 2.66999L2.09235 3.06872C0.447105 5.18925 0.684655 8.21324 2.64083 10.0509Z"
+                    stroke="#41D5E7"
+                    stroke-width="2"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="card w-[253px] h-[335px] bg-white mt-10 ml-4">
+            <figure class="bg-[#ecb179]">
+              <img src="imgs/brand-strategist.png" />
+            </figure>
+            <div class="card-body">
+              <p class="text-black font-bold text-sm mb-2">Brand Strategist</p>
+              <p class="text-black font-bold text-[10px] xl:w-[230px]">
+                Specialist in branding and PR strategy withextensive experience
+                in creating maketing campaigns & audits.
+              </p>
+
+              <!--<p class="text-black font-bold text-xs mt-4">Price</p>-->
+              <div>
+                <!-- <img src="imgs/atom.png" class="inline-block" />
+              <p class="text-black font-bold text-xs inline-block">455,133</p>-->
+                <svg
+                  class="inline-block float-right"
+                  width="21"
+                  height="18"
+                  viewBox="0 0 21 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2.64083 10.0509L9.59344 16.5821C9.83294 16.8071 9.95269 16.9196 10.0939 16.9473C10.1575 16.9598 10.2229 16.9598 10.2864 16.9473C10.4276 16.9196 10.5474 16.8071 10.7869 16.5821L17.7395 10.0509C19.6957 8.21324 19.9332 5.18925 18.288 3.06871L17.9786 2.66999C16.0104 0.133229 12.0598 0.558663 10.6768 3.4563C10.4815 3.86561 9.89884 3.86561 9.70349 3.4563C8.32053 0.558663 4.36988 0.133233 2.4017 2.66999L2.09235 3.06872C0.447105 5.18925 0.684655 8.21324 2.64083 10.0509Z"
+                    stroke="#41D5E7"
+                    stroke-width="2"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="card w-[253px] h-[335px] bg-white mt-10 ml-4">
+            <figure class="bg-[#e6e8a7]">
+              <img src="imgs/discord-nft-specialist.png" />
+            </figure>
+            <div class="card-body">
+              <p class="text-black font-bold text-sm mb-2">
+                Discord & NFT Specialist
+              </p>
+              <p class="text-black font-bold text-[10px] xl:w-[180px]">
+                Experienced community manager. Collab expert & Discord security
+                specialist.
+              </p>
+
+              <div>
+                <svg
+                  class="inline-block float-right"
+                  width="21"
+                  height="18"
+                  viewBox="0 0 21 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2.64083 10.0509L9.59344 16.5821C9.83294 16.8071 9.95269 16.9196 10.0939 16.9473C10.1575 16.9598 10.2229 16.9598 10.2864 16.9473C10.4276 16.9196 10.5474 16.8071 10.7869 16.5821L17.7395 10.0509C19.6957 8.21324 19.9332 5.18925 18.288 3.06871L17.9786 2.66999C16.0104 0.133229 12.0598 0.558663 10.6768 3.4563C10.4815 3.86561 9.89884 3.86561 9.70349 3.4563C8.32053 0.558663 4.36988 0.133233 2.4017 2.66999L2.09235 3.06872C0.447105 5.18925 0.684655 8.21324 2.64083 10.0509Z"
+                    stroke="#41D5E7"
+                    stroke-width="2"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center itemsc-center mt-1">
+          <div class="card w-[253px] h-[335px] bg-white mt-10 ml-4">
+            <figure class="bg-[#d6d6d6]">
+              <img src="imgs/strategist-operations.png" />
+            </figure>
+            <div class="card-body">
+              <p class="text-black font-bold text-sm mb-2">
+                Strategist / Operations
+              </p>
+              <p class="text-black font-bold text-[10px] xl:w-[180px]">
+                OG crypto investor, assists with overall strategy for clients.
+              </p>
+
+              <div>
+                <svg
+                  class="inline-block float-right"
+                  width="21"
+                  height="18"
+                  viewBox="0 0 21 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2.64083 10.0509L9.59344 16.5821C9.83294 16.8071 9.95269 16.9196 10.0939 16.9473C10.1575 16.9598 10.2229 16.9598 10.2864 16.9473C10.4276 16.9196 10.5474 16.8071 10.7869 16.5821L17.7395 10.0509C19.6957 8.21324 19.9332 5.18925 18.288 3.06871L17.9786 2.66999C16.0104 0.133229 12.0598 0.558663 10.6768 3.4563C10.4815 3.86561 9.89884 3.86561 9.70349 3.4563C8.32053 0.558663 4.36988 0.133233 2.4017 2.66999L2.09235 3.06872C0.447105 5.18925 0.684655 8.21324 2.64083 10.0509Z"
+                    stroke="#41D5E7"
+                    stroke-width="2"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-20 reveal 2xl:flex 2xl:justify-center">
+        <div class="inline-block">
+          <img src="imgs/arrow.png" />
+        </div>
+        <div class="ml-8 mt-10 xl:mt-0 block xl:ml-40 xl:inline-block">
+          <p class="text-white font-bold text-2xl xl:text-[40px]">
+            Does this look familiar?
+          </p>
+          <p
+            class="text-transparent bg-clip-text bg-gradient-to-r from-darkcyan to-lightcyan text-2xl xl:text-[40px] font-bold"
+          >
+            Let's fix it together
+          </p>
+          <div class="mt-10">
+            <a href="" target="_blank">
+              <button
+                class="bg-gradient-to-r from-darkcyan to-lightcyan rounded-lg hover:opacity-70 border border-white"
+              >
+                <p
+                  class="pt-4 pb-4 pl-6 pr-6 font-black text-xl items-center text-white"
+                >
+                  Schedule A Call
+                </p>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="mt-20">
+        <hr class="bg-white h-0" />
+      </div>
+
+      <div class="mt-10">
+        <div class="block xl:inline-block align-middle">
+          <img src="imgs/footer-logo.png" class="mt-0 ml-0 xl:ml-20" />
+
+          <p class="text-white text-xs font-bold ml-2 xl:ml-24">
+            © Multichain Advisors Inc.
+          </p>
+        </div>
+        <div
+          class="block lg:inline-block xl:ml-14 2xl:ml-[1100px] xl:pb-0 pb-10 xl:mb-20"
+        >
+          <div
+            class="block xl:inline-block mt-8 xl:mt-0 ml-2 xl:ml-10 align-top"
+          >
+            <p
+              class="text-transparent bg-clip-text bg-gradient-to-r from-darkcyan to-lightcyan font-bold text-base"
+            >
+              Community
+            </p>
+
+            <a href="" target="_blank">
+              <p class="text-sm text-white font-bold hover:text-darkcyan mt-2">
+                Twitter
+              </p>
+            </a>
+            <a href="" target="_blank">
+              <p class="text-sm text-white font-bold hover:text-darkcyan mt-2">
+                Youtube
+              </p> </a
+            ><a href="" target="_blank">
+              <p class="text-sm text-white font-bold hover:text-darkcyan mt-2">
+                Medium
+              </p> </a
+            ><a href="" target="_blank">
+              <p class="text-sm text-white font-bold hover:text-darkcyan mt-2">
+                Spotify
+              </p>
+            </a>
+          </div>
+          <div
+            class="block xl:inline-block mt-8 xl:mt-0 ml-2 xl:ml-10 align-top"
+          >
+            <p
+              class="text-transparent bg-clip-text bg-gradient-to-r from-darkcyan to-lightcyan font-bold text-base"
+            >
+              About
+            </p>
+
+            <a href="" target="_blank">
+              <p class="text-sm text-white font-bold hover:text-darkcyan mt-2">
+                Pitch Deck
+              </p>
+            </a>
+            <a href="" target="_blank">
+              <p class="text-sm text-white font-bold hover:text-darkcyan mt-2">
+                One-Pager
+              </p> </a
+            ><a href="" target="_blank">
+              <p class="text-sm text-white font-bold hover:text-darkcyan mt-2">
+                Team
+              </p> </a
+            ><a href="" target="_blank">
+              <p class="text-sm text-white font-bold hover:text-darkcyan mt-2">
+                Statistics
+              </p>
+            </a>
+          </div>
+          <div
+            class="block xl:inline-block mt-8 xl:mt-0 ml-2 xl:ml-10 align-top"
+          >
+            <p
+              class="text-transparent bg-clip-text bg-gradient-to-r from-darkcyan to-lightcyan font-bold text-base"
+            >
+              Products
+            </p>
+
+            <a href="" target="_blank">
+              <p class="text-sm text-white font-bold hover:text-darkcyan mt-2">
+                Refferal Program
+              </p>
+            </a>
+          </div>
+          <div
+            class="block xl:inline-block mt-8 xl:mt-0 ml-2 xl:ml-10 align-top"
+          >
+            <p
+              class="text-transparent bg-clip-text bg-gradient-to-r from-darkcyan to-lightcyan font-bold text-base"
+            >
+              For Business Inquiries
+            </p>
+
+            <a href="" target="_blank">
+              <p class="text-sm text-white font-bold hover:text-darkcyan mt-2">
+                Partnerships
+              </p>
+            </a>
+            <a href="" target="_blank">
+              <p class="text-sm text-white font-bold hover:text-darkcyan mt-2">
+                Join Twitter Spaces
+              </p> </a
+            ><a href="" target="_blank">
+              <p class="text-sm text-white font-bold hover:text-darkcyan mt-2">
+                Become a client
+              </p>
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -1665,6 +1996,7 @@
         // Optional parameters
         loop: true,
         mousewheel: true,
+        slidesPerView: 3,
         // If we need pagination
         pagination: {
           el: ".swiper-pagination",
@@ -1674,6 +2006,12 @@
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
         },
       });
 
