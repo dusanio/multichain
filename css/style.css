@@ -2745,6 +2745,10 @@ html {
   margin-left: 10px;
 }
 
+.mr-2 {
+  margin-right: 0.5rem;
+}
+
 .block {
   display: block;
 }
@@ -3023,6 +3027,14 @@ html {
 
 .w-\[40x\] {
   width: 40x;
+}
+
+.w-\[100px\] {
+  width: 100px;
+}
+
+.w-\[30px\] {
+  width: 30px;
 }
 
 .grow {
@@ -3682,6 +3694,10 @@ html {
 
   .xl\:ml-\[140px\] {
     margin-left: 140px;
+  }
+
+  .xl\:mr-\[20px\] {
+    margin-right: 20px;
   }
 
   .xl\:block {
