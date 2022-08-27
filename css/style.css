@@ -2721,6 +2721,10 @@ html {
   margin-top: 7rem;
 }
 
+.ml-6 {
+  margin-left: 1.5rem;
+}
+
 .block {
   display: block;
 }
@@ -2903,6 +2907,10 @@ html {
 
 .w-\[320px\] {
   width: 320px;
+}
+
+.w-\[30px\] {
+  width: 30px;
 }
 
 .grow {
