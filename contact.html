@@ -276,44 +276,57 @@
               </div>
             </div>
             <div
-              class="md:mt-24 xl:mt-0 ml-auto mr-auto xl:inline-block bg-white w-[360px] h-[700px] 2xl:w-[900px] 2xl:h-[1100px] md:w-[625px] md:h-[880px] align-middle xl:ml-20 rounded-[30px]"
+              class="md:mt-24 xl:mt-0 ml-auto mr-auto xl:inline-block bg-white w-[360px] h-[755px] 2xl:w-[900px] 2xl:h-[1100px] md:w-[625px] md:h-[920px] align-middle xl:ml-20 rounded-[30px]"
             >
               <p
                 class="pt-8 md:pt-12 xl:pt-0 ml-10 mt-12 font-bold 2xl:text-4xl text-xl md:text-[24px] text-transparent bg-clip-text bg-gradient-to-r from-darkcyan to-lightcyan"
               >
                 Tell us about you.
               </p>
-              <p
-                class="ml-10 pt-6 md:mt-10 text-black 2xl:text-2xl text-sm md:text-base font-bold"
+
+              <div
+                class="ml-10 pt-8 md:pt-10 text-black 2xl:text-2xl text-sm md:text-base font-bold"
               >
-                First Name*
-              </p>
-              <div class="mt-2">
-                <hr class="bg-black h-0.5 mr-10 ml-10" />
+                <label for="first-name" class="block">First Name*</label>
+                <input
+                  type="text"
+                  id="first-name"
+                  name="first-name"
+                  class="md:pt-2 bg-transparent border-none border-b-solid border-black block focus:outline-none w-[290px] md:w-[540px] 2xl:w-[800px] mr-10 xl:text-sm"
+                />
               </div>
-              <p
-                class="ml-10 pt-6 md:mt-10 text-black 2xl:text-2xl text-sm md:text-base font-bold"
+              <div
+                class="ml-10 pt-6 md:mt-4 text-black 2xl:text-2xl text-sm md:text-base font-bold"
               >
-                Last Name*
-              </p>
-              <div class="mt-2">
-                <hr class="bg-black h-0.5 mr-10 ml-10" />
+                <label for="last-name" class="block">Last Name*</label>
+                <input
+                  type="text"
+                  id="last-name"
+                  name="last-name"
+                  class="md:pt-2 bg-transparent border-none border-b-solid border-black block focus:outline-none w-[290px] md:w-[540px] 2xl:w-[800px] mr-10 xl:text-sm"
+                />
               </div>
-              <p
-                class="ml-10 pt-6 md:mt-10 text-black 2xl:text-2xl text-sm md:text-base font-bold"
+              <div
+                class="ml-10 pt-6 md:mt-4 text-black 2xl:text-2xl text-sm md:text-base font-bold"
               >
-                Email*
-              </p>
-              <div class="mt-2">
-                <hr class="bg-black h-0.5 mr-10 ml-10" />
+                <label for="email" class="block">Email*</label>
+                <input
+                  type="text"
+                  id="email"
+                  name="email"
+                  class="md:pt-2 bg-transparent border-none border-b-solid border-black block focus:outline-none w-[290px] md:w-[540px] 2xl:w-[800px] mr-10 xl:text-sm"
+                />
               </div>
-              <p
-                class="ml-10 pt-6 md:mt-10 text-black 2xl:text-2xl text-sm md:text-base font-bold"
+              <div
+                class="ml-10 pt-6 md:mt-4 text-black 2xl:text-2xl text-sm md:text-base font-bold"
               >
-                Website URL*
-              </p>
-              <div class="mt-2">
-                <hr class="bg-black h-0.5 mr-10 ml-10" />
+                <label for="website-url" class="block">Website URL*</label>
+                <input
+                  type="text"
+                  id="website-url"
+                  name="website-url"
+                  class="md:pt-2 bg-transparent border-none border-b-solid border-black block focus:outline-none w-[290px] md:w-[540px] 2xl:w-[800px] mr-10 xl:text-sm"
+                />
               </div>
               <p
                 class="text-black ml-10 mt-6 font-bold 2xl:text-2xl text-sm md:text-base"
@@ -366,24 +379,30 @@
               >
                 What is your Budget?
               </p>
-              <p
-                class="text-black font-bold ml-10 2xl:mt-12 mt-4 md:mt-8 2xl:text-2xl text-sm md:text-base"
+              <div
+                class="ml-10 pt-6 md:mt-4 text-black 2xl:text-2xl text-sm md:text-base font-bold"
               >
-                Please Select
-              </p>
-              <div class="mt-2">
-                <hr class="bg-black h-0.5 mr-10 ml-10" />
+                <label for="select-budget" class="block">Please Select</label>
+                <input
+                  type="text"
+                  id="select-budget"
+                  name="select-budget"
+                  class="md:pt-2 bg-transparent border-none border-b-solid border-black block focus:outline-none w-[290px] md:w-[540px] 2xl:w-[800px] mr-10 xl:text-sm"
+                />
               </div>
-              <p
-                class="text-black font-bold ml-10 2xl:mt-12 md:mt-8 pt-6 text-sm 2xl:text-2xl md:text-base"
+              <div
+                class="ml-10 pt-6 md:mt-4 text-black 2xl:text-2xl text-sm md:text-base font-bold"
               >
-                Your Message
-              </p>
-              <div class="mt-2">
-                <hr class="bg-black h-0.5 mr-10 ml-10" />
+                <label for="your-message" class="block">Your Message*</label>
+                <input
+                  type="text"
+                  id="your-message"
+                  name="your-message"
+                  class="md:pt-2 bg-transparent border-none border-b-solid border-black block focus:outline-none w-[290px] md:w-[540px] 2xl:w-[800px] mr-10 xl:text-sm"
+                />
               </div>
               <button
-                class="mt-8 ml-8 w-[300px] h-[50px] 2xl:w-[800px] 2xl:h-[120px] md:w-[520px] md:h-[65px] bg-gradient-to-r from-darkcyan to-lightcyan rounded-lg hover:opacity-70 2xl:ml-12 2xl:mt-10 md:mt-4 md:ml-12"
+                class="mt-6 ml-8 w-[300px] h-[50px] 2xl:w-[800px] 2xl:h-[120px] md:w-[520px] md:h-[65px] bg-gradient-to-r from-darkcyan to-lightcyan rounded-lg hover:opacity-70 2xl:ml-12 2xl:mt-10 md:mt-8 md:ml-12"
               >
                 <p
                   class="pl-4 pr-4 pb-2 pt-2 xl:pt-[19px] xl:pb-[19px] xl:pl-[24px] xl:pr-[24px] font-black text-lg 2xl:text-4xl xl:text-xl items-center text-white"

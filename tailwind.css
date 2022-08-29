@@ -70,6 +70,12 @@
   opacity: 1;
 }
 
+input[type="text"] {
+  background: transparent !important;
+  border: none !important;
+  border-bottom: 1px solid #000000 !important;
+}
+
 @media (min-width: 1536px) {
   .swiper-button-prev {
     margin-left: 650px !important;
