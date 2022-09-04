@@ -3667,6 +3667,18 @@ input[type="text"] {
     margin-left: 18rem;
   }
 
+  .md\:mt-10 {
+    margin-top: 2.5rem;
+  }
+
+  .md\:mt-7 {
+    margin-top: 1.75rem;
+  }
+
+  .md\:mt-11 {
+    margin-top: 2.75rem;
+  }
+
   .md\:block {
     display: block;
   }
@@ -3753,6 +3765,10 @@ input[type="text"] {
 
   .md\:w-\[169px\] {
     width: 169px;
+  }
+
+  .md\:w-\[253px\] {
+    width: 253px;
   }
 
   .md\:-translate-y-\[85\%\] {
@@ -3923,6 +3939,14 @@ input[type="text"] {
     margin-left: 7rem;
   }
 
+  .lg\:mt-2 {
+    margin-top: 0.5rem;
+  }
+
+  .lg\:mt-3 {
+    margin-top: 0.75rem;
+  }
+
   .lg\:block {
     display: block;
   }
@@ -3983,6 +4007,10 @@ input[type="text"] {
 
   .lg\:h-\[342px\] {
     height: 342px;
+  }
+
+  .lg\:h-\[432px\] {
+    height: 432px;
   }
 
   .lg\:w-\[450px\] {
@@ -4258,6 +4286,18 @@ input[type="text"] {
 
   .xl\:mb-64 {
     margin-bottom: 16rem;
+  }
+
+  .xl\:mt-6 {
+    margin-top: 1.5rem;
+  }
+
+  .xl\:mt-8 {
+    margin-top: 2rem;
+  }
+
+  .xl\:mt-7 {
+    margin-top: 1.75rem;
   }
 
   .xl\:block {
