@@ -70,7 +70,10 @@
   opacity: 1;
 }
 
-input[type="text"] {
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="url"] {
   background: transparent !important;
   border: none !important;
   border-bottom: 1px solid #000000 !important;

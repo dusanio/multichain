@@ -48,22 +48,22 @@
 
     <div class="hidden mt-10 ml-8" id="mobile-menu">
       <div class="mb-8">
-        <p class="text-sm text-white font-bold font-bold hover:text-darkcyan">
+        <p class="text-sm text-white font-bold hover:text-darkcyan">
           <a href="services.html" target="_blank"> Services </a>
         </p>
       </div>
       <div class="mb-8">
-        <p class="text-sm text-white font-bold font-bold hover:text-darkcyan">
+        <p class="text-sm text-white font-bold hover:text-darkcyan">
           <a href="about_us.html"> Team </a>
         </p>
       </div>
       <div class="mb-8">
-        <p class="text-sm text-white font-bold font-bold hover:text-darkcyan">
+        <p class="text-sm text-white font-bold hover:text-darkcyan">
           <a href=""> Our Methodology </a>
         </p>
       </div>
       <div class="pb-[355px]">
-        <p class="text-sm text-white font-bold font-bold hover:text-darkcyan">
+        <p class="text-sm text-white font-bold hover:text-darkcyan">
           <a href="contact.html" target="_blank"> Contact </a>
         </p>
       </div>
@@ -270,6 +270,7 @@
               </div>
             </div>
             <form
+              id="contactForm"
               class="md:mt-24 xl:mt-0 ml-auto mr-auto xl:inline-block bg-white w-[360px] h-[755px] 2xl:w-[900px] 2xl:h-[1100px] md:w-[525px] md:h-[860px] lg:w-[625px] lg:h-[920px] align-middle xl:ml-20 rounded-[30px]"
             >
               <p
@@ -307,7 +308,7 @@
               >
                 <label for="email" class="block">Email*</label>
                 <input
-                  type="text"
+                  type="email"
                   id="email"
                   name="email"
                   class="md:pt-2 bg-transparent border-none border-b-solid border-black block focus:outline-none md:text-xs lg:text-sm w-[290px] md:w-[450px] lg:w-[540px] 2xl:w-[800px] mr-10 xl:text-sm"
@@ -319,10 +320,10 @@
               >
                 <label for="website-url" class="block">Website URL*</label>
                 <input
-                  type="text"
+                  type="url"
                   id="website-url"
                   name="website-url"
-                  class="md:pt-2 bg-transparent border-none border-b-solid border-black block focus:outline-none w-[290px] md:text-base md:w-[450px] lg:w-[540px] 2xl:w-[800px] mr-10 xl:text-sm"
+                  class="md:pt-2 bg-transparent border-none border-b-solid border-black block focus:outline-none w-[290px] md:text-xs md:w-[450px] lg:w-[540px] 2xl:w-[800px] mr-10 xl:text-sm"
                   required
                 />
               </div>
@@ -372,20 +373,19 @@
                   >
                 </div>
               </div>
-              <p
-                class="text-black font-bold ml-10 mt-6 2xl:text-2xl text-sm md:text-sm lg:text-base"
-              >
-                What is your Budget?
-              </p>
+
               <div
                 class="ml-10 pt-6 md:mt-4 text-black 2xl:text-2xl text-sm md:text-sm lg:text-base font-bold"
               >
-                <label for="select-budget" class="block">Please Select</label>
+                <label for="select-budget" class="block">
+                  What is your Budget?</label
+                >
                 <input
-                  type="text"
+                  min="0"
+                  type="number"
                   id="select-budget"
                   name="select-budget"
-                  class="md:pt-2 bg-transparent border-none border-b-solid border-black block focus:outline-none w-[290px] md:w-[450px] lg:w-[540px] 2xl:w-[800px] mr-10 xl:text-sm"
+                  class="value-class md:pt-2 bg-transparent border-none border-b-solid border-black block focus:outline-none w-[290px] md:w-[450px] lg:w-[540px] 2xl:w-[800px] mr-10 xl:text-sm"
                   required
                 />
               </div>
@@ -530,7 +530,7 @@
         </div>
       </div>
     </div>
-
+    <script src="sendMail.js"></script>
     <script src="scroll.js"></script>
     <script src="menu.js"></script>
   </body>
