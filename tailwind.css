@@ -99,6 +99,21 @@ input[type="url"] {
   }
 }
 
+@media (max-width: 768px) {
+  .swiper-pagination-bullet {
+    width: 40px !important;
+    height: 8px !important;
+    border-radius: 0 !important;
+    color: white !important;
+    background: white !important;
+    opacity: 100% !important;
+  }
+  .swiper-pagination-bullet-active {
+    color: var(--arrowcyan) !important;
+    background: var(--arrowcyan) !important;
+  }
+}
+
 @media (min-width: 1920px) {
   .swiper-button-prev {
     margin-left: 280px !important;
