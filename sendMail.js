@@ -45,9 +45,7 @@ formEl.onsubmit = (event) => {
   const body = message.join(encodeURI("\r\n"));
 
   location.href = `mailto:example@example.com?subject=${subject}&body=${body}`;
-  window.alert(
-    "Email has opened in your default mail app, send it from there.\nIf nothing happens make sure you have a mail app installed"
-  );
+
   event.preventDefault();
   return false;
 };
