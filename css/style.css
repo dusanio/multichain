@@ -3251,6 +3251,10 @@ body[dir="rtl"] .checkbox:checked,
   width: 72px;
 }
 
+.w-\[82px\] {
+  width: 82px;
+}
+
 .grow {
   flex-grow: 1;
 }
