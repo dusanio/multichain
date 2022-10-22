@@ -3033,6 +3033,10 @@ body[dir="rtl"] .checkbox:checked,
   margin-top: 12rem;
 }
 
+.mb-64 {
+  margin-bottom: 16rem;
+}
+
 .block {
   display: block;
 }
@@ -3597,6 +3601,26 @@ body[dir="rtl"] .checkbox:checked,
 
 .pl-20 {
   padding-left: 5rem;
+}
+
+.pb-64 {
+  padding-bottom: 16rem;
+}
+
+.pb-96 {
+  padding-bottom: 24rem;
+}
+
+.pb-\[400px\] {
+  padding-bottom: 400px;
+}
+
+.pb-\[420px\] {
+  padding-bottom: 420px;
+}
+
+.pb-\[410px\] {
+  padding-bottom: 410px;
 }
 
 .text-left {
