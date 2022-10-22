@@ -3514,6 +3514,10 @@ body[dir="rtl"] .checkbox:checked,
   background-image: url('/imgs/test.jpeg');
 }
 
+.bg-\[url\(\'\/imgs\/test2\.jpeg\'\)\] {
+  background-image: url('/imgs/test2.jpeg');
+}
+
 .from-darkcyan {
   --tw-gradient-from: var(--darkcyan);
   --tw-gradient-to: rgb(255 255 255 / 0);
