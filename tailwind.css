@@ -116,13 +116,13 @@ input[type="url"] {
 
 @media (min-width: 1920px) {
   .swiper-button-prev {
-    margin-left: 280px !important;
+    margin-left: 110px !important;
     color: black !important;
     border: 50px solid var(--arrowcyan) !important;
     border-radius: 100% !important;
   }
   .swiper-button-next {
-    margin-right: 280px !important;
+    margin-right: 110px !important;
     color: black !important;
     border: 50px solid var(--arrowcyan) !important;
     border-radius: 100% !important;
