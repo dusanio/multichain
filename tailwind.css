@@ -147,3 +147,15 @@ input[type="url"] {
     font-size: 40px !important;
   }
 }
+
+@media (min-width: 2560px) {
+  #link-in-the-chain {
+    transform: translateX(300px);
+  }
+  #xxl-discovery {
+    transform: translateX(200px);
+  }
+  #xxl-deploy {
+    transform: translateX(-200px);
+  }
+}
