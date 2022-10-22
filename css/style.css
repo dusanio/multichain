@@ -4473,6 +4473,10 @@ nav {
     padding-top: 0px;
   }
 
+  .md\:pt-52 {
+    padding-top: 13rem;
+  }
+
   .md\:text-left {
     text-align: left;
   }
