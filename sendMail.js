@@ -1,4 +1,4 @@
-const formEl = document.getElementById("contactForm");
+/*const formEl = document.getElementById("contactForm");
 
 formEl.onsubmit = (event) => {
   const formData = new FormData(event.target);
@@ -49,3 +49,4 @@ formEl.onsubmit = (event) => {
   event.preventDefault();
   return false;
 };
+*/
