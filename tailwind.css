@@ -10,6 +10,8 @@
   --lightestcyan: #49e2ef;
   --arrowcyan: #47dfed;
   --lightgray: #d9d9d9;
+  --background-darker: #121212;
+  --background-lighter: #1f1f1f;
 }
 
 .swiper-button-prev {
