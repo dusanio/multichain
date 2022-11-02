@@ -3553,6 +3553,10 @@ body[dir="rtl"] .checkbox:checked,
   background-image: url('/images/cool.jpeg');
 }
 
+.bg-\[url\(\'\/images\/hero\.jpeg\'\)\] {
+  background-image: url('/images/hero.jpeg');
+}
+
 .from-darkcyan {
   --tw-gradient-from: var(--darkcyan);
   --tw-gradient-to: rgb(255 255 255 / 0);
@@ -6163,6 +6167,11 @@ nav {
   .\32xl\:px-5 {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
+  }
+
+  .\32xl\:px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 
   .\32xl\:pt-10 {
