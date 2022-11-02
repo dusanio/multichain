@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>MultiChain - Advisors Inc.</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+  </head>
+
+  <body class="bg-black font-poppins">
+    <div class="flex justify-between items-center pt-6 xl:hidden">
+      <img
+        src="imgs/multichain.png"
+        class="w-[70px] h-[90px] ml-4 hover:opacity-70"
+      />
+      <button
+        class="bg-gradient-to-r from-darkcyan to-lightcyan rounded-lg hover:opacity-70 border border-white"
+      >
+        <a href="contact.html">
+          <p
+            class="font-bold pt-2 pb-2 pl-3 pr-3 text-base lg:text-xl lg:pt-4 lg:pb-4 lg:pl-5 lg:pr-6 items-center text-white"
+          >
+            Schedule A Call
+          </p>
+        </a>
+      </button>
+      <div class="mt-1 float-right mr-4" onclick="mobileMenu();">
+        <button id="three-lines">
+          <img src="imgs/burger.png" class="w-[40px] h-[40px]" />
+        </button>
+
+        <button id="x-button" class="hidden">
+          <img src="imgs/x-button.png" class="w-[40px] h-[40px]" />
+        </button>
+      </div>
+    </div>
+
+    <div class="hidden mt-10 ml-8" id="mobile-menu">
+      <div class="mb-8">
+        <p class="text-sm text-white font-bold font-bold hover:text-darkcyan">
+          <a href="index.html"> Home </a>
+        </p>
+      </div>
+      <div class="mb-8">
+        <p class="text-sm text-white font-bold font-bold hover:text-darkcyan">
+          <a href="services.html"> Services </a>
+        </p>
+      </div>
+      <div class="mb-8">
+        <p class="text-sm text-white font-bold font-bold hover:text-darkcyan">
+          <a href="about_us.html"> Team </a>
+        </p>
+      </div>
+      <div class="pb-[410px]">
+        <p class="text-sm text-white font-bold font-bold hover:text-darkcyan">
+          <a href="methodology.html"> Our Methodology </a>
+        </p>
+      </div>
+    </div>
+    <div id="content">
+      <div class="hidden xl:flex items-center">
+        <img
+          src="imgs/header-logo.png"
+          alt="Multichain logo"
+          class="2xl:w-[500px] 2xl:h-[180px] sm:hidden lg:block ml-8"
+        />
+        <div class="hidden lg:flex items-center ml-auto p-6 z-50 relative">
+          <div>
+            <p
+              class="lg:text-sm xl:text-base 2xl:text-xl text-white lg:ml-0 xl:ml-0 hover:text-darkcyan"
+            >
+              <a href="index.html">Home</a>
+            </p>
+          </div>
+          <div>
+            <p
+              class="lg:text-sm xl:text-base 2xl:text-xl text-white lg:ml-0 xl:ml-16 hover:text-darkcyan"
+            >
+              <a href="services.html">Services</a>
+            </p>
+          </div>
+          <div>
+            <p
+              class="lg:text-sm xl:text-base 2xl:text-xl text-white lg:ml-0 xl:ml-16 hover:text-darkcyan"
+            >
+              <a href="about_us.html">Team</a>
+            </p>
+          </div>
+          <div>
+            <p
+              class="lg:text-sm xl:text-base 2xl:text-xl text-white lg:ml-16 hover:text-darkcyan"
+            >
+              <a href="methodology.html">Our Methodology</a>
+            </p>
+          </div>
+
+          <div class="ml-16 mr-10">
+            <a href="contact.html">
+              <button
+                class="bg-gradient-to-r from-darkcyan to-lightcyan rounded-lg hover:opacity-70 border border-white"
+              >
+                <p
+                  class="2xl:pt-6 2xl:pb-6 2xl:pl-8 2xl:pr-8 2xl:text-2xl pt-4 pb-4 pl-6 pr-6 font-black text-xl items-center text-white"
+                >
+                  Schedule A Call
+                </p>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="pl-8 xl:pl-0 pt-10 xl:pt-0 xl:mt-10 mb-20 xl:flex justify-around"
+      >
+        <div class="block md:inline-block align-middle">
+          <p
+            class="leading-normal 2xl:leading-normal font-extrabold text-white text-5xl xl:text-[90px] xl:w-[600px] 2xl:text-[70px]"
+          >
+            Services
+          </p>
+          <p
+            class="leading-normal 2xl:leading-normal font-bold text-base text-white w-[330px] xl:w-[500px] mt-2 2xl:text-xl 2xl:w-[500px]"
+          >
+            MultiChain Advisors Inc. specializes in strategy, growth, marketing,
+            community engagement, partnerships, and collabs for growing NFT,
+            GameFi, & DeFi projects.
+          </p>
+          <div class="mt-10 xl:mt-20">
+            <a href="">
+              <button
+                class="bg-gradient-to-r from-darkcyan to-lightcyan rounded-lg hover:opacity-70 border border-white"
+              >
+                <p
+                  class="2xl:pt-6 2xl:pb-6 2xl:pl-8 2xl:pr-8 pt-4 pb-4 pl-6 pr-6 font-black text-lg xl:text-xl 2xl:text-3xl items-center text-white"
+                >
+                  Let's grow
+                </p>
+              </button>
+            </a>
+            <a href="">
+              <button
+                class="bg-transparent border border-darkcyan rounded-lg ml-4 md:ml-10"
+              >
+                <p
+                  class="2xl:pt-6 2xl:pb-6 2xl:pl-8 2xl:pr-8 pt-4 pb-4 pl-6 pr-6 2xl:text-3xl font-black text-lg xl:text-xl items-center text-transparent bg-clip-text bg-gradient-to-r from-darkcyan to-lightcyan"
+                >
+                  Learn More
+                </p>
+              </button>
+            </a>
+          </div>
+        </div>
+        <div class="hidden md:inline-block align-middle">
+          <img
+            src="imgs/services.png"
+            class="lg:ml-28 xl:ml-0 lg:w-[500px] lg:h-[300px] md:ml-20 md:w-[300px] md:h-[200px] xl:w-[600px] xl:h-[400px] 2xl:w-[850px] 2xl:h-[550px]"
+          />
+        </div>
+      </div>
+      <div class="mt-20 reveal">
+        <p
+          class="reveal leading-normal 2xl:text-[65px] text-center text-transparent bg-clip-text bg-gradient-to-r from-darkcyan to-lightcyan font-bold text-3xl xl:text-[40px] pb-10"
+        >
+          How we help
+        </p>
+
+        <div
+          class="mt-10 xl:mt-20 flex justify-center items-center ml-8 xl:ml-10 mb-10 xl:mb-20 reveal"
+        >
+          <div class="inline-block align-top mr-20">
+            <p
+              class="leading-normal font-bold text-2xl xl:text-[40px] 2xl:text-[70px] text-white mt-4"
+            >
+              Strategy
+            </p>
+            <div class="mt-4 xl:mt-10">
+              <p
+                class="font-bold text-white text-sm xl:text-base lg:w-[300px] xl:w-[500px] 2xl:text-2xl 2xl:w-[800px]"
+              >
+                As a team of experts with years of experience in Web2 and Web3,
+                Multichain will advise your project by reviewing or creating
+                your pre-mint strategy, roadmap, marketing strategy, and
+                utilities to help achieve your goals.
+              </p>
+              <p
+                class="mt-4 font-bold text-white text-sm xl:text-base lg:w-[300px] xl:w-[500px] 2xl:text-2xl 2xl:w-[800px]"
+              >
+                When it comes to planning mint price, supply, mint timing, game
+                strategy/mechanics, tokenomics and more, our team can ensure any
+                pre-mint preparations will be smooth and effective. Our
+                incentives are directly aligned with your success & we'll be
+                there every step of the way.
+              </p>
+            </div>
+          </div>
+          <div class="hidden lg:inline-block">
+            <img src="imgs/strategy.png" class="2xl:h-[600px] 2xl:w-[600px]" />
+          </div>
+        </div>
+        <div class="lg:hidden flex justify-center reveal">
+          <img src="imgs/strategy.png" class="w-[200px] h-[200px]" />
+        </div>
+
+        <div
+          class="mt-10 xl:mt-20 flex justify-center items-center ml-8 xl:ml-10 mb-10 xl:mb-20 reveal"
+        >
+          <div class="hidden lg:inline-block">
+            <img
+              src="imgs/growth-go-to-market.png"
+              class="2xl:w-[600px] 2xl:h-[600px]"
+            />
+          </div>
+          <div class="inline-block align-top mr-20">
+            <p
+              class="font-bold text-2xl xl:text-[40px] text-white mt-4 2xl:w-[500px] leading-normal 2xl:text-[70px]"
+            >
+              Growth & Go - To - Market
+            </p>
+            <div class="mt-4 xl:mt-10">
+              <p
+                class="font-bold text-white text-sm xl:text-base lg:w-[300px] xl:w-[500px] 2xl:text-2xl 2xl:w-[800px]"
+              >
+                Focused on Growth and Go-To-Market strategies, Multichain
+                utilizes its experience and expertise to navigate the
+                unpredictable markets, adapting and growing everyday to ensure
+                our clients are well prepared for what awaits.
+              </p>
+              <p
+                class="mt-4 font-bold text-white text-sm xl:text-base lg:w-[300px] xl:w-[500px] 2xl:text-2xl 2xl:w-[800px]"
+              >
+                Multichain is a very well connected advisory firm in the Solana
+                Space and has an extensive network of DAOs, partners and
+                influencers. This combined with growth strategies allows for
+                organic growth of your project from start to finish.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:hidden flex justify-center reveal mt-10">
+          <img src="imgs/growth-go-to-market.png" class="w-[250px] h-[250px]" />
+        </div>
+        <div
+          class="mt-20 flex justify-center items-center ml-8 xl:ml-10 mb-10 xl:mb-20 reveal"
+        >
+          <div class="inline-block align-top mr-20">
+            <p
+              class="font-bold text-2xl xl:text-[40px] text-white mt-4 2xl:text-[70px] leading-normal"
+            >
+              Branding
+            </p>
+            <div class="mt-10">
+              <p
+                class="font-bold text-white text-sm xl:text-base lg:w-[300px] xl:w-[450px] 2xl:text-2xl 2xl:w-[800px]"
+              >
+                This facet includes full scale marketing & branding strategy,
+                creation of marketing materials and brand identity. Multichain
+                offers a thorough brand analysis utilizing well known consulting
+                frameworks to take your project to the next level.
+              </p>
+              <p
+                class="mt-4 font-bold text-white text-sm xl:text-base lg:w-[300px] xl:w-[440px] 2xl:text-2xl 2xl:w-[800px]"
+              >
+                Bring your project to life utilizing our expertise. We keep a
+                close watch on the market trends and help you navigate the
+                fast-paced web 3.0 ecosystem to bring you success, as we've done
+                for our clients in the past.
+              </p>
+            </div>
+          </div>
+          <div class="hidden lg:inline-block">
+            <img
+              src="imgs/branding.png"
+              class="xl:w-[450px] xl:h-[414px] lg:w-[400px] xl:h-[320px] 2xl:w-[600px] 2xl:h-[500px]"
+            />
+          </div>
+        </div>
+        <div class="lg:hidden flex justify-center reveal">
+          <img src="imgs/branding.png" class="w-[250px] h-[200px]" />
+        </div>
+        <div class="reveal flex justify-center items-center">
+          <div class="hidden lg:inline-block">
+            <img
+              src="imgs/community-management.png"
+              class="2xl:w-[700px] 2xl:h-[600px]"
+            />
+          </div>
+          <div
+            class="mt-10 xl:mt-20 flex justify-center items-center ml-8 xl:ml-10 mb-10 xl:mb-20"
+          >
+            <div class="inline-block align-top mr-20">
+              <p
+                class="font-bold text-2xl xl:text-[40px] text-white mt-4 2xl:text-[70px] 2xl:w-[600px] leading-normal"
+              >
+                Community Management
+              </p>
+              <div class="mt-4 xl:mt-10">
+                <p
+                  class="font-bold text-white text-sm xl:text-base lg:w-[300px] xl:w-[500px] 2xl:text-2xl 2xl:w-[800px]"
+                >
+                  The MultiChain team includes expert community specialists who
+                  have experience managing communities for previous projects &
+                  clients. With a focus on community strategies to achieve full
+                  engagement, we can assure good vibes and a strong culture
+                  around the project.
+                </p>
+                <p
+                  class="mt-4 font-bold text-white text-sm xl:text-base lg:w-[300px] xl:w-[500px] 2xl:text-2xl 2xl:w-[800px]"
+                >
+                  Part of this team includes hands-on security and safety
+                  specialists, who are experts at preventing Discord hacks and
+                  keeping the project team safe from scams.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="lg:hidden flex justify-center reveal">
+          <img
+            src="imgs/community-management.png"
+            class="w-[250px] h-[230px] mt-10"
+          />
+        </div>
+        <div
+          class="mt-10 xl:mt-20 flex justify-center items-center ml-8 xl:ml-10 mb-20 reveal"
+        >
+          <div class="inline-block align-top mr-20">
+            <p
+              class="font-bold text-2xl xl:text-[40px] text-white mt-4 2xl:text-[70px] leading-normal 2xl:w-[800px]"
+            >
+              Partnerships & Collabs
+            </p>
+            <div class="mt-10">
+              <p
+                class="font-bold text-white text-sm xl:text-base lg:w-[300px] 2xl:text-2xl 2xl:w-[800px]"
+              >
+                We are officially partnered with top launchpads such as Magic
+                Eden, SolanArt, Blocksmith, and Fractal, allowing for expedited
+                access, one-on-one service and help from an expert who has been
+                through it all.
+              </p>
+            </div>
+          </div>
+          <div class="hidden lg:inline-block">
+            <img
+              src="imgs/partnerships-and-collabs.png"
+              class="xl:w-[344px] xl:h-[302px] lg:w-[350px] lg:h-[310px] 2xl:w-[600px] 2xl:h-[500px]"
+            />
+          </div>
+        </div>
+        <div class="lg:hidden flex justify-center reveal">
+          <img
+            src="imgs/partnerships-and-collabs.png"
+            class="w-[250px] h-[230px]"
+          />
+        </div>
+        <div class="mt-10 xl:mt-0 reveal lg:flex justify-center items-center">
+          <div class="hidden lg:inline-block">
+            <img
+              src="imgs/capital-rase-advisory.png"
+              class="xl:w-[564px] xl:h-[410px] lg:w-[400px] lg:h-[300px] 2xl:w-[600px] 2xl:h-[500px]"
+            />
+          </div>
+          <div class="inline-block align-top ml-8 xl:ml-10 xl:ml-20">
+            <p
+              class="xl:ml-0 font-bold text-2xl xl:text-[40px] text-white mt-4 2xl:text-[70px] leading-normal"
+            >
+              Capital Raise Advisory
+            </p>
+            <div class="mt-10">
+              <p
+                class="font-bold text-white text-sm xl:text-base lg:w-[400px] md:w-[600px] ml-0 xl:ml-0 xl:w-[500px] 2xl:text-2xl 2xl:w-[800px]"
+              >
+                Guide projects through the capital raise, advise on raise
+                strategies, build valuation models, connect with VCs, develop
+                pitch decks and secure the best funding options.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="lg:hidden flex justify-center reveal">
+          <img
+            src="imgs/capital-rase-advisory.png"
+            class="w-[300px] h-[250px] mt-10"
+          />
+        </div>
+        <div
+          class="mt-10 xl:mt-20 flex justify-center items-center ml-8 xl:ml-10 mb-20 reveal"
+        >
+          <div class="inline-block align-top mr-20">
+            <p
+              class="font-bold text-2xl xl:text-[40px] text-white mt-4 2xl:text-[70px] leading-normal 2xl:w-[800px]"
+            >
+              Mergers & Acqusitions
+            </p>
+            <div class="mt-10">
+              <p
+                class="font-bold text-white text-sm xl:text-base 2xl:text-2xl 2xl:w-[800px]"
+              >
+                Pre-Acquisitions
+              </p>
+              <p
+                class="mt-4 font-bold text-white text-sm xl:text-base lg:w-[300px] xl:w-[500px] 2xl:text-2xl 2xl:w-[800px]"
+              >
+                MultiChain Advisors is your one stop shop for pre-acquisition
+                support ranging from sourcing, due-diligence, valuation and
+                acquisitions pricing.
+              </p>
+              <p
+                class="mt-4 font-bold text-white text-sm xl:text-base lg:w-[300px] xl:w-[500px] 2xl:text-2xl 2xl:w-[800px]"
+              >
+                Utilize our experienced team to build your acquisitions strategy
+                & execute your inorganic growth plans.
+              </p>
+            </div>
+          </div>
+          <div class="hidden lg:inline-block">
+            <img
+              src="imgs/mergers-and-acqusitions2.png"
+              class="lg:w-[400px] lg:h-[300px] xl:w-[500px] xl:h-[400px] 2xl:w-[700px] 2xl:h-[600px]"
+            />
+          </div>
+        </div>
+        <div class="lg:hidden flex justify-center reveal">
+          <img
+            src="imgs/mergers-and-acqusitions2.png"
+            class="w-[350px] h-[250px]"
+          />
+        </div>
+      </div>
+
+      <div class="mt-20 reveal flex justify-center items-center">
+        <div class="inline-block mb-8">
+          <div>
+            <div class="mt-10">
+              <div
+                class="block md:inline-block border-2 border-darkcyan bgdarklight-left rounded-[30px] w-[250px] h-[250px] xl:w-[447px] xl:h-[327px] 2xl:w-[600px] 2xl:h-[400px]"
+              >
+                <p
+                  class="leading-normal pl-6 pr-6 mt-4 xl:mt-10 2xl:mt-20 text-transparent bg-clip-text bg-gradient-to-r from-darkcyan to-lightcyan font-bold text-2xl xl:text-[40px] text-center 2xl:text-5xl leading-normal"
+                >
+                  We Don't Follow. <br />
+                  We Lead.
+                </p>
+                <p
+                  class="mt-4 text-white font-bold text-xs xl:text-base text-center ml-auto mr-auto w-[200px] xl:w-[350px] 2xl:w-[500px] 2xl:text-2xl"
+                >
+                  “Hyper-target your customers, understand the market, and build
+                  a community of loyal followers that believe in your project as
+                  much as you do.
+                </p>
+              </div>
+              <div
+                class="mt-4 md:mt-0 xl:mt-0 xl:mt-0 ml-0 md:ml-4 xl:ml-10 align-top block md:inline-block border-2 border-darkcyan bgdarklight-left rounded-[30px] w-[250px] h-[250px] xl:w-[431px] xl:h-[327px] 2xl:w-[600px] 2xl:h-[400px]"
+              >
+                <p
+                  class="leading-normal pl-6 pr-6 mt-4 2xl:mt-[110px] xl:mt-20 text-transparent bg-clip-text bg-gradient-to-r from-darkcyan to-lightcyan font-bold text-2xl xl:text-[40px] text-center 2xl:text-5xl"
+                >
+                  Web3's experts
+                </p>
+                <p
+                  class="mt-4 xl:mt-8 text-white font-bold text-xs xl:text-base text-center ml-auto mr-auto w-[200px] xl:w-[400px] 2xl:w-[500px] 2xl:text-2xl"
+                >
+                  Combines a tailor-made service, performed by the most
+                  specialized WEB3 team on the market, with a strategic and
+                  proven vision of the specificities related to the web3 world.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-20 reveal">
+        <p
+          class="2xl:text-[50px] leading-normal text-center text-transparent bg-clip-text bg-gradient-to-r from-darkcyan to-lightcyan font-bold text-3xl xl:text-[40px] ml-auto mr-auto"
+        >
+          Unpacking the technologies that<br />
+          underpin web3, and the <br />
+          myriad of possibilities unlocked.
+        </p>
+
+        <div class="mt-10 flex justify-center items-center reveal">
+          <div class="inline-block">
+            <img
+              src="imgs/scaling-never-easy.png"
+              class="md:w-[400px] md:h-[300px] xl:w-[600px] xl:h-[480px] 2xl:w-[1000px] 2xl:h-[800px]"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="mt-20 reveal flex justify-center items-center">
+        <p
+          class="2xl:text-[50px] leading-normal text-center text-transparent bg-clip-text bg-gradient-to-r from-darkcyan to-lightcyan font-bold text-3xl xl:text-[40px] ml-auto mr-auto"
+        >
+          Work with some of the biggest<br />
+          players in the Web3 industry.
+        </p>
+      </div>
+
+      <div class="z-50 relative mt-48 reveal flex justify-center">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center gap-10 md:gap-10 lg:gap-20 xl:gap-40"
+        >
+          <div class="inline-block">
+            <img src="imgs/magic-eden2.png" />
+            <p
+              class="text-center mt-4 text-sm font-bold text-white 2xl:text-2xl"
+            >
+              Magic Eden
+            </p>
+          </div>
+          <div class="inline-block">
+            <img src="imgs/ludex3.png" />
+            <p
+              class="text-center mt-4 text-sm font-bold text-white 2xl:text-2xl"
+            >
+              Ludex
+            </p>
+          </div>
+
+          <div class="inline-block">
+            <img src="imgs/blocksmith-labs.png" />
+            <p
+              class="text-center mt-4 text-sm font-bold text-white 2xl:text-2xl"
+            >
+              Blocksmith Labs
+            </p>
+          </div>
+          <div class="inline-block">
+            <img src="imgs/solport.png" />
+            <p
+              class="text-center mt-4 text-sm font-bold text-white 2xl:text-2xl"
+            >
+              Solport
+            </p>
+          </div>
+
+          <div class="inline-block">
+            <img src="imgs/fractal.png" />
+            <p class="text-center 4 text-sm font-bold text-white 2xl:text-2xl">
+              Fractal
+            </p>
+          </div>
+          <div class="inline-block">
+            <img src="imgs/solanart.png" class="w-fit h-fit" />
+            <p
+              class="text-center mt-4 text-sm font-bold text-white 2xl:text-2xl"
+            >
+              Solanart
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="z-50 pt-40 xl:mt-64 2xl:mt-96 mb-40 xl:mb-72 reveal">
+        <p
+          class="2xl:w-[1400px] 2xl:text-[70px] text-[#49e4f0] text-center font-bold text-6xl ml-auto mr-auto lg:w-[600px] xl:w-[1000px] w-[360px] xl:text-[64px]"
+        >
+          Ready to be a link in the chain?
+        </p>
+      </div>
+      <div
+        class="2xl:-translate-y-[840px] -translate-y-full -z-5 absolute lg:left-56 lg:-translate-y-[80%] md:left-24 md:-translate-y-[85%] 2xl:left-[550px] -translate-y-[105%] xl:-translate-y-[100%] xl:left-[450px] 2xl:left-[860px]"
+      >
+        <img
+          src="imgs/link-in-the-chain.png"
+          class="2xl:w-[800px] 2xl:h-[1000px]"
+          id="link-in-the-chain"
+        />
+      </div>
+      <div class="pt-40 z-50 relative">
+        <hr class="bg-white h-0" />
+      </div>
+      <div class="xl:mt-10 z-50 relative">
+        <div class="block xl:inline-block align-middle">
+          <img
+            src="imgs/footer-logo.png"
+            class="mt-0 ml-0 xl:ml-20 2xl:h-[180px] 2xl:w-[500px]"
+          />
+
+          <p class="text-white text-xs font-bold ml-4 xl:ml-24 2xl:text-xl">
+            © Multichain Advisors Inc.
+          </p>
+        </div>
+        <div
+          class="ml-4 block md:inline-block xl:ml-14 2xl:ml-[300px] pb-10 xl:mb-20"
+        >
+          <div
+            class="mt-8 block xl:inline-block 2xl:mt-0 xl:mt-0 ml-2 xl:ml-10 align-top"
+          >
+            <p
+              class="text-transparent bg-clip-text bg-gradient-to-r from-darkcyan to-lightcyan font-bold text-base 2xl:text-2xl"
+            >
+              Community
+            </p>
+
+            <a href="">
+              <p
+                class="2xl:text-xl text-sm text-white font-bold hover:text-darkcyan mt-2"
+              >
+                Twitter
+              </p>
+            </a>
+            <a href="">
+              <p
+                class="2xl:text-xl text-sm text-white font-bold hover:text-darkcyan mt-2"
+              >
+                Youtube
+              </p> </a
+            ><a href="">
+              <p
+                class="2xl:text-xl text-sm text-white font-bold hover:text-darkcyan mt-2"
+              >
+                Medium
+              </p> </a
+            ><a href="">
+              <p
+                class="2xl:text-xl text-sm text-white font-bold hover:text-darkcyan mt-2"
+              >
+                Spotify
+              </p>
+            </a>
+          </div>
+          <div
+            class="mt-8 block xl:inline-block 2xl:mt-0 xl:mt-0 ml-2 xl:ml-10 align-top"
+          >
+            <p
+              class="text-transparent bg-clip-text bg-gradient-to-r from-darkcyan to-lightcyan font-bold text-base 2xl:text-2xl"
+            >
+              About
+            </p>
+
+            <a href="">
+              <p
+                class="2xl:text-xl text-sm text-white font-bold hover:text-darkcyan mt-2"
+              >
+                Pitch Deck
+              </p>
+            </a>
+            <a href="">
+              <p
+                class="2xl:text-xl text-sm text-white font-bold hover:text-darkcyan mt-2"
+              >
+                One-Pager
+              </p> </a
+            ><a href="">
+              <p
+                class="2xl:text-xl text-sm text-white font-bold hover:text-darkcyan mt-2"
+              >
+                Team
+              </p> </a
+            ><a href="">
+              <p
+                class="2xl:text-xl text-sm text-white font-bold hover:text-darkcyan mt-2"
+              >
+                Statistics
+              </p>
+            </a>
+          </div>
+          <div
+            class="mt-8 block xl:inline-block 2xl:mt-0 xl:mt-0 ml-2 xl:ml-10 align-top"
+          >
+            <p
+              class="2xl:text-2xl text-transparent bg-clip-text bg-gradient-to-r from-darkcyan to-lightcyan font-bold text-base"
+            >
+              Products
+            </p>
+
+            <a href="">
+              <p
+                class="2xl:text-xl text-sm text-white font-bold hover:text-darkcyan mt-2"
+              >
+                Refferal Program
+              </p>
+            </a>
+          </div>
+          <div
+            class="mt-8 block xl:inline-block 2xl:mt-0 xl:mt-0 ml-2 xl:ml-10 align-top"
+          >
+            <p
+              class="2xl:text-2xl text-transparent bg-clip-text bg-gradient-to-r from-darkcyan to-lightcyan font-bold text-base"
+            >
+              For Business Inquiries
+            </p>
+
+            <a href="">
+              <p
+                class="2xl:text-xl text-sm text-white font-bold hover:text-darkcyan mt-2"
+              >
+                Partnerships
+              </p>
+            </a>
+            <a href="">
+              <p
+                class="2xl:text-xl text-sm text-white font-bold hover:text-darkcyan mt-2"
+              >
+                Join Twitter Spaces
+              </p> </a
+            ><a href="">
+              <p
+                class="2xl:text-xl text-sm text-white font-bold hover:text-darkcyan mt-2"
+              >
+                Become a client
+              </p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="scroll.js"></script>
+    <script src="menu.js"></script>
+  </body>
+</html>

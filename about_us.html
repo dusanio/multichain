@@ -1,0 +1,1810 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>MultiChain - Advisors Inc.</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+  </head>
+
+  <body class="bg-black font-poppins">
+    <div class="flex justify-between items-center pt-6 xl:hidden">
+      <a href="index.html">
+        <img
+          src="imgs/multichain.png"
+          class="w-[70px] h-[90px] cursor-pointer ml-4 hover:opacity-70"
+        />
+      </a>
+      <button
+        class="bg-gradient-to-r from-darkcyan to-lightcyan rounded-lg hover:opacity-70 border border-white"
+      >
+        <a href="contact.html">
+          <p
+            class="font-bold pt-2 pb-2 pl-3 pr-3 text-base lg:text-xl lg:pt-4 lg:pb-4 lg:pl-5 lg:pr-6 items-center text-white"
+          >
+            Schedule A Call
+          </p>
+        </a>
+      </button>
+      <div class="mt-1 float-right mr-4" onclick="mobileMenu();">
+        <button id="three-lines">
+          <img src="imgs/burger.png" class="w-[40px] h-[40px]" />
+        </button>
+
+        <button id="x-button" class="hidden">
+          <img src="imgs/x-button.png" class="w-[40px] h-[40px]" />
+        </button>
+      </div>
+    </div>
+
+    <div class="hidden mt-10 ml-8" id="mobile-menu">
+      <div class="mb-8">
+        <p class="text-sm text-white font-bold font-bold hover:text-darkcyan">
+          <a href="services.html"> Services </a>
+        </p>
+      </div>
+      <div class="mb-8">
+        <p class="text-sm text-white font-bold font-bold hover:text-darkcyan">
+          <a href="about_us.html"> Team </a>
+        </p>
+      </div>
+      <div class="pb-[410px]">
+        <p class="text-sm text-white font-bold font-bold hover:text-darkcyan">
+          <a href="methodology.html"> Our Methodology </a>
+        </p>
+      </div>
+    </div>
+    <div id="content">
+      <div class="hidden xl:flex items-center">
+        <a href="index.html">
+          <img
+            src="imgs/header-logo.png"
+            alt="Multichain logo"
+            class="2xl:w-[600px] 2xl:h-[220px] sm:hidden lg:block ml-8 cursor-pointer"
+        /></a>
+        <div class="hidden lg:flex items-center ml-auto p-6">
+          <div>
+            <p
+              class="lg:text-sm xl:text-md 2xl:text-2xl text-white lg:ml-0 xl:ml-0 hover:text-darkcyan"
+            >
+              <a href="services.html">Services</a>
+            </p>
+          </div>
+          <div>
+            <p
+              class="lg:text-sm xl:text-md 2xl:text-2xl text-white lg:ml-0 xl:ml-16 hover:text-darkcyan"
+            >
+              <a href="about_us.html">Team</a>
+            </p>
+          </div>
+          <div>
+            <p
+              class="lg:text-sm xl:text-md 2xl:text-2xl text-white lg:ml-16 hover:text-darkcyan"
+            >
+              <a href="methodology.html">Our Methodology</a>
+            </p>
+          </div>
+
+          <div class="ml-16 mr-10">
+            <a href="contact.html">
+              <button
+                class="bg-gradient-to-r from-darkcyan to-lightcyan rounded-lg hover:opacity-70 border border-white"
+              >
+                <p
+                  class="2xl:pt-10 2xl:pb-10 2xl:pl-12 2xl:pr-12 2xl:text-4xl pt-4 pb-4 pl-6 pr-6 font-black text-xl items-center text-white"
+                >
+                  Schedule A Call
+                </p>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="z-50 relative mt-10 mb-20 flex justify-center">
+        <div class="pl-6 md:ml-0 inline-block align-middle lg:mt-20 xl:mt-28">
+          <p
+            class="font-extrabold text-white text-5xl xl:text-[90px] xl:w-[600px] 2xl:w-[700px] 2xl:text-[140px]"
+          >
+            About Us
+          </p>
+          <p
+            class="font-bold text-base text-white w-[330px] xl:w-[700px] mt-2 2xl:text-2xl 2xl:w-[700px]"
+          >
+            MultiChain Advisors Inc. is a web 3.0 consulting firm that
+            specializes in strategy, growth,marketing, community management,
+            partnerships, and collabs for growing NFT,GameFi, and DeFi projects.
+          </p>
+          <div class="mt-10 xl:mt-20">
+            <a href="">
+              <button
+                class="bg-gradient-to-r from-darkcyan to-lightcyan rounded-lg hover:opacity-70 border border-white"
+              >
+                <p
+                  class="2xl:pt-6 2xl:pb-6 2xl:pl-8 2xl:pr-8 pt-4 pb-4 pl-6 pr-6 font-black text-lg xl:text-xl 2xl:text-3xl items-center text-white"
+                >
+                  Let's grow
+                </p>
+              </button>
+            </a>
+            <a href="">
+              <button
+                class="bg-transparent border border-darkcyan rounded-lg ml-4 md:ml-10"
+              >
+                <p
+                  class="2xl:pt-6 2xl:pb-6 2xl:pl-8 2xl:pr-8 pt-4 pb-4 pl-6 pr-6 2xl:text-3xl font-black text-lg xl:text-xl items-center text-transparent bg-clip-text bg-gradient-to-r from-darkcyan to-lightcyan"
+                >
+                  Learn More
+                </p>
+              </button>
+            </a>
+          </div>
+        </div>
+        <div
+          class="hidden md:ml-10 lg:ml-20 xl:ml-0 md:inline-block align-middle"
+        >
+          <img
+            src="imgs/about-us.png"
+            class="2xl:w-[900px] 2xl:h-[900px] xl:w-[550px] xl:h-[550px] lg:w-[450px] lg:h-[450px] md:w-[300px] md:h-[300px] rounded-[30px]"
+          />
+        </div>
+      </div>
+      <div class="-translate-y-2/4 -z-5 absolute">
+        <img src="imgs/tan-circle.png" class="2xl:h-[2500px] 2xl:w-[1500px]" />
+      </div>
+      <div class="z-50 relative mt-20 reveal">
+        <p
+          class="reveal leading-normal 2xl:text-[70px] text-center text-transparent bg-clip-text bg-gradient-to-r from-darkcyan to-lightcyan font-bold text-3xl xl:text-[40px]"
+        >
+          Previous Clients
+        </p>
+        <p
+          class="reveal text-center mt-2 text-white text-sm w-[300px] xl:w-[500px] ml-auto mr-auto xl:text-base font-bold mb-10 2xl:text-2xl"
+        >
+          Multichain pride itself in being a part of the success of multiple
+          projects such as:
+        </p>
+        <div class="grid justify-center mt-10 xl:mt-20 reveal">
+          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10 2xl:gap-40">
+            <div class="reveal">
+              <img
+                src="imgs/smart-sea-society-2.png"
+                class="2xl:w-[300px] 2xl:h-[300px]"
+              />
+              <p
+                class="text-center mt-4 text-sm 2xl:text-2xl font-bold text-white"
+              >
+                Smart Sea Society
+              </p>
+            </div>
+            <div class="reveal">
+              <img
+                src="imgs/melt-labs-2.png"
+                class="2xl:w-[300px] 2xl:h-[300px]"
+              />
+              <p
+                class="text-center mt-4 text-sm 2xl:text-2xl font-bold text-white"
+              >
+                MeltLabs
+              </p>
+            </div>
+            <div class="reveal">
+              <img src="imgs/ludex-2.png" class="2xl:w-[300px] 2xl:h-[300px]" />
+              <p
+                class="text-center mt-4 text-sm 2xl:text-2xl font-bold text-white"
+              >
+                Ludex
+              </p>
+            </div>
+            <div class="reveal">
+              <img
+                src="imgs/eye-guys-social-club.png"
+                class="2xl:w-[300px] 2xl:h-[300px]"
+              />
+              <p
+                class="text-center mt-4 text-sm 2xl:text-2xl font-bold text-white"
+              >
+                Eye Guys Social Club
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="grid md:grid-cols-2 lg:grid-cols-4 gap-10 2xl:gap-40 mt-10"
+          >
+            <div class="reveal">
+              <img
+                src="imgs/miners-of-mars.png"
+                class="2xl:w-[300px] 2xl:h-[300px]"
+              />
+              <p
+                class="text-center mt-4 text-sm 2xl:text-2xl font-bold text-white"
+              >
+                Miners of Mars
+              </p>
+            </div>
+            <div class="reveal">
+              <img
+                src="imgs/oak-paradise.png"
+                class="2xl:w-[300px] 2xl:h-[300px]"
+              />
+              <p
+                class="text-center mt-4 text-sm 2xl:text-2xl font-bold text-white"
+              >
+                Oak Paradise
+              </p>
+            </div>
+            <div class="reveal">
+              <img
+                src="imgs/ape-in-poker2.png"
+                class="2xl:w-[300px] 2xl:h-[300px]"
+              />
+              <p
+                class="text-center mt-4 text-sm 2xl:text-2xl font-bold text-white"
+              >
+                Ape in Poker
+              </p>
+            </div>
+            <div class="reveal">
+              <img
+                src="imgs/sentries.png"
+                class="2xl:w-[300px] 2xl:h-[300px]"
+              />
+              <p
+                class="text-center mt-4 text-sm 2xl:text-2xl font-bold text-white"
+              >
+                Sentries
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="grid md:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-24 mt-10"
+          >
+            <div class="2xl:ml-64 reveal">
+              <img
+                src="imgs/ladder-caster.png"
+                class="2xl:w-[300px] 2xl:h-[300px]"
+              />
+              <p
+                class="text-center mt-4 text-sm 2xl:text-2xl font-bold text-white"
+              >
+                LadderCaster
+              </p>
+            </div>
+            <div class="2xl:ml-28 reveal">
+              <img
+                src="imgs/glyph-bound.png"
+                class="2xl:w-[300px] 2xl:h-[300px]"
+              />
+              <p
+                class="2xl:mr-32 text-center mt-4 text-sm 2xl:text-2xl font-bold text-white"
+              >
+                GlyphBound
+              </p>
+            </div>
+            <div class="reveal">
+              <img
+                src="imgs/the-daily-dao.png"
+                class="2xl:w-[300px] 2xl:h-[300px]"
+              />
+              <p
+                class="2xl:mr-64 text-center mt-4 text-sm 2xl:text-2xl font-bold text-white"
+              >
+                The Daily DAO
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="reveal mt-20 xl:mt-48 mb-10">
+          <p
+            class="reveal leading-normal 2xl:text-[70px] text-center text-transparent bg-clip-text bg-gradient-to-r from-darkcyan to-lightcyan font-bold text-3xl xl:text-[40px]"
+          >
+            Current Clients
+          </p>
+          <p
+            class="reveal text-center mt-2 text-white text-sm w-[300px] xl:w-[500px] ml-auto mr-auto xl:text-base 2xl:text-2xl font-bold"
+          >
+            Multichain is currently working with these projects to take them to
+            the next level:
+          </p>
+        </div>
+        <div class="reveal ml-20 mr-20 grid justify-center">
+          <div
+            class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-10 xl:gap-28"
+          >
+            <div class="reveal">
+              <img
+                src="imgs/high-society-bulls.png"
+                class="w-[171px] h-[171px] lg:w-[130px] lg:h-[130px] xl:w-[150px] xl:h-[150px] 2xl:w-[250px] 2xl:h-[250px]"
+              />
+              <p
+                class="text-center mt-4 text-sm 2xl:text-2xl font-bold text-white"
+              >
+                High Society Bulls
+              </p>
+            </div>
+            <div class="reveal">
+              <img
+                src="imgs/hidden-apes.png"
+                class="w-[171px] h-[171px] lg:w-[130px] lg:h-[130px] xl:w-[150px] xl:h-[150px] 2xl:w-[250px] 2xl:h-[250px]"
+              />
+              <p
+                class="text-center mt-4 text-sm 2xl:text-2xl font-bold text-white"
+              >
+                Hidden Apes
+              </p>
+            </div>
+            <div class="reveal">
+              <img
+                src="imgs/rentii.png"
+                class="w-[171px] h-[171px] lg:w-[130px] lg:h-[130px] xl:w-[150px] xl:h-[150px] 2xl:w-[250px] 2xl:h-[250px]"
+              />
+              <p
+                class="text-center mt-4 text-sm 2xl:text-2xl font-bold text-white"
+              >
+                Rentii
+              </p>
+            </div>
+            <div class="reveal">
+              <img
+                src="imgs/eeries.png"
+                class="w-[171px] h-[171px] lg:w-[130px] lg:h-[130px] xl:w-[150px] xl:h-[150px] 2xl:w-[250px] 2xl:h-[250px]"
+              />
+              <p
+                class="text-center mt-4 text-sm 2xl:text-2xl font-bold text-white"
+              >
+                Eeries
+              </p>
+            </div>
+            <div class="reveal">
+              <img
+                src="imgs/skark-fi.png"
+                class="w-[171px] h-[171px] lg:w-[130px] lg:h-[130px] xl:w-[150px] xl:h-[150px] 2xl:w-[250px] 2xl:h-[250px]"
+              />
+              <p
+                class="text-center mt-4 text-sm 2xl:text-2xl font-bold text-white"
+              >
+                Sharky.Fi
+              </p>
+            </div>
+          </div>
+          <div
+            class="grid grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-10 xl:gap-28 mt-10"
+          >
+            <div class="reveal">
+              <img
+                src="imgs/bitwarriors2.png"
+                class="w-[171px] h-[171px] lg:w-[130px] lg:h-[130px] xl:w-[150px] xl:h-[150px] 2xl:w-[250px] 2xl:h-[250px]"
+              />
+              <p
+                class="text-center mt-4 text-sm 2xl:text-2xl font-bold text-white"
+              >
+                BitWarriors
+              </p>
+            </div>
+            <div class="reveal">
+              <img
+                src="imgs/shadows-of-miyomoto.png"
+                class="w-[171px] h-[171px] lg:w-[130px] lg:h-[130px] xl:w-[150px] xl:h-[150px] 2xl:w-[250px] 2xl:h-[250px]"
+              />
+              <p
+                class="text-center mt-4 text-sm 2xl:text-2xl font-bold text-white"
+              >
+                Shadows of Miyomoto
+              </p>
+            </div>
+            <div class="reveal">
+              <img
+                src="imgs/3moji-2.png"
+                class="w-[171px] h-[171px] lg:w-[130px] lg:h-[130px] xl:w-[150px] xl:h-[150px] 2xl:w-[250px] 2xl:h-[250px]"
+              />
+              <p
+                class="text-center mt-4 text-sm 2xl:text-2xl font-bold text-white"
+              >
+                3moji
+              </p>
+            </div>
+
+            <div class="reveal">
+              <img
+                src="imgs/game-of-dragons2.png"
+                class="w-[171px] h-[171px] lg:w-[130px] lg:h-[130px] xl:w-[150px] xl:h-[150px] 2xl:w-[250px] 2xl:h-[250px]"
+              />
+              <p
+                class="text-center mt-4 text-sm 2xl:text-2xl font-bold text-white"
+              >
+                A Game of Dragons
+              </p>
+            </div>
+            <div class="reveal">
+              <img
+                src="imgs/bong-heads.png"
+                class="w-[171px] h-[171px] lg:w-[130px] lg:h-[130px] xl:w-[150px] xl:h-[150px] 2xl:w-[250px] 2xl:h-[250px]"
+              />
+              <p
+                class="text-center mt-4 text-sm 2xl:text-2xl font-bold text-white"
+              >
+                BongHeads
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="z-50 relative mt-20 reveal flex justify-center items-center">
+        <div class="hidden lg:inline-block mr-0 lg:mr-10 xl:mr-20">
+          <img
+            src="imgs/bitcoin-hand.png"
+            class="xl:w-[480px] xl:h-[480px] lg:w-[400px] xl:h-[350px] 2xl:w-[700px] 2xl:h-[800px]"
+          />
+        </div>
+        <div class="inline-block mb-8">
+          <div>
+            <div class="mt-10">
+              <div
+                class="reveal md:inline-block border-2 border-darkcyan bgdarklight-left rounded-[30px] h-[200px] w-[200px] xl:h-[208px] xl:w-[290px] 2xl:h-[300px] 2xl:w-[400px]"
+              >
+                <p
+                  class="leading-normal mt-10 2xl:mt-20 2xl:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-darkcyan to-lightcyan font-bold text-xl xl:text-3xl text-center"
+                >
+                  130K+
+                </p>
+                <p
+                  class="mt-4 2xl:text-xl text-white font-bold text-xs xl:text-base text-center ml-auto mr-auto w-[150px] xl:w-[250px]"
+                >
+                  built Web3 communities of 130l+ followers strong
+                </p>
+              </div>
+              <div
+                class="reveal mt-4 md:mt-0 mb-4 ml-0 md:ml-8 xl:ml-10 align-top md:inline-block border-2 border-darkcyan bgdarklight-left rounded-[30px] h-[200px] w-[200px] xl:h-[208px] xl:w-[290px] 2xl:h-[300px] 2xl:w-[400px]"
+              >
+                <p
+                  class="pt-4 xl:pt-2 2xl:pt-2 2xl:text-5xl 2xl:leading-tight text-transparent bg-clip-text bg-gradient-to-r from-darkcyan to-lightcyan font-bold text-xl xl:text-3xl text-center ml-auto mr-auto w-[150px] lg:w-[150px] xl:w-[250px]"
+                >
+                  Within 10 months
+                </p>
+                <p
+                  class="2xl:text-xl mt-4 text-white font-bold text-xs xl:text-base text-center w-[150px] lg:w-[150px] xl:w-[250px] ml-auto mr-auto"
+                >
+                  Achieved 90% positive community sentiment, x18 more content,
+                  x7 more followers, x3 more impressions
+                </p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="mt-4 md:mt-6">
+              <div
+                class="reveal md:inline-block border-2 border-darkcyan bgdarklight-left rounded-[30px] h-[200px] w-[200px] xl:h-[208px] xl:w-[290px] 2xl:h-[300px] 2xl:w-[400px]"
+              >
+                <p
+                  class="mt-10 leading-normal 2xl:mt-20 2xl:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-darkcyan to-lightcyan font-bold text-xl xl:text-3xl text-center"
+                >
+                  $US 300M
+                </p>
+                <p
+                  class="mt-4 text-white 2xl:text-xl font-bold text-xs xl:text-base text-center w-[200px] xl:w-[250px] ml-auto mr-auto"
+                >
+                  Supported projects to raise funding over
+                </p>
+              </div>
+              <div
+                class="reveal mt-4 md:mt-0 ml-0 md:ml-8 xl:ml-10 align-top md:inline-block border-2 border-darkcyan bgdarklight-left rounded-[30px] h-[200px] w-[200px] xl:h-[208px] xl:w-[290px] 2xl:h-[300px] 2xl:w-[400px]"
+              >
+                <p
+                  class="2xl:mt-2 2xl:w-[300px] 2xl:leading-tight 2xl:text-5xl mt-6 text-transparent bg-clip-text bg-gradient-to-r from-darkcyan to-lightcyan font-bold text-xl xl:text-3xl text-center xl:w-[200px] ml-auto mr-auto"
+                >
+                  Best rebranding
+                </p>
+                <p
+                  class="2xl:text-xl 2xl:w-[350px] mt-4 text-white font-bold text-xs xl:text-base text-center w-[200px] xl:w-[250px] ml-auto mr-auto"
+                >
+                  Nominated at the Institute of Creative Advertising Design
+                  Awards 2020 for Cardano.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="-translate-y-3/4 -z-5 absolute right-0">
+        <img
+          src="imgs/tan-circle-right.png"
+          class="2xl:h-[2500px] 2xl:w-[1500px]"
+        />
+      </div>
+      <div
+        class="z-50 relative mt-20 reveal md:flex justify-center items-center ml-10 mb-20"
+      >
+        <div class="md:inline-block align-top mr-10 lg:mr-20">
+          <p
+            class="2xl:text-[90px] leading-tight font-bold text-3xl xl:text-[40px] text-transparent bg-clip-text bg-gradient-to-r from-darkcyan to-lightcyan mt-4"
+          >
+            We Don't Follow The Norm <br />
+            We Think Outside The Box.
+          </p>
+          <div class="mt-6 lg:hidden block">
+            <img src="imgs/money-nft.png" class="w-[330px] h-[200px]" />
+          </div>
+          <div class="mt-6 xl:mt-10">
+            <p
+              class="2xl:text-2xl 2xl:w-[950px] font-bold text-white text-base md:w-[300px] xl:w-[380px]"
+            >
+              Conventional? Not how we do it. We go off the beaten track to
+              hyper-target your customers, and build a loyal fanbase in the
+              Blockchain community.
+            </p>
+          </div>
+        </div>
+
+        <div class="hidden lg:inline-block">
+          <img
+            src="imgs/money-nft.png"
+            class="xl:w-[617px] xl:h-[457px] lg:w-[400px] lg:h-[270px] md:w-[300px] md:h-[220px] 2xl:w-[800px] 2xl:h-[600px]"
+          />
+        </div>
+      </div>
+      <div class="-translate-y-2/4 -z-5 absolute">
+        <img src="imgs/tan-circle.png" class="2xl:h-[2500px] 2xl:w-[1500px]" />
+      </div>
+      <div class="mt-20 reveal">
+        <p
+          class="reveal leading-normal 2xl:text-[70px] text-center text-transparent bg-clip-text bg-gradient-to-r from-darkcyan to-lightcyan font-bold text-3xl xl:text-[40px]"
+        >
+          A DONE FOR YOU SOLUTION
+        </p>
+        <p
+          class="reveal 2xl:text-2xl text-center mt-2 text-white text-sm xl:text-base font-bold mb-6 xl:mb-10"
+        >
+          Get excited to launch your project/brand.
+        </p>
+
+        <div
+          class="mt-10 grid grid-cols-1 lg:grid-cols-2 justify-center lg:-translate-x-[40px] xl:-translate-x-[60px]"
+        >
+          <div
+            class="lg:inline-block grid justify-center mt-10 lg:translate-x-[100px] 2xl:translate-x-[300px] xl:translate-x-[150px] 2xl:translate-x-[400px]"
+          >
+            <img
+              src="imgs/done-for-you.png"
+              class="md:w-[470px] md:h-[350px] xl:w-[517px] xl:h-[357px] lg:w-[400px] lg:h-[330px] 2xl:w-[800px] 2xl:h-[600px] w-[295px] h-[200px]"
+            />
+          </div>
+          <div class="mb-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-0">
+              <div>
+                <div class="mt-10 grid justify-center">
+                  <div
+                    class="reveal border-2 border-darkcyan bgdarklight-left rounded-[30px] h-[150px] w-[220px] xl:h-[175px] xl:w-[294px] 2xl:w-[400px] 2xl:h-[250px]"
+                  >
+                    <p
+                      class="2xl:text-2xl mt-8 text-transparent bg-clip-text bg-gradient-to-r from-darkcyan to-lightcyan font-bold lg:text-md xl:text-[20px] text-center lg:w-[200px] xl:w-[200px] ml-auto mr-auto"
+                    >
+                      Pre/post ICO strategy, planning and tactical
+                      implementation
+                    </p>
+                  </div>
+                  <div
+                    class="reveal 2xl:mt-20 mt-4 border-2 border-darkcyan bgdarklight-left rounded-[30px] h-[150px] w-[220px] xl:h-[175px] xl:w-[294px] 2xl:w-[400px] 2xl:h-[250px]"
+                  >
+                    <p
+                      class="2xl:text-2xl mt-8 text-transparent bg-clip-text bg-gradient-to-r from-darkcyan to-lightcyan font-bold lg:text-md xl:text-[20px] text-center lg:w-[200px] xl:w-[210px] ml-auto mr-auto"
+                    >
+                      Multitouch attribution modeling for measuring performance
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div
+                  class="md:mt-10 mt-4 grid justify-center ml-0 2xl:-translate-x-[200px]"
+                >
+                  <div
+                    class="reveal border-2 border-darkcyan bgdarklight-left rounded-[30px] h-[150px] w-[220px] xl:h-[175px] xl:w-[294px] 2xl:w-[400px] 2xl:h-[250px]"
+                  >
+                    <p
+                      class="2xl:text-2xl mt-8 text-transparent bg-clip-text bg-gradient-to-r from-darkcyan to-lightcyan font-bold lg:text-md xl:text-[20px] text-center lg:w-[200px] xl:w-[200px] ml-auto mr-auto"
+                    >
+                      Transparent communications to investors and communities
+                    </p>
+                  </div>
+                  <div
+                    class="reveal 2xl:mt-20 mt-4 border-2 border-darkcyan bgdarklight-left rounded-[30px] h-[150px] w-[220px] xl:h-[175px] xl:w-[294px] 2xl:w-[400px] 2xl:h-[250px]"
+                  >
+                    <p
+                      class="2xl:text-2xl mt-8 text-transparent bg-clip-text bg-gradient-to-r from-darkcyan to-lightcyan font-bold lg:text-md xl:text-[20px] text-center lg:w-[200px] xl:w-[210px] ml-auto mr-auto"
+                    >
+                      Aggressive omnichannel marketing across PPC, PR, SEO &
+                      Socia
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hidden mt-20 reveal lg:flex justify-center items-center">
+        <div class="mt-6">
+          <div
+            class="align-middle lg:inline-block border-2 border-darkcyan bgdarklight-left rounded-[30px] lg:w-[230px] lg:h-[130px] xl:h-[175px] xl:w-[294px] 2xl:w-[400px] 2xl:h-[250px]"
+          >
+            <p
+              class="2xl:mt-20 2xl:text-4xl mt-8 text-transparent bg-clip-text bg-gradient-to-r from-darkcyan to-lightcyan font-bold lg:text-3xl xl:text-[40px] text-center xl:w-[200px] ml-auto mr-auto"
+            >
+              Core Values
+            </p>
+          </div>
+          <div class="inline-block lg:ml-10 xl:ml-20 align-middle">
+            <p
+              class="2xl:text-6xl mt-8 text-transparent bg-clip-text bg-gradient-to-r from-darkcyan to-lightcyan font-bold lg:text-4xl xl:text-[40px] text-left xl:w-[200px] ml-auto mr-auto"
+            >
+              01
+            </p>
+            <p
+              class="2xl:text-2xl text-white font-bold lg:text-md xl:text-[20px]"
+            >
+              Data driven
+            </p>
+            <p
+              class="2xl:text-xl mt-1 text-white font-bold lg:text-xs xl:text-base lg:w-[200px]"
+            >
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam.
+            </p>
+          </div>
+          <div class="inline-block lg:ml-4 xl:ml-10 align-middle">
+            <p
+              class="2xl:text-6xl mt-8 text-transparent bg-clip-text bg-gradient-to-r from-darkcyan to-lightcyan font-bold lg:text-4xl xl:text-[40px] text-left xl:w-[200px] ml-auto mr-auto"
+            >
+              02
+            </p>
+            <p
+              class="2xl:text-2xl text-white font-bold lg:text-md xl:text-[20px]"
+            >
+              Transparent
+            </p>
+            <p
+              class="2xl:text-xl mt-1 text-white font-bold lg:text-xs xl:text-base lg:w-[200px]"
+            >
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam.
+            </p>
+          </div>
+          <div class="inline-block lg:ml-4 xl:ml-10 align-middle">
+            <p
+              class="2xl:text-6xl mt-8 text-transparent bg-clip-text bg-gradient-to-r from-darkcyan to-lightcyan font-bold lg:text-4xl xl:text-[40px] text-left xl:w-[200px] ml-auto mr-auto"
+            >
+              03
+            </p>
+            <p
+              class="2xl:text-2xl text-white font-bold lg:text-md xl:text-[20px]"
+            >
+              Flexible
+            </p>
+            <p
+              class="2xl:text-xl mt-1 text-white font-bold lg:text-xs xl:text-base lg:w-[200px]"
+            >
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="lg:hidden reveal mt-28">
+        <div class="flex justify-center">
+          <div
+            class="border-2 border-darkcyan bgdarklight-left rounded-[30px] h-[175px] w-[294px]"
+          >
+            <p
+              class="mt-8 text-transparent bg-clip-text bg-gradient-to-r from-darkcyan to-lightcyan font-bold text-3xl text-center ml-auto mr-auto"
+            >
+              Core Values
+            </p>
+          </div>
+        </div>
+        <div class="reveal flex justify-center mt-10">
+          <div class="lg:ml-10 xl:ml-20 align-middle">
+            <p
+              class="mt-8 text-transparent bg-clip-text bg-gradient-to-r from-darkcyan to-lightcyan font-bold text-4xl text-center ml-auto mr-auto"
+            >
+              01
+            </p>
+            <p class="text-white font-bold text-center text-[20px]">
+              Data driven
+            </p>
+            <p
+              class="mt-1 text-white font-bold text-base text-center w-[200px]"
+            >
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam.
+            </p>
+          </div>
+        </div>
+        <div class="reveal flex justify-center mt-10">
+          <div class="lg:ml-10 xl:ml-20 align-middle">
+            <p
+              class="mt-8 text-transparent bg-clip-text bg-gradient-to-r from-darkcyan to-lightcyan font-bold text-4xl text-center ml-auto mr-auto"
+            >
+              02
+            </p>
+            <p class="text-white font-bold text-center text-[20px]">
+              Transparent
+            </p>
+            <p
+              class="mt-1 text-white font-bold text-base text-center w-[200px]"
+            >
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam.
+            </p>
+          </div>
+        </div>
+        <div class="reveal flex justify-center mt-10">
+          <div class="lg:ml-10 xl:ml-20 align-middle">
+            <p
+              class="mt-8 text-transparent bg-clip-text bg-gradient-to-r from-darkcyan to-lightcyan font-bold text-4xl text-center ml-auto mr-auto"
+            >
+              03
+            </p>
+            <p class="text-white font-bold text-center text-[20px]">Flexible</p>
+            <p
+              class="mt-1 text-white font-bold text-base text-center w-[200px]"
+            >
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="z-50 block mt-20 reveal">
+        <p
+          class="reveal 2xl:leading-loose 2xl:text-[70px] text-center text-transparent bg-clip-text bg-gradient-to-r from-darkcyan to-lightcyan font-bold text-3xl xl:text-[40px] pb-10"
+        >
+          Meet The Team
+        </p>
+        <div class="w-fit ml-auto mr-auto">
+          <label class="swap swap-flip text-7xl">
+            <!-- this hidden checkbox controls the state -->
+            <input type="checkbox" />
+
+            <div class="swap-on">
+              <div
+                class="bg-white h-[250px] w-[250px] 2xl:w-[450px] 2xl:h-[450px] rounded-[30px]"
+              >
+                <div class="2xl:pl-10 2xl:pt-10 pl-4 pt-6">
+                  <p
+                    class="text-black font-bold text-base lg:text-base xl:text-xl 2xl:text-4xl"
+                  >
+                    CryptoApe
+                  </p>
+                  <p
+                    class="text-black font-bold text-base lg:text-sm xl:text-lg 2xl:text-3xl mb-2"
+                  >
+                    CEO
+                  </p>
+                  <p
+                    class="text-black font-bold text-xs lg:text-[10px] w-[200px] lg:w-[220px] 2xl:w-[320px] xl:text-xs 2xl:text-xl"
+                  >
+                    Founder and CEO of MultiChain Advisors
+                  </p>
+                  <p
+                    class="text-black font-bold text-xs lg:text-[10px] w-[200px] lg:w-[220px] 2xl:w-[320px] xl:text-xs 2xl:text-xl"
+                  >
+                    CPA & Management Consultant with 10 years of experience in
+                    Web 2 and Web 3
+                  </p>
+
+                  <div class="toast">
+                    <!-- <img
+                        src="imgs/icons8-twitter.gif"
+                        class="w-[48px] h-[48px]"
+                    />-->
+                    <a href="https://twitter.com/CryptoApe0" target="blank">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 48 48"
+                        width="32px"
+                        height="32px"
+                      >
+                        <linearGradient
+                          id="_osn9zIN2f6RhTsY8WhY4a"
+                          x1="10.341"
+                          x2="40.798"
+                          y1="8.312"
+                          y2="38.769"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop offset="0" stop-color="#2aa4f4" />
+                          <stop offset="1" stop-color="#007ad9" />
+                        </linearGradient>
+                        <path
+                          fill="url(#_osn9zIN2f6RhTsY8WhY4a)"
+                          d="M46.105,11.02c-1.551,0.687-3.219,1.145-4.979,1.362c1.789-1.062,3.166-2.756,3.812-4.758	c-1.674,0.981-3.529,1.702-5.502,2.082C37.86,8.036,35.612,7,33.122,7c-4.783,0-8.661,3.843-8.661,8.582	c0,0.671,0.079,1.324,0.226,1.958c-7.196-0.361-13.579-3.782-17.849-8.974c-0.75,1.269-1.172,2.754-1.172,4.322	c0,2.979,1.525,5.602,3.851,7.147c-1.42-0.043-2.756-0.438-3.926-1.072c0,0.026,0,0.064,0,0.101c0,4.163,2.986,7.63,6.944,8.419	c-0.723,0.198-1.488,0.308-2.276,0.308c-0.559,0-1.104-0.063-1.632-0.158c1.102,3.402,4.299,5.889,8.087,5.963	c-2.964,2.298-6.697,3.674-10.756,3.674c-0.701,0-1.387-0.04-2.065-0.122C7.73,39.577,12.283,41,17.171,41	c15.927,0,24.641-13.079,24.641-24.426c0-0.372-0.012-0.742-0.029-1.108C43.483,14.265,44.948,12.751,46.105,11.02"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swap-off">
+              <img
+                src="imgs/cryptoape.png"
+                class="rounded-[30px] w-[250px] w-[250px] 2xl:h-[450px] 2xl:w-[450px]"
+              />
+            </div>
+          </label>
+        </div>
+      </div>
+
+      <div
+        class="grid lg:grid-cols-3 xl:grid-cols-5 mt-10 reveal grid-cols-1 gap-10 xl:gap-20"
+      >
+        <label class="swap swap-flip text-9xl">
+          <!-- this hidden checkbox controls the state -->
+          <input type="checkbox" />
+
+          <div class="swap-on">
+            <div
+              class="bg-white h-[200px] w-[200px] lg:w-[180px] lg:h-[180px] xl:w-[220px] xl:h-[220px] 2xl:w-[400px] 2xl:h-[400px] rounded-[30px]"
+            >
+              <div class="pl-4 pt-6 2xl:pl-10 2xl:pt-10">
+                <p
+                  class="text-black font-bold text-base xl:text-xl 2xl:text-4xl"
+                >
+                  Garamond
+                </p>
+                <p
+                  class="text-black font-bold text-xs xl:text-sm 2xl:text-2xl mb-2"
+                >
+                  Creative Strategist
+                </p>
+                <p
+                  class="text-black font-bold text-[10px] w-[150px] xl:w-[180px] xl:text-xs 2xl:text-xl 2xl:w-[300px]"
+                >
+                  Well experienced marketing professional, withan education in
+                  Integrated Marketing and experience in a digital agency.
+                </p>
+
+                <div class="toast">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 48 48"
+                    width="32px"
+                    height="32px"
+                  >
+                    <linearGradient
+                      id="_osn9zIN2f6RhTsY8WhY4a"
+                      x1="10.341"
+                      x2="40.798"
+                      y1="8.312"
+                      y2="38.769"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop offset="0" stop-color="#2aa4f4" />
+                      <stop offset="1" stop-color="#007ad9" />
+                    </linearGradient>
+                    <path
+                      fill="url(#_osn9zIN2f6RhTsY8WhY4a)"
+                      d="M46.105,11.02c-1.551,0.687-3.219,1.145-4.979,1.362c1.789-1.062,3.166-2.756,3.812-4.758	c-1.674,0.981-3.529,1.702-5.502,2.082C37.86,8.036,35.612,7,33.122,7c-4.783,0-8.661,3.843-8.661,8.582	c0,0.671,0.079,1.324,0.226,1.958c-7.196-0.361-13.579-3.782-17.849-8.974c-0.75,1.269-1.172,2.754-1.172,4.322	c0,2.979,1.525,5.602,3.851,7.147c-1.42-0.043-2.756-0.438-3.926-1.072c0,0.026,0,0.064,0,0.101c0,4.163,2.986,7.63,6.944,8.419	c-0.723,0.198-1.488,0.308-2.276,0.308c-0.559,0-1.104-0.063-1.632-0.158c1.102,3.402,4.299,5.889,8.087,5.963	c-2.964,2.298-6.697,3.674-10.756,3.674c-0.701,0-1.387-0.04-2.065-0.122C7.73,39.577,12.283,41,17.171,41	c15.927,0,24.641-13.079,24.641-24.426c0-0.372-0.012-0.742-0.029-1.108C43.483,14.265,44.948,12.751,46.105,11.02"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swap-off">
+            <img
+              src="imgs/garamond.png"
+              class="rounded-[30px] h-[200px] w-[200px] lg:w-[180px] lg:h-[180px] xl:w-[220px] xl:h-[220px] 2xl:w-[400px] 2xl:h-[400px]"
+            />
+          </div> </label
+        ><label class="swap swap-flip text-9xl">
+          <!-- this hidden checkbox controls the state -->
+          <input type="checkbox" />
+
+          <div class="swap-on">
+            <div
+              class="bg-white h-[200px] w-[200px] lg:w-[180px] lg:h-[180px] xl:w-[220px] xl:h-[220px] 2xl:w-[400px] 2xl:h-[400px] rounded-[30px]"
+            >
+              <div class="pl-4 pt-6 2xl:pl-10 2xl:pt-10">
+                <p
+                  class="text-black font-bold text-base xl:text-xl 2xl:text-4xl"
+                >
+                  Chopsticks
+                </p>
+                <p
+                  class="text-black font-bold text-xs xl:text-sm 2xl:text-2xl mb-2"
+                >
+                  Collab Expert
+                </p>
+                <p
+                  class="text-black font-bold text-[10px] w-[150px] xl:w-[180px] xl:text-xs 2xl:text-xl 2xl:w-[300px]"
+                >
+                  Deep connections to countless DAOs. Experienced in strategies
+                  & collaborations.
+                </p>
+
+                <div class="toast">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 48 48"
+                    width="32px"
+                    height="32px"
+                  >
+                    <linearGradient
+                      id="_osn9zIN2f6RhTsY8WhY4a"
+                      x1="10.341"
+                      x2="40.798"
+                      y1="8.312"
+                      y2="38.769"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop offset="0" stop-color="#2aa4f4" />
+                      <stop offset="1" stop-color="#007ad9" />
+                    </linearGradient>
+                    <path
+                      fill="url(#_osn9zIN2f6RhTsY8WhY4a)"
+                      d="M46.105,11.02c-1.551,0.687-3.219,1.145-4.979,1.362c1.789-1.062,3.166-2.756,3.812-4.758	c-1.674,0.981-3.529,1.702-5.502,2.082C37.86,8.036,35.612,7,33.122,7c-4.783,0-8.661,3.843-8.661,8.582	c0,0.671,0.079,1.324,0.226,1.958c-7.196-0.361-13.579-3.782-17.849-8.974c-0.75,1.269-1.172,2.754-1.172,4.322	c0,2.979,1.525,5.602,3.851,7.147c-1.42-0.043-2.756-0.438-3.926-1.072c0,0.026,0,0.064,0,0.101c0,4.163,2.986,7.63,6.944,8.419	c-0.723,0.198-1.488,0.308-2.276,0.308c-0.559,0-1.104-0.063-1.632-0.158c1.102,3.402,4.299,5.889,8.087,5.963	c-2.964,2.298-6.697,3.674-10.756,3.674c-0.701,0-1.387-0.04-2.065-0.122C7.73,39.577,12.283,41,17.171,41	c15.927,0,24.641-13.079,24.641-24.426c0-0.372-0.012-0.742-0.029-1.108C43.483,14.265,44.948,12.751,46.105,11.02"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swap-off">
+            <img
+              src="imgs/chopsticks.jpg"
+              class="rounded-[30px] h-[200px] w-[200px] lg:w-[180px] lg:h-[180px] xl:w-[220px] xl:h-[220px] 2xl:w-[400px] 2xl:h-[400px]"
+            />
+          </div> </label
+        ><label class="swap swap-flip text-9xl">
+          <!-- this hidden checkbox controls the state -->
+          <input type="checkbox" />
+
+          <div class="swap-on">
+            <div
+              class="bg-white h-[200px] w-[200px] lg:w-[180px] lg:h-[180px] xl:w-[220px] xl:h-[220px] 2xl:w-[400px] 2xl:h-[400px] rounded-[30px]"
+            >
+              <div class="pl-4 pt-6 2xl:pl-10 2xl:pt-10">
+                <p
+                  class="text-black font-bold text-base xl:text-xl 2xl:text-4xl"
+                >
+                  Big Canari
+                </p>
+                <p
+                  class="text-black font-bold text-xs xl:text-sm 2xl:text-2xl mb-2"
+                >
+                  Community Strategist
+                </p>
+                <p
+                  class="text-black font-bold text-[10px] w-[150px] xl:w-[180px] xl:text-xs 2xl:text-xl 2xl:w-[300px]"
+                >
+                  Experienced Community Manager with a background in project
+                  management & strategy.
+                </p>
+
+                <div class="toast">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 48 48"
+                    width="32px"
+                    height="32px"
+                  >
+                    <linearGradient
+                      id="_osn9zIN2f6RhTsY8WhY4a"
+                      x1="10.341"
+                      x2="40.798"
+                      y1="8.312"
+                      y2="38.769"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop offset="0" stop-color="#2aa4f4" />
+                      <stop offset="1" stop-color="#007ad9" />
+                    </linearGradient>
+                    <path
+                      fill="url(#_osn9zIN2f6RhTsY8WhY4a)"
+                      d="M46.105,11.02c-1.551,0.687-3.219,1.145-4.979,1.362c1.789-1.062,3.166-2.756,3.812-4.758	c-1.674,0.981-3.529,1.702-5.502,2.082C37.86,8.036,35.612,7,33.122,7c-4.783,0-8.661,3.843-8.661,8.582	c0,0.671,0.079,1.324,0.226,1.958c-7.196-0.361-13.579-3.782-17.849-8.974c-0.75,1.269-1.172,2.754-1.172,4.322	c0,2.979,1.525,5.602,3.851,7.147c-1.42-0.043-2.756-0.438-3.926-1.072c0,0.026,0,0.064,0,0.101c0,4.163,2.986,7.63,6.944,8.419	c-0.723,0.198-1.488,0.308-2.276,0.308c-0.559,0-1.104-0.063-1.632-0.158c1.102,3.402,4.299,5.889,8.087,5.963	c-2.964,2.298-6.697,3.674-10.756,3.674c-0.701,0-1.387-0.04-2.065-0.122C7.73,39.577,12.283,41,17.171,41	c15.927,0,24.641-13.079,24.641-24.426c0-0.372-0.012-0.742-0.029-1.108C43.483,14.265,44.948,12.751,46.105,11.02"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swap-off">
+            <img
+              src="imgs/big-canari.png"
+              class="rounded-[30px] h-[200px] w-[200px] lg:w-[180px] lg:h-[180px] xl:w-[220px] xl:h-[220px] 2xl:w-[400px] 2xl:h-[400px]"
+            />
+          </div> </label
+        ><label class="lg:ml-[400px] xl:ml-0 swap swap-flip text-9xl">
+          <!-- this hidden checkbox controls the state -->
+          <input type="checkbox" />
+
+          <div class="swap-on">
+            <div
+              class="bg-white h-[200px] w-[200px] lg:w-[180px] lg:h-[180px] xl:w-[220px] xl:h-[220px] 2xl:w-[400px] 2xl:h-[400px] rounded-[30px]"
+            >
+              <div class="pl-4 pt-6 2xl:pl-10 2xl:pt-10">
+                <p
+                  class="text-black font-bold text-base xl:text-xl 2xl:text-4xl"
+                >
+                  Frankito
+                </p>
+                <p
+                  class="text-black font-bold text-xs xl:text-sm 2xl:text-2xl mb-2"
+                >
+                  Brand Strategist
+                </p>
+                <p
+                  class="text-black font-bold text-[10px] w-[150px] xl:w-[180px] xl:text-xs 2xl:text-xl 2xl:w-[300px]"
+                >
+                  Specialist in branding and PR strategy withextensive
+                  experience in creating maketing campaigns & audits.
+                </p>
+
+                <div class="toast">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 48 48"
+                    width="32px"
+                    height="32px"
+                  >
+                    <linearGradient
+                      id="_osn9zIN2f6RhTsY8WhY4a"
+                      x1="10.341"
+                      x2="40.798"
+                      y1="8.312"
+                      y2="38.769"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop offset="0" stop-color="#2aa4f4" />
+                      <stop offset="1" stop-color="#007ad9" />
+                    </linearGradient>
+                    <path
+                      fill="url(#_osn9zIN2f6RhTsY8WhY4a)"
+                      d="M46.105,11.02c-1.551,0.687-3.219,1.145-4.979,1.362c1.789-1.062,3.166-2.756,3.812-4.758	c-1.674,0.981-3.529,1.702-5.502,2.082C37.86,8.036,35.612,7,33.122,7c-4.783,0-8.661,3.843-8.661,8.582	c0,0.671,0.079,1.324,0.226,1.958c-7.196-0.361-13.579-3.782-17.849-8.974c-0.75,1.269-1.172,2.754-1.172,4.322	c0,2.979,1.525,5.602,3.851,7.147c-1.42-0.043-2.756-0.438-3.926-1.072c0,0.026,0,0.064,0,0.101c0,4.163,2.986,7.63,6.944,8.419	c-0.723,0.198-1.488,0.308-2.276,0.308c-0.559,0-1.104-0.063-1.632-0.158c1.102,3.402,4.299,5.889,8.087,5.963	c-2.964,2.298-6.697,3.674-10.756,3.674c-0.701,0-1.387-0.04-2.065-0.122C7.73,39.577,12.283,41,17.171,41	c15.927,0,24.641-13.079,24.641-24.426c0-0.372-0.012-0.742-0.029-1.108C43.483,14.265,44.948,12.751,46.105,11.02"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swap-off">
+            <img
+              src="imgs/frankito.png"
+              class="rounded-[30px] h-[200px] w-[200px] lg:w-[180px] lg:h-[180px] xl:w-[220px] xl:h-[220px] 2xl:w-[400px] 2xl:h-[400px]"
+            />
+          </div> </label
+        ><label class="lg:ml-[240px] xl:ml-0 swap swap-flip text-9xl">
+          <!-- this hidden checkbox controls the state -->
+          <input type="checkbox" />
+
+          <div class="swap-on">
+            <div
+              class="bg-white h-[200px] w-[200px] lg:w-[180px] lg:h-[180px] xl:w-[220px] xl:h-[220px] 2xl:w-[400px] 2xl:h-[400px] rounded-[30px]"
+            >
+              <div class="pl-4 pt-6 2xl:pl-10 2xl:pt-10">
+                <p
+                  class="text-black font-bold text-base xl:text-xl 2xl:text-4xl"
+                >
+                  Ston Licon
+                </p>
+                <p
+                  class="text-black font-bold text-xs xl:text-sm 2xl:text-2xl mb-2"
+                >
+                  Discord & NFT Specialist
+                </p>
+                <p
+                  class="text-black font-bold text-[10px] w-[150px] xl:w-[180px] xl:text-xs 2xl:text-xl 2xl:w-[300px]"
+                >
+                  Experienced community manager. Collab expert & Discord
+                  security specialist.
+                </p>
+
+                <div class="toast">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 48 48"
+                    width="32px"
+                    height="32px"
+                  >
+                    <linearGradient
+                      id="_osn9zIN2f6RhTsY8WhY4a"
+                      x1="10.341"
+                      x2="40.798"
+                      y1="8.312"
+                      y2="38.769"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop offset="0" stop-color="#2aa4f4" />
+                      <stop offset="1" stop-color="#007ad9" />
+                    </linearGradient>
+                    <path
+                      fill="url(#_osn9zIN2f6RhTsY8WhY4a)"
+                      d="M46.105,11.02c-1.551,0.687-3.219,1.145-4.979,1.362c1.789-1.062,3.166-2.756,3.812-4.758	c-1.674,0.981-3.529,1.702-5.502,2.082C37.86,8.036,35.612,7,33.122,7c-4.783,0-8.661,3.843-8.661,8.582	c0,0.671,0.079,1.324,0.226,1.958c-7.196-0.361-13.579-3.782-17.849-8.974c-0.75,1.269-1.172,2.754-1.172,4.322	c0,2.979,1.525,5.602,3.851,7.147c-1.42-0.043-2.756-0.438-3.926-1.072c0,0.026,0,0.064,0,0.101c0,4.163,2.986,7.63,6.944,8.419	c-0.723,0.198-1.488,0.308-2.276,0.308c-0.559,0-1.104-0.063-1.632-0.158c1.102,3.402,4.299,5.889,8.087,5.963	c-2.964,2.298-6.697,3.674-10.756,3.674c-0.701,0-1.387-0.04-2.065-0.122C7.73,39.577,12.283,41,17.171,41	c15.927,0,24.641-13.079,24.641-24.426c0-0.372-0.012-0.742-0.029-1.108C43.483,14.265,44.948,12.751,46.105,11.02"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swap-off">
+            <img
+              src="imgs/ston_licon.jpg"
+              class="rounded-[30px] h-[200px] w-[200px] lg:w-[180px] lg:h-[180px] xl:w-[220px] xl:h-[220px] 2xl:w-[400px] 2xl:h-[400px]"
+            />
+          </div>
+        </label>
+      </div>
+      <div
+        class="grid lg:grid-cols-4 mt-10 reveal grid-cols-1 gap-10 lg:gap-24"
+      >
+        <label class="swap swap-flip text-9xl lg:ml-40 xl:ml-56 2xl:ml-96">
+          <!-- this hidden checkbox controls the state -->
+          <input type="checkbox" />
+
+          <div class="swap-on">
+            <div
+              class="bg-white h-[200px] w-[200px] lg:w-[180px] lg:h-[180px] xl:w-[220px] xl:h-[220px] 2xl:w-[400px] 2xl:h-[400px] rounded-[30px]"
+            >
+              <div class="pl-4 pt-6 2xl:pl-10 2xl:pt-10">
+                <p
+                  class="text-black font-bold text-base xl:text-xl 2xl:text-4xl"
+                >
+                  NorthernApe
+                </p>
+                <p
+                  class="text-black font-bold text-xs xl:text-sm 2xl:text-2xl mb-2"
+                >
+                  Strategy & Ops Manager
+                </p>
+                <p
+                  class="text-black font-bold text-[10px] w-[150px] xl:w-[180px] xl:text-xs 2xl:text-xl 2xl:w-[300px]"
+                >
+                  OG crypto investor, assists with overall strategy for clients.
+                  Head project manager, ensuring success of clients
+                </p>
+
+                <div class="toast">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 48 48"
+                    width="32px"
+                    height="32px"
+                  >
+                    <linearGradient
+                      id="_osn9zIN2f6RhTsY8WhY4a"
+                      x1="10.341"
+                      x2="40.798"
+                      y1="8.312"
+                      y2="38.769"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop offset="0" stop-color="#2aa4f4" />
+                      <stop offset="1" stop-color="#007ad9" />
+                    </linearGradient>
+                    <path
+                      fill="url(#_osn9zIN2f6RhTsY8WhY4a)"
+                      d="M46.105,11.02c-1.551,0.687-3.219,1.145-4.979,1.362c1.789-1.062,3.166-2.756,3.812-4.758	c-1.674,0.981-3.529,1.702-5.502,2.082C37.86,8.036,35.612,7,33.122,7c-4.783,0-8.661,3.843-8.661,8.582	c0,0.671,0.079,1.324,0.226,1.958c-7.196-0.361-13.579-3.782-17.849-8.974c-0.75,1.269-1.172,2.754-1.172,4.322	c0,2.979,1.525,5.602,3.851,7.147c-1.42-0.043-2.756-0.438-3.926-1.072c0,0.026,0,0.064,0,0.101c0,4.163,2.986,7.63,6.944,8.419	c-0.723,0.198-1.488,0.308-2.276,0.308c-0.559,0-1.104-0.063-1.632-0.158c1.102,3.402,4.299,5.889,8.087,5.963	c-2.964,2.298-6.697,3.674-10.756,3.674c-0.701,0-1.387-0.04-2.065-0.122C7.73,39.577,12.283,41,17.171,41	c15.927,0,24.641-13.079,24.641-24.426c0-0.372-0.012-0.742-0.029-1.108C43.483,14.265,44.948,12.751,46.105,11.02"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swap-off">
+            <img
+              src="imgs/northern-ape.png"
+              class="rounded-[30px] h-[200px] w-[200px] lg:w-[180px] lg:h-[180px] xl:w-[220px] xl:h-[220px] 2xl:w-[400px] 2xl:h-[400px]"
+            />
+          </div>
+        </label>
+        <div>
+          <label
+            class="swap swap-flip text-9xl grid justify-center lg:ml-14 xl:ml-20 2xl:ml-36"
+          >
+            <!-- this hidden checkbox controls the state -->
+            <input type="checkbox" />
+
+            <div class="swap-on">
+              <div
+                class="bg-white h-[200px] w-[200px] lg:w-[180px] lg:h-[180px] xl:w-[220px] xl:h-[220px] 2xl:w-[400px] 2xl:h-[400px] rounded-[30px]"
+              >
+                <div class="pl-4 pt-6 2xl:pl-10 2xl:pt-10">
+                  <p
+                    class="text-black font-bold text-base xl:text-xl 2xl:text-3xl"
+                  >
+                    Samzimmer
+                  </p>
+                  <p
+                    class="text-black font-bold text-xs xl:text-sm 2xl:text-lg mb-2"
+                  >
+                    Gaming & Collab Expert
+                  </p>
+                  <p
+                    class="text-black font-bold text-[10px] w-[150px] xl:w-[180px] xl:text-xs 2xl:text-xl 2xl:w-[300px]"
+                  >
+                    Previously a creator for popular games on the App Store.
+                    Also a well connected & experienced collab expert.
+                  </p>
+
+                  <div class="toast">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 48 48"
+                      width="32px"
+                      height="32px"
+                    >
+                      <linearGradient
+                        id="_osn9zIN2f6RhTsY8WhY4a"
+                        x1="10.341"
+                        x2="40.798"
+                        y1="8.312"
+                        y2="38.769"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop offset="0" stop-color="#2aa4f4" />
+                        <stop offset="1" stop-color="#007ad9" />
+                      </linearGradient>
+                      <path
+                        fill="url(#_osn9zIN2f6RhTsY8WhY4a)"
+                        d="M46.105,11.02c-1.551,0.687-3.219,1.145-4.979,1.362c1.789-1.062,3.166-2.756,3.812-4.758	c-1.674,0.981-3.529,1.702-5.502,2.082C37.86,8.036,35.612,7,33.122,7c-4.783,0-8.661,3.843-8.661,8.582	c0,0.671,0.079,1.324,0.226,1.958c-7.196-0.361-13.579-3.782-17.849-8.974c-0.75,1.269-1.172,2.754-1.172,4.322	c0,2.979,1.525,5.602,3.851,7.147c-1.42-0.043-2.756-0.438-3.926-1.072c0,0.026,0,0.064,0,0.101c0,4.163,2.986,7.63,6.944,8.419	c-0.723,0.198-1.488,0.308-2.276,0.308c-0.559,0-1.104-0.063-1.632-0.158c1.102,3.402,4.299,5.889,8.087,5.963	c-2.964,2.298-6.697,3.674-10.756,3.674c-0.701,0-1.387-0.04-2.065-0.122C7.73,39.577,12.283,41,17.171,41	c15.927,0,24.641-13.079,24.641-24.426c0-0.372-0.012-0.742-0.029-1.108C43.483,14.265,44.948,12.751,46.105,11.02"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swap-off">
+              <img
+                src="imgs/samzimmer.png"
+                class="rounded-[30px] h-[200px] w-[200px] lg:w-[180px] lg:h-[180px] xl:w-[220px] xl:h-[220px] 2xl:w-[400px] 2xl:h-[400px]"
+              />
+            </div>
+          </label>
+        </div>
+        <div>
+          <label
+            class="swap swap-flip text-9xl grid justify-center lg:mr-10 xl:mr-16 2xl:mr-28"
+          >
+            <!-- this hidden checkbox controls the state -->
+            <input type="checkbox" />
+
+            <div class="swap-on">
+              <div
+                class="bg-white h-[200px] w-[200px] lg:w-[180px] lg:h-[180px] xl:w-[220px] xl:h-[220px] 2xl:w-[400px] 2xl:h-[400px] rounded-[30px]"
+              >
+                <div class="pl-4 pt-6 2xl:pl-10 2xl:pt-10">
+                  <p
+                    class="text-black font-bold text-base xl:text-xl 2xl:text-3xl"
+                  >
+                    Aladin
+                  </p>
+                  <p
+                    class="text-black font-bold text-xs xl:text-sm 2xl:text-lg mb-2"
+                  >
+                    Community Consultant
+                  </p>
+                  <p
+                    class="text-black font-bold text-[10px] w-[150px] xl:w-[180px] xl:text-xs 2xl:text-xl 2xl:w-[300px]"
+                  >
+                    Community manager specialized in organic engagement
+                    strategies and discord game moderation.
+                  </p>
+
+                  <div class="toast">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 48 48"
+                      width="32px"
+                      height="32px"
+                    >
+                      <linearGradient
+                        id="_osn9zIN2f6RhTsY8WhY4a"
+                        x1="10.341"
+                        x2="40.798"
+                        y1="8.312"
+                        y2="38.769"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop offset="0" stop-color="#2aa4f4" />
+                        <stop offset="1" stop-color="#007ad9" />
+                      </linearGradient>
+                      <path
+                        fill="url(#_osn9zIN2f6RhTsY8WhY4a)"
+                        d="M46.105,11.02c-1.551,0.687-3.219,1.145-4.979,1.362c1.789-1.062,3.166-2.756,3.812-4.758	c-1.674,0.981-3.529,1.702-5.502,2.082C37.86,8.036,35.612,7,33.122,7c-4.783,0-8.661,3.843-8.661,8.582	c0,0.671,0.079,1.324,0.226,1.958c-7.196-0.361-13.579-3.782-17.849-8.974c-0.75,1.269-1.172,2.754-1.172,4.322	c0,2.979,1.525,5.602,3.851,7.147c-1.42-0.043-2.756-0.438-3.926-1.072c0,0.026,0,0.064,0,0.101c0,4.163,2.986,7.63,6.944,8.419	c-0.723,0.198-1.488,0.308-2.276,0.308c-0.559,0-1.104-0.063-1.632-0.158c1.102,3.402,4.299,5.889,8.087,5.963	c-2.964,2.298-6.697,3.674-10.756,3.674c-0.701,0-1.387-0.04-2.065-0.122C7.73,39.577,12.283,41,17.171,41	c15.927,0,24.641-13.079,24.641-24.426c0-0.372-0.012-0.742-0.029-1.108C43.483,14.265,44.948,12.751,46.105,11.02"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swap-off">
+              <img
+                src="imgs/aladin.png"
+                class="rounded-[30px] h-[200px] w-[200px] lg:w-[180px] lg:h-[180px] xl:w-[220px] xl:h-[220px] 2xl:w-[400px] 2xl:h-[400px]"
+              />
+            </div>
+          </label>
+        </div>
+        <div>
+          <label
+            class="swap swap-flip text-9xl grid justify-center lg:mr-36 xl:mr-52 2xl:mr-96"
+          >
+            <!-- this hidden checkbox controls the state -->
+            <input type="checkbox" />
+
+            <div class="swap-on">
+              <div
+                class="bg-white h-[200px] w-[200px] lg:w-[180px] lg:h-[180px] xl:w-[220px] xl:h-[220px] 2xl:w-[400px] 2xl:h-[400px] rounded-[30px]"
+              >
+                <div class="pl-4 pt-6 2xl:pl-10 2xl:pt-10">
+                  <p
+                    class="text-black font-bold text-base xl:text-xl 2xl:text-3xl"
+                  >
+                    Chamon
+                  </p>
+                  <p
+                    class="text-black font-bold text-xs xl:text-sm 2xl:text-lg mb-2"
+                  >
+                    Collab Expert & Strategist
+                  </p>
+                  <p
+                    class="text-black font-bold text-[10px] w-[150px] xl:w-[180px] xl:text-xs 2xl:text-xl 2xl:w-[300px]"
+                  >
+                    Utilizes an extensive network of popular DAOs. Advises on
+                    general strategy & growth.
+                  </p>
+
+                  <div class="toast">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 48 48"
+                      width="32px"
+                      height="32px"
+                    >
+                      <linearGradient
+                        id="_osn9zIN2f6RhTsY8WhY4a"
+                        x1="10.341"
+                        x2="40.798"
+                        y1="8.312"
+                        y2="38.769"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop offset="0" stop-color="#2aa4f4" />
+                        <stop offset="1" stop-color="#007ad9" />
+                      </linearGradient>
+                      <path
+                        fill="url(#_osn9zIN2f6RhTsY8WhY4a)"
+                        d="M46.105,11.02c-1.551,0.687-3.219,1.145-4.979,1.362c1.789-1.062,3.166-2.756,3.812-4.758	c-1.674,0.981-3.529,1.702-5.502,2.082C37.86,8.036,35.612,7,33.122,7c-4.783,0-8.661,3.843-8.661,8.582	c0,0.671,0.079,1.324,0.226,1.958c-7.196-0.361-13.579-3.782-17.849-8.974c-0.75,1.269-1.172,2.754-1.172,4.322	c0,2.979,1.525,5.602,3.851,7.147c-1.42-0.043-2.756-0.438-3.926-1.072c0,0.026,0,0.064,0,0.101c0,4.163,2.986,7.63,6.944,8.419	c-0.723,0.198-1.488,0.308-2.276,0.308c-0.559,0-1.104-0.063-1.632-0.158c1.102,3.402,4.299,5.889,8.087,5.963	c-2.964,2.298-6.697,3.674-10.756,3.674c-0.701,0-1.387-0.04-2.065-0.122C7.73,39.577,12.283,41,17.171,41	c15.927,0,24.641-13.079,24.641-24.426c0-0.372-0.012-0.742-0.029-1.108C43.483,14.265,44.948,12.751,46.105,11.02"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swap-off">
+              <img
+                src="imgs/chamon.png"
+                class="rounded-[30px] h-[200px] w-[200px] lg:w-[180px] lg:h-[180px] xl:w-[220px] xl:h-[220px] 2xl:w-[400px] 2xl:h-[400px]"
+              />
+            </div>
+          </label>
+        </div>
+      </div>
+      <div
+        class="grid lg:grid-cols-4 mt-10 reveal grid-cols-1 gap-10 lg:gap-24"
+      >
+        <label
+          class="swap swap-flip text-9xl grid justify-center lg:ml-40 xl:ml-56 2xl:ml-96"
+        >
+          <!-- this hidden checkbox controls the state -->
+          <input type="checkbox" />
+
+          <div class="swap-on">
+            <div
+              class="bg-white h-[200px] w-[200px] lg:w-[180px] lg:h-[180px] xl:w-[220px] xl:h-[220px] 2xl:w-[400px] 2xl:h-[400px] rounded-[30px]"
+            >
+              <div class="pl-4 pt-6 2xl:pl-10 2xl:pt-10">
+                <p
+                  class="text-black font-bold text-base xl:text-xl 2xl:text-4xl"
+                >
+                  Icejpg
+                </p>
+                <p
+                  class="text-black font-bold text-xs xl:text-sm 2xl:text-2xl mb-2"
+                >
+                  Marketing Analyst
+                </p>
+                <p
+                  class="text-black font-bold text-[10px] w-[150px] xl:w-[180px] xl:text-xs 2xl:text-xl 2xl:w-[300px]"
+                >
+                  Studying Corporate Management, specializes in marketing
+                  analysis and collabs management.
+                </p>
+
+                <div class="toast">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 48 48"
+                    width="32px"
+                    height="32px"
+                  >
+                    <linearGradient
+                      id="_osn9zIN2f6RhTsY8WhY4a"
+                      x1="10.341"
+                      x2="40.798"
+                      y1="8.312"
+                      y2="38.769"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop offset="0" stop-color="#2aa4f4" />
+                      <stop offset="1" stop-color="#007ad9" />
+                    </linearGradient>
+                    <path
+                      fill="url(#_osn9zIN2f6RhTsY8WhY4a)"
+                      d="M46.105,11.02c-1.551,0.687-3.219,1.145-4.979,1.362c1.789-1.062,3.166-2.756,3.812-4.758	c-1.674,0.981-3.529,1.702-5.502,2.082C37.86,8.036,35.612,7,33.122,7c-4.783,0-8.661,3.843-8.661,8.582	c0,0.671,0.079,1.324,0.226,1.958c-7.196-0.361-13.579-3.782-17.849-8.974c-0.75,1.269-1.172,2.754-1.172,4.322	c0,2.979,1.525,5.602,3.851,7.147c-1.42-0.043-2.756-0.438-3.926-1.072c0,0.026,0,0.064,0,0.101c0,4.163,2.986,7.63,6.944,8.419	c-0.723,0.198-1.488,0.308-2.276,0.308c-0.559,0-1.104-0.063-1.632-0.158c1.102,3.402,4.299,5.889,8.087,5.963	c-2.964,2.298-6.697,3.674-10.756,3.674c-0.701,0-1.387-0.04-2.065-0.122C7.73,39.577,12.283,41,17.171,41	c15.927,0,24.641-13.079,24.641-24.426c0-0.372-0.012-0.742-0.029-1.108C43.483,14.265,44.948,12.751,46.105,11.02"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swap-off">
+            <img
+              src="imgs/icejpg.png"
+              class="rounded-[30px] h-[200px] w-[200px] lg:w-[180px] lg:h-[180px] xl:w-[220px] xl:h-[220px] 2xl:w-[400px] 2xl:h-[400px]"
+            />
+          </div> </label
+        ><label
+          class="swap swap-flip text-9xl grid justify-center lg:ml-14 xl:ml-20 2xl:ml-36"
+        >
+          <!-- this hidden checkbox controls the state -->
+          <input type="checkbox" />
+
+          <div class="swap-on">
+            <div
+              class="bg-white h-[200px] w-[200px] lg:w-[180px] lg:h-[180px] xl:w-[220px] xl:h-[220px] 2xl:w-[400px] 2xl:h-[400px] rounded-[30px]"
+            >
+              <div class="pl-4 pt-6 2xl:pl-10 2xl:pt-10">
+                <p
+                  class="text-black font-bold text-base xl:text-xl 2xl:text-4xl"
+                >
+                  GBeans
+                </p>
+                <p
+                  class="text-black font-bold text-xs xl:text-sm 2xl:text-2xl mb-2"
+                >
+                  Finance & Strategy Project Manager
+                </p>
+                <p
+                  class="text-black font-bold text-[10px] w-[150px] xl:w-[180px] xl:text-xs 2xl:text-xl 2xl:w-[300px]"
+                >
+                  Business Administration Major with a concentration in finance.
+                  Helps clients on the strategy and finance side.
+                </p>
+
+                <div class="toast">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 48 48"
+                    width="32px"
+                    height="32px"
+                  >
+                    <linearGradient
+                      id="_osn9zIN2f6RhTsY8WhY4a"
+                      x1="10.341"
+                      x2="40.798"
+                      y1="8.312"
+                      y2="38.769"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop offset="0" stop-color="#2aa4f4" />
+                      <stop offset="1" stop-color="#007ad9" />
+                    </linearGradient>
+                    <path
+                      fill="url(#_osn9zIN2f6RhTsY8WhY4a)"
+                      d="M46.105,11.02c-1.551,0.687-3.219,1.145-4.979,1.362c1.789-1.062,3.166-2.756,3.812-4.758	c-1.674,0.981-3.529,1.702-5.502,2.082C37.86,8.036,35.612,7,33.122,7c-4.783,0-8.661,3.843-8.661,8.582	c0,0.671,0.079,1.324,0.226,1.958c-7.196-0.361-13.579-3.782-17.849-8.974c-0.75,1.269-1.172,2.754-1.172,4.322	c0,2.979,1.525,5.602,3.851,7.147c-1.42-0.043-2.756-0.438-3.926-1.072c0,0.026,0,0.064,0,0.101c0,4.163,2.986,7.63,6.944,8.419	c-0.723,0.198-1.488,0.308-2.276,0.308c-0.559,0-1.104-0.063-1.632-0.158c1.102,3.402,4.299,5.889,8.087,5.963	c-2.964,2.298-6.697,3.674-10.756,3.674c-0.701,0-1.387-0.04-2.065-0.122C7.73,39.577,12.283,41,17.171,41	c15.927,0,24.641-13.079,24.641-24.426c0-0.372-0.012-0.742-0.029-1.108C43.483,14.265,44.948,12.751,46.105,11.02"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swap-off">
+            <img
+              src="imgs/gbeans.png"
+              class="rounded-[30px] h-[200px] w-[200px] lg:w-[180px] lg:h-[180px] xl:w-[220px] xl:h-[220px] 2xl:w-[400px] 2xl:h-[400px]"
+            />
+          </div> </label
+        ><label
+          class="swap swap-flip text-9xl grid justify-center lg:mr-10 xl:mr-16 2xl:mr-28"
+        >
+          <!-- this hidden checkbox controls the state -->
+          <input type="checkbox" />
+
+          <div class="swap-on">
+            <div
+              class="bg-white h-[200px] w-[200px] lg:w-[180px] lg:h-[180px] xl:w-[220px] xl:h-[220px] 2xl:w-[400px] 2xl:h-[400px] rounded-[30px]"
+            >
+              <div class="pl-4 pt-6 2xl:pl-10 2xl:pt-10">
+                <p
+                  class="text-black font-bold text-base xl:text-xl 2xl:text-4xl"
+                >
+                  Dusanio
+                </p>
+                <p
+                  class="text-black font-bold text-xs xl:text-sm 2xl:text-2xl mb-2"
+                >
+                  Web Developer
+                </p>
+                <p
+                  class="text-black font-bold text-[10px] w-[150px] xl:w-[180px] xl:text-xs 2xl:text-xl 2xl:w-[300px]"
+                >
+                  Junior Web Developer. Works as a UI developer and executes web
+                  designs for clients.
+                </p>
+
+                <div class="toast">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 48 48"
+                    width="32px"
+                    height="32px"
+                  >
+                    <linearGradient
+                      id="_osn9zIN2f6RhTsY8WhY4a"
+                      x1="10.341"
+                      x2="40.798"
+                      y1="8.312"
+                      y2="38.769"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop offset="0" stop-color="#2aa4f4" />
+                      <stop offset="1" stop-color="#007ad9" />
+                    </linearGradient>
+                    <path
+                      fill="url(#_osn9zIN2f6RhTsY8WhY4a)"
+                      d="M46.105,11.02c-1.551,0.687-3.219,1.145-4.979,1.362c1.789-1.062,3.166-2.756,3.812-4.758	c-1.674,0.981-3.529,1.702-5.502,2.082C37.86,8.036,35.612,7,33.122,7c-4.783,0-8.661,3.843-8.661,8.582	c0,0.671,0.079,1.324,0.226,1.958c-7.196-0.361-13.579-3.782-17.849-8.974c-0.75,1.269-1.172,2.754-1.172,4.322	c0,2.979,1.525,5.602,3.851,7.147c-1.42-0.043-2.756-0.438-3.926-1.072c0,0.026,0,0.064,0,0.101c0,4.163,2.986,7.63,6.944,8.419	c-0.723,0.198-1.488,0.308-2.276,0.308c-0.559,0-1.104-0.063-1.632-0.158c1.102,3.402,4.299,5.889,8.087,5.963	c-2.964,2.298-6.697,3.674-10.756,3.674c-0.701,0-1.387-0.04-2.065-0.122C7.73,39.577,12.283,41,17.171,41	c15.927,0,24.641-13.079,24.641-24.426c0-0.372-0.012-0.742-0.029-1.108C43.483,14.265,44.948,12.751,46.105,11.02"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swap-off">
+            <img
+              src="imgs/dusanio.png"
+              class="rounded-[30px] h-[200px] w-[200px] lg:w-[180px] lg:h-[180px] xl:w-[220px] xl:h-[220px] 2xl:w-[400px] 2xl:h-[400px]"
+            />
+          </div> </label
+        ><label
+          class="swap swap-flip text-9xl grid justify-center lg:mr-36 xl:mr-52 2xl:mr-96"
+        >
+          <!-- this hidden checkbox controls the state -->
+          <input type="checkbox" />
+
+          <div class="swap-on">
+            <div
+              class="bg-white h-[200px] w-[200px] lg:w-[180px] lg:h-[180px] xl:w-[220px] xl:h-[220px] 2xl:w-[400px] 2xl:h-[400px] rounded-[30px]"
+            >
+              <div class="pl-4 pt-6 2xl:pl-10 2xl:pt-10">
+                <p
+                  class="text-black font-bold text-base xl:text-xl 2xl:text-4xl"
+                >
+                  Papi.G
+                </p>
+                <p
+                  class="text-black font-bold text-xs xl:text-sm 2xl:text-2xl mb-2"
+                >
+                  Project Manager, Community Manager & Collab Manager
+                </p>
+                <p
+                  class="text-black font-bold text-[10px] w-[150px] xl:w-[180px] xl:text-xs 2xl:text-xl 2xl:w-[300px]"
+                >
+                  Experienced in numerous social organizations. Efficient in
+                  micro-managing and assisting projects.
+                </p>
+
+                <div class="toast">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 48 48"
+                    width="32px"
+                    height="32px"
+                  >
+                    <linearGradient
+                      id="_osn9zIN2f6RhTsY8WhY4a"
+                      x1="10.341"
+                      x2="40.798"
+                      y1="8.312"
+                      y2="38.769"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop offset="0" stop-color="#2aa4f4" />
+                      <stop offset="1" stop-color="#007ad9" />
+                    </linearGradient>
+                    <path
+                      fill="url(#_osn9zIN2f6RhTsY8WhY4a)"
+                      d="M46.105,11.02c-1.551,0.687-3.219,1.145-4.979,1.362c1.789-1.062,3.166-2.756,3.812-4.758	c-1.674,0.981-3.529,1.702-5.502,2.082C37.86,8.036,35.612,7,33.122,7c-4.783,0-8.661,3.843-8.661,8.582	c0,0.671,0.079,1.324,0.226,1.958c-7.196-0.361-13.579-3.782-17.849-8.974c-0.75,1.269-1.172,2.754-1.172,4.322	c0,2.979,1.525,5.602,3.851,7.147c-1.42-0.043-2.756-0.438-3.926-1.072c0,0.026,0,0.064,0,0.101c0,4.163,2.986,7.63,6.944,8.419	c-0.723,0.198-1.488,0.308-2.276,0.308c-0.559,0-1.104-0.063-1.632-0.158c1.102,3.402,4.299,5.889,8.087,5.963	c-2.964,2.298-6.697,3.674-10.756,3.674c-0.701,0-1.387-0.04-2.065-0.122C7.73,39.577,12.283,41,17.171,41	c15.927,0,24.641-13.079,24.641-24.426c0-0.372-0.012-0.742-0.029-1.108C43.483,14.265,44.948,12.751,46.105,11.02"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swap-off">
+            <img
+              src="imgs/papi-g.png"
+              class="rounded-[30px] h-[200px] w-[200px] lg:w-[180px] lg:h-[180px] xl:w-[220px] xl:h-[220px] 2xl:w-[400px] 2xl:h-[400px]"
+            />
+          </div>
+        </label>
+      </div>
+
+      <div class="z-50 mt-96 2xl:mt-[700px] mb-40 xl:mb-72 reveal">
+        <p
+          class="2xl:w-[1400px] 2xl:text-[90px] text-[#49e4f0] text-center font-bold text-6xl ml-auto mr-auto lg:w-[600px] xl:w-[1000px] w-[360px] xl:text-[64px]"
+        >
+          Ready to be a link in the chain?
+        </p>
+      </div>
+      <div
+        class="2xl:-translate-y-[840px] -translate-y-full -z-5 absolute lg:left-56 lg:-translate-y-[80%] md:left-24 md:-translate-y-[85%] 2xl:left-[1000px] -translate-y-[105%] xl:-translate-y-[100%] xl:left-[450px] 2xl:left-[860px]"
+      >
+        <img
+          src="imgs/link-in-the-chain.png"
+          class="2xl:w-[800px] 2xl:h-[1000px]"
+        />
+      </div>
+      <div class="z-50 relative pt-40">
+        <hr class="bg-white h-0" />
+      </div>
+      <div class="z-50 relative mt-10">
+        <div class="block xl:inline-block align-middle">
+          <img
+            src="imgs/footer-logo.png"
+            class="mt-0 ml-0 xl:ml-20 2xl:h-[200px] 2xl:w-[500px]"
+          />
+
+          <p class="text-white text-xs font-bold ml-4 xl:ml-24 2xl:text-xl">
+            © Multichain Advisors Inc.
+          </p>
+        </div>
+        <div
+          class="ml-4 block md:inline-block xl:ml-14 2xl:ml-[1100px] xl:pb-0 pb-10 xl:mb-20"
+        >
+          <div
+            class="mt-8 block xl:inline-block 2xl:mt-0 xl:mt-0 ml-2 xl:ml-10 align-top"
+          >
+            <p
+              class="text-transparent bg-clip-text bg-gradient-to-r from-darkcyan to-lightcyan font-bold text-base 2xl:text-2xl"
+            >
+              Community
+            </p>
+
+            <a href="">
+              <p
+                class="2xl:text-xl text-sm text-white font-bold hover:text-darkcyan mt-2"
+              >
+                Twitter
+              </p>
+            </a>
+            <a href="">
+              <p
+                class="2xl:text-xl text-sm text-white font-bold hover:text-darkcyan mt-2"
+              >
+                Youtube
+              </p> </a
+            ><a href="">
+              <p
+                class="2xl:text-xl text-sm text-white font-bold hover:text-darkcyan mt-2"
+              >
+                Medium
+              </p> </a
+            ><a href="">
+              <p
+                class="2xl:text-xl text-sm text-white font-bold hover:text-darkcyan mt-2"
+              >
+                Spotify
+              </p>
+            </a>
+          </div>
+          <div
+            class="mt-8 block xl:inline-block 2xl:mt-0 xl:mt-0 ml-2 xl:ml-10 align-top"
+          >
+            <p
+              class="text-transparent bg-clip-text bg-gradient-to-r from-darkcyan to-lightcyan font-bold text-base 2xl:text-2xl"
+            >
+              About
+            </p>
+
+            <a href="">
+              <p
+                class="2xl:text-xl text-sm text-white font-bold hover:text-darkcyan mt-2"
+              >
+                Pitch Deck
+              </p>
+            </a>
+            <a href="">
+              <p
+                class="2xl:text-xl text-sm text-white font-bold hover:text-darkcyan mt-2"
+              >
+                One-Pager
+              </p> </a
+            ><a href="">
+              <p
+                class="2xl:text-xl text-sm text-white font-bold hover:text-darkcyan mt-2"
+              >
+                Team
+              </p> </a
+            ><a href="">
+              <p
+                class="2xl:text-xl text-sm text-white font-bold hover:text-darkcyan mt-2"
+              >
+                Statistics
+              </p>
+            </a>
+          </div>
+          <div
+            class="mt-8 block xl:inline-block 2xl:mt-0 xl:mt-0 ml-2 xl:ml-10 align-top"
+          >
+            <p
+              class="2xl:text-2xl text-transparent bg-clip-text bg-gradient-to-r from-darkcyan to-lightcyan font-bold text-base"
+            >
+              Products
+            </p>
+
+            <a href="">
+              <p
+                class="2xl:text-xl text-sm text-white font-bold hover:text-darkcyan mt-2"
+              >
+                Refferal Program
+              </p>
+            </a>
+          </div>
+          <div
+            class="mt-8 block xl:inline-block 2xl:mt-0 xl:mt-0 ml-2 xl:ml-10 align-top"
+          >
+            <p
+              class="2xl:text-2xl text-transparent bg-clip-text bg-gradient-to-r from-darkcyan to-lightcyan font-bold text-base"
+            >
+              For Business Inquiries
+            </p>
+
+            <a href="">
+              <p
+                class="2xl:text-xl text-sm text-white font-bold hover:text-darkcyan mt-2"
+              >
+                Partnerships
+              </p>
+            </a>
+            <a href="">
+              <p
+                class="2xl:text-xl text-sm text-white font-bold hover:text-darkcyan mt-2"
+              >
+                Join Twitter Spaces
+              </p> </a
+            ><a href="">
+              <p
+                class="2xl:text-xl text-sm text-white font-bold hover:text-darkcyan mt-2"
+              >
+                Become a client
+              </p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="scroll.js"></script>
+    <script src="menu.js"></script>
+  </body>
+</html>
