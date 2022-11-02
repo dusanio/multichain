@@ -8,7 +8,7 @@ module.exports = {
     extend: {
       colors: {
         darkcyan: "var(--darkcyan)",
-        lightcyan: "var(--lightcyan)",
+        multichaingreen: "var(--lightcyan)",
         darkgray: "var(--darkgray)",
         lightgray: "var(--lightgray)",
         lightercyan: "var(--lightercyan)",

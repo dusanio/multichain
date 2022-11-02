@@ -4,9 +4,9 @@
 
 :root {
   --darkcyan: #128dba;
-  --lightcyan: #4eebf4;
+  --multichaingreen: #01a4a1;
   --darkgray: #101010;
-  --lightercyan: #1794bf;
+  --lightercyan: #01a4a1;
   --lightestcyan: #49e2ef;
   --arrowcyan: #47dfed;
   --lightgray: #d9d9d9;
@@ -218,17 +218,6 @@ nav {
   border-top-right-radius: 120px 90px;
   border-bottom-right-radius: 90px 90px;
   border-bottom-left-radius: 200px 110px;
-}
-
-.background {
-  background-size: 100% 100%;
-  background-position: 0px 0px;
-  background-image: linear-gradient(
-    43deg,
-    #121212 23%,
-    #121212 62%,
-    #128dba 120%
-  );
 }
 
 .object {

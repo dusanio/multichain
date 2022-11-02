@@ -3190,10 +3190,6 @@ body[dir="rtl"] .checkbox:checked,
   height: 1.5rem;
 }
 
-.h-0\.5 {
-  height: 0.125rem;
-}
-
 .h-32 {
   height: 8rem;
 }
@@ -3204,10 +3200,6 @@ body[dir="rtl"] .checkbox:checked,
 
 .h-screen {
   height: 100vh;
-}
-
-.h-\[800px\] {
-  height: 800px;
 }
 
 .w-\[70px\] {
@@ -3328,10 +3320,6 @@ body[dir="rtl"] .checkbox:checked,
   width: 100%;
 }
 
-.w-\[1000px\] {
-  width: 1000px;
-}
-
 .max-w-\[1140px\] {
   max-width: 1140px;
 }
@@ -3400,10 +3388,6 @@ body[dir="rtl"] .checkbox:checked,
 
 .place-items-center {
   place-items: center;
-}
-
-.items-end {
-  align-items: flex-end;
 }
 
 .items-center {
@@ -3500,10 +3484,6 @@ body[dir="rtl"] .checkbox:checked,
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
-.border-lightcyan {
-  border-color: var(--lightcyan);
-}
-
 .border-\[\#42cfdd\] {
   --tw-border-opacity: 1;
   border-color: rgb(66 207 221 / var(--tw-border-opacity));
@@ -3537,16 +3517,8 @@ body[dir="rtl"] .checkbox:checked,
   background-color: rgb(69 221 235 / var(--tw-bg-opacity));
 }
 
-.bg-backgroundLighter {
-  background-color: var(--background-lighter);
-}
-
-.bg-darkcyan {
-  background-color: var(--darkcyan);
-}
-
-.bg-backgroundDarker {
-  background-color: var(--background-darker);
+.bg-lightercyan {
+  background-color: var(--lightercyan);
 }
 
 .bg-gradient-to-r {
@@ -3571,10 +3543,6 @@ body[dir="rtl"] .checkbox:checked,
   --tw-gradient-from: var(--lightercyan);
   --tw-gradient-to: rgb(255 255 255 / 0);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
-.to-lightcyan {
-  --tw-gradient-to: var(--lightcyan);
 }
 
 .to-lightestcyan {
@@ -3909,10 +3877,6 @@ body[dir="rtl"] .checkbox:checked,
   color: rgb(73 228 240 / var(--tw-text-opacity));
 }
 
-.text-lightcyan {
-  color: var(--lightcyan);
-}
-
 .text-\[\#46ddec\] {
   --tw-text-opacity: 1;
   color: rgb(70 221 236 / var(--tw-text-opacity));
@@ -3923,8 +3887,8 @@ body[dir="rtl"] .checkbox:checked,
   color: rgb(107 114 128 / var(--tw-text-opacity));
 }
 
-.text-darkcyan {
-  color: var(--darkcyan);
+.text-lightercyan {
+  color: var(--lightercyan);
 }
 
 .opacity-100 {
@@ -3937,8 +3901,8 @@ body[dir="rtl"] .checkbox:checked,
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.shadow-\[-10px_-0px_100px_-30px_rgba\(24\2c 162\2c 217\2c 1\)\] {
-  --tw-shadow: -10px -0px 100px -30px rgba(24,162,217,1);
+.shadow-\[-10px_-0px_100px_-30px_rgba\(1\2c 164\2c 161\2c 255\)\] {
+  --tw-shadow: -10px -0px 100px -30px rgba(1,164,161,255);
   --tw-shadow-colored: -10px -0px 100px -30px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
@@ -3957,9 +3921,9 @@ body[dir="rtl"] .checkbox:checked,
 
 :root {
   --darkcyan: #128dba;
-  --lightcyan: #4eebf4;
+  --multichaingreen: #01a4a1;
   --darkgray: #101010;
-  --lightercyan: #1794bf;
+  --lightercyan: #01a4a1;
   --lightestcyan: #49e2ef;
   --arrowcyan: #47dfed;
   --lightgray: #d9d9d9;
@@ -4185,17 +4149,6 @@ nav {
   border-bottom-left-radius: 200px 110px;
 }
 
-.background {
-  background-size: 100% 100%;
-  background-position: 0px 0px;
-  background-image: linear-gradient(
-    43deg,
-    #121212 23%,
-    #121212 62%,
-    #128dba 120%
-  );
-}
-
 .object {
   -webkit-animation: MoveUpDown 4s linear infinite;
           animation: MoveUpDown 4s linear infinite;
@@ -4228,10 +4181,6 @@ nav {
   border-style: solid;
 }
 
-.hover\:border-lightcyan:hover {
-  border-color: var(--lightcyan);
-}
-
 .hover\:bg-gray-100:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
@@ -4239,10 +4188,6 @@ nav {
 
 .hover\:text-darkcyan:hover {
   color: var(--darkcyan);
-}
-
-.hover\:text-lightcyan:hover {
-  color: var(--lightcyan);
 }
 
 .hover\:opacity-70:hover {
@@ -4555,20 +4500,8 @@ nav {
     gap: 2.5rem;
   }
 
-  .md\:gap-20 {
-    gap: 5rem;
-  }
-
   .md\:gap-8 {
     gap: 2rem;
-  }
-
-  .md\:gap-6 {
-    gap: 1.5rem;
-  }
-
-  .md\:gap-0 {
-    gap: 0px;
   }
 
   .md\:space-x-8 > :not([hidden]) ~ :not([hidden]) {
@@ -5961,10 +5894,6 @@ nav {
     margin-top: 100px;
   }
 
-  .\32xl\:ml-80 {
-    margin-left: 20rem;
-  }
-
   .\32xl\:flex {
     display: flex;
   }
@@ -6406,6 +6335,11 @@ nav {
 
   .\32xl\:text-\[40px\] {
     font-size: 40px;
+  }
+
+  .\32xl\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 
   .\32xl\:leading-tight {
