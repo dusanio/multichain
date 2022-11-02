@@ -3206,6 +3206,10 @@ body[dir="rtl"] .checkbox:checked,
   height: 100vh;
 }
 
+.h-\[800px\] {
+  height: 800px;
+}
+
 .w-\[70px\] {
   width: 70px;
 }
@@ -3322,6 +3326,10 @@ body[dir="rtl"] .checkbox:checked,
 
 .w-full {
   width: 100%;
+}
+
+.w-\[1000px\] {
+  width: 1000px;
 }
 
 .max-w-\[1140px\] {
@@ -5627,6 +5635,10 @@ nav {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
+  .xl\:items-end {
+    align-items: flex-end;
+  }
+
   .xl\:gap-28 {
     gap: 7rem;
   }
@@ -5947,6 +5959,10 @@ nav {
 
   .\32xl\:mt-\[100px\] {
     margin-top: 100px;
+  }
+
+  .\32xl\:ml-80 {
+    margin-left: 20rem;
   }
 
   .\32xl\:flex {
