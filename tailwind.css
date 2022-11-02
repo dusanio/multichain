@@ -11,7 +11,7 @@
   --arrowcyan: #47dfed;
   --lightgray: #d9d9d9;
   --background-darker: #121212;
-  --background-lighter: #1f1f1f;
+  --background-lighter: #191a1e;
 }
 
 .swiper-button-prev {
@@ -193,4 +193,22 @@ nav {
   width: 100%;
   z-index: 9999;
   transition: all 500ms ease-in-out;
+}
+
+.team-card {
+  display: none;
+}
+
+.team .team-card:nth-child(1),
+.team .team-card:nth-child(2),
+.team .team-card:nth-child(3),
+.team .team-card:nth-child(4),
+.team .team-card:nth-child(5),
+.team .team-card:nth-child(6),
+.team .team-card:nth-child(7),
+.team .team-card:nth-child(8) {
+  display: block;
+}
+.list .team-card:nth-child(2) {
+  display: block;
 }
