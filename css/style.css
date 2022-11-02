@@ -3394,6 +3394,10 @@ body[dir="rtl"] .checkbox:checked,
   place-items: center;
 }
 
+.items-end {
+  align-items: flex-end;
+}
+
 .items-center {
   align-items: center;
 }
@@ -3545,16 +3549,8 @@ body[dir="rtl"] .checkbox:checked,
   background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
 }
 
-.bg-\[url\(\'\/images\/test3\.jpeg\'\)\] {
-  background-image: url('/images/test3.jpeg');
-}
-
 .bg-\[url\(\'\/images\/cool\.jpeg\'\)\] {
   background-image: url('/images/cool.jpeg');
-}
-
-.bg-\[url\(\'\/images\/hero\.jpeg\'\)\] {
-  background-image: url('/images/hero.jpeg');
 }
 
 .from-darkcyan {
@@ -4174,6 +4170,52 @@ nav {
   display: block;
 }
 
+.blob {
+  border-top-left-radius: 90px 70px;
+  border-top-right-radius: 120px 90px;
+  border-bottom-right-radius: 90px 90px;
+  border-bottom-left-radius: 200px 110px;
+}
+
+.background {
+  background-size: 100% 100%;
+  background-position: 0px 0px;
+  background-image: linear-gradient(
+    43deg,
+    #121212 23%,
+    #121212 62%,
+    #128dba 120%
+  );
+}
+
+.object {
+  -webkit-animation: MoveUpDown 4s linear infinite;
+          animation: MoveUpDown 4s linear infinite;
+  position: relative;
+}
+
+@-webkit-keyframes MoveUpDown {
+  0%,
+  100% {
+    bottom: 0;
+  }
+
+  50% {
+    bottom: 30px;
+  }
+}
+
+@keyframes MoveUpDown {
+  0%,
+  100% {
+    bottom: 0;
+  }
+
+  50% {
+    bottom: 30px;
+  }
+}
+
 .hover\:border-solid:hover {
   border-style: solid;
 }
@@ -4505,8 +4547,20 @@ nav {
     gap: 2.5rem;
   }
 
+  .md\:gap-20 {
+    gap: 5rem;
+  }
+
   .md\:gap-8 {
     gap: 2rem;
+  }
+
+  .md\:gap-6 {
+    gap: 1.5rem;
+  }
+
+  .md\:gap-0 {
+    gap: 0px;
   }
 
   .md\:space-x-8 > :not([hidden]) ~ :not([hidden]) {
@@ -6149,6 +6203,21 @@ nav {
     padding: 10rem;
   }
 
+  .\32xl\:py-5 {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+
+  .\32xl\:px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .\32xl\:px-5 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
   .\32xl\:py-6 {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
@@ -6157,21 +6226,6 @@ nav {
   .\32xl\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
-  }
-
-  .\32xl\:py-5 {
-    padding-top: 1.25rem;
-    padding-bottom: 1.25rem;
-  }
-
-  .\32xl\:px-5 {
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
-  }
-
-  .\32xl\:px-6 {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
   }
 
   .\32xl\:pt-10 {
