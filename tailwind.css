@@ -15,13 +15,13 @@
 }
 
 .swiper-button-prev {
-  margin-left: 180px !important;
+  margin-left: -10px !important;
   color: black !important;
   border: 30px solid var(--arrowcyan) !important;
   border-radius: 100% !important;
 }
 .swiper-button-next {
-  margin-right: 180px !important;
+  margin-right: -10px !important;
   color: black !important;
   border: 30px solid var(--arrowcyan) !important;
   border-radius: 100% !important;
@@ -116,40 +116,6 @@ input[type="url"] {
   }
 }
 
-@media (min-width: 1920px) {
-  .swiper-button-prev {
-    margin-left: 110px !important;
-    color: black !important;
-    border: 50px solid var(--arrowcyan) !important;
-    border-radius: 100% !important;
-  }
-  .swiper-button-next {
-    margin-right: 110px !important;
-    color: black !important;
-    border: 50px solid var(--arrowcyan) !important;
-    border-radius: 100% !important;
-  }
-  .swiper-pagination-bullet {
-    width: 90px !important;
-    height: 12px !important;
-    border-radius: 0 !important;
-    color: white !important;
-    background: white !important;
-    opacity: 100% !important;
-  }
-  .swiper-pagination-bullet-active {
-    color: var(--arrowcyan) !important;
-    background: var(--arrowcyan) !important;
-  }
-
-  .swiper-button-prev::after {
-    font-size: 40px !important;
-  }
-  .swiper-button-next::after {
-    font-size: 40px !important;
-  }
-}
-
 @media (min-width: 2560px) {
   #link-in-the-chain {
     transform: translateX(300px);
@@ -195,6 +161,19 @@ nav {
   transition: all 500ms ease-in-out;
 }
 
+circle {
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 20px;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
+  animation: fillCircle 2.5s linear forwards;
+}
+
+svg {
+  position: absolute;
+}
+
 .team-card {
   display: none;
 }
@@ -232,5 +211,10 @@ nav {
   }
   50% {
     bottom: 30px;
+  }
+}
+@keyframes fillCircle {
+  100% {
+    stroke-dashoffset: 0;
   }
 }

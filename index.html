@@ -2670,21 +2670,6 @@
           },
         },
       });
-
-      $(document).ready(function () {
-        $(window).bind("scroll", fetchMore);
-      });
-
-      var scroll = document.querySelector(body);
-      scroll.addEventListener("scroll", pageScroll);
-
-      function pageScroll() {
-        var myScrollTop = body.scrollTop;
-        var myScrollHeight = body.scrollHeight;
-        var diff = myScrollHeight - myScrollTop;
-        var height = body.clientHeight;
-        var offPageHeight = 500;
-      }
     </script>
     <script src="scroll.js"></script>
   </body>
