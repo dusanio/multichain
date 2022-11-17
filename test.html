@@ -122,7 +122,7 @@
             <div
               class="grid grid-cols-1 md:grid-cols-2 justify-center items-center md:max-w-[700px] lg:max-w-[950px] xl:max-w-[1240px]"
             >
-              <div>
+              <div class="ml-4 md:ml-0">
                 <p
                   class="leading-snug 2xl:leading-snug text-white font-bold lg:leading-snug xl:leading-snug text-5xl lg:text-6xl xl:text-8xl 2xl:text-8xl"
                 >
@@ -351,14 +351,14 @@
           <div class="swiper-scrollbar"></div>
         </div>
 
-        <div class="pt-20">
+        <div class="pt-20 ml-auto mr-auto">
           <p
             class="reveal text-transparent bg-clip-text bg-gradient-to-r from-darkcyan to-lightercyan xl:text-4xl font-bold text-center text-3xl"
           >
             We Let Our Numbers Speak for Us
           </p>
           <div
-            class="grid grid-cols-1 lg:grid-cols-2 ml-auto mr-auto max-w-[1140px]"
+            class="grid grid-cols-1 lg:grid-cols-2 ml-auto mr-auto md:max-w-[700px] lg:max-w-[950px] xl:max-w-[1240px]"
           >
             <div class="pt-20 grid grid-cols-2 gap-6 lg:gap-10 md:grid-cols-2">
               <div class="reveal h-[160px]">
@@ -517,12 +517,15 @@
               </div>
             </div>
             <div>
-              <img src="imgs/saturn.png" class="reveal ml-auto mr-auto" />
+              <img
+                src="imgs/saturn.png"
+                class="max-w-[300px] md:max-w-[550px] lg:max-w-[900px] lg:max-w-[900px] reveal ml-auto mr-auto"
+              />
             </div>
           </div>
         </div>
 
-        <div class="bg-black pt-20">
+        <div class="bg-black pt-20 max-w-[1140px] ml-auto mr-auto">
           <p
             class="reveal text-transparent bg-clip-text bg-gradient-to-r from-darkcyan to-lightercyan xl:text-4xl font-bold text-center text-3xl"
           >
@@ -861,22 +864,58 @@
           </div>
         </div>
 
-        <div class="bg-black" id="services">
-          <p
-            class="reveal text-lightercyan xl:text-4xl font-bold text-center pt-20 text-3xl"
+        <div class="bg-black">
+          <div
+            class="grid grid-cols-1 lg:grid-cols-3 lg:max-w-[900px] xl:max-w-[1140px] lg:ml-auto lg:mr-auto"
           >
-            What We Offer
-          </p>
-          <p
-            class="reveal text-lightercyan text-sm font-normal text-center pt-4 w-[300px] md:w-[500px] lg:w-[800px] ml-auto mr-auto"
-          >
-            As a full service Web 3.0 advisory firm, we offer a comprehensive
-            range of services to support your mission at every stage of
-            development. From start to finish, we will work closely with you to
-            illuminate project’s vision or goal, and determine your Go-to-market
-            strategy to successfully launch your project and achieve success.
-          </p>
-          <div class="pt-10">
+            <div class="ml-4 md:ml-20">
+              <p class="reveal text-white xl:text-6xl font-bold pt-20 text-3xl">
+                Services
+              </p>
+              <p
+                class="reveal text-white text-base font-normal pt-4 w-[300px] md:w-[300px]"
+              >
+                MultiChain Advisors Inc. specializes in strategy, growth,
+                marketing, community building, capital raise advisory,
+                partnerships, and collabs for growing projects.
+              </p>
+              <div class="mt-10 reveal">
+                <a href="">
+                  <button
+                    class="bg-gradient-to-r from-darkcyan to-lightestcyan rounded-lg hover:opacity-70 border border-white"
+                  >
+                    <p
+                      class="pt-4 pb-4 pl-6 pr-6 font-normal text-xl items-center text-white"
+                    >
+                      Schedule A Call
+                    </p>
+                  </button>
+                </a>
+              </div>
+            </div>
+
+            <div
+              class="pt-20 reveal col-span-2 max-w-[300px] ml-auto mr-auto md:ml-20 md:max-w-[600px] lg:max-w-[auto]"
+            >
+              <img src="imgs/services.png" />
+            </div>
+          </div>
+          <div class="pt-10" id="services">
+            <p
+              class="reveal text-transparent bg-clip-text bg-gradient-to-r from-darkcyan to-lightestcyan text-center xl:text-4xl font-bold pt-20 text-3xl"
+            >
+              What We Offer
+            </p>
+            <p
+              class="reveal text-transparent bg-clip-text bg-gradient-to-r from-darkcyan to-lightestcyan text-base font-normal text-center ml-auto mr-auto pt-4 w-[300px] md:w-[500px]"
+            >
+              As a full service Web 3.0 advisory firm, we offer a comprehensive
+              range of services to support your mission at every stage of
+              development. From start to finish, we will work closely with you
+              to illuminate project’s vision or goal, and determine your
+              Go-to-market strategy to successfully launch your project and
+              achieve success.
+            </p>
             <div
               class="reveal mt-10 xl:mt-20 flex justify-center items-center ml-8 xl:ml-10"
             >
@@ -1149,15 +1188,15 @@
                 class="w-[350px] h-[250px]"
               />
             </div>
-            <div class="reveal flex justify-center pt-20 md:gap-8">
+            <div class="reveal flex justify-center pt-8 md:gap-8">
               <button
                 type="button"
-                class="text-white bg-transparent text-lg border border-solid border-white hover:border-solid hover:border-lightestcyan hover:text-lightestcyan font-semibold rounded-full text-sm px-5 py-2.5 2xl:py-5 2xl:px-5 text-center mr-3 md:mr-0"
+                class="text-white bg-transparent text-lg border border-solid border-white hover:border-solid hover:border-lightestcyan hover:text-lightestcyan font-semibold rounded-lg text-sm px-5 py-2.5 2xl:py-4 2xl:px-5 text-center mr-3 md:mr-0"
               >
                 Let's Connect</button
               ><button
                 type="button"
-                class="text-white bg-lightercyan text-lg border border-solid border-white hover:opacity-70 font-semibold rounded-full text-sm px-5 py-2.5 2xl:py-6 2xl:px-8 text-center mr-3 md:mr-0"
+                class="text-white bg-gradient-to-r from-darkcyan to-lightestcyan text-lg border border-solid border-white hover:opacity-70 font-semibold rounded-lg text-sm px-5 py-2.5 2xl:py-4 2xl:px-8 text-center mr-3 md:mr-0"
               >
                 Pitch Deck
               </button>
@@ -1553,7 +1592,7 @@
       </div>
     </div>
 
-    <div
+    <!-- <div
       id="intro"
       class="bg-[url('/images/cool.jpeg')] bg-cover fixed top-0 left-0 w-[100%] h-[100%] flex justify-center items-center"
     >
@@ -1574,7 +1613,7 @@
     <div
       id="slider"
       class="bg-black translate-y-[100%] fixed top-0 left-0 w-[100%] h-[100%]"
-    ></div>
+    ></div> -->
 
     <!-- <script>
       const body = document.body;
@@ -1673,6 +1712,6 @@
     </script>
 
     <script src="progress_circles.js"></script>
-    <script src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
   </body>
 </html>
