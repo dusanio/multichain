@@ -4,7 +4,7 @@
 
 :root {
   --darkcyan: #128dba;
-  --multichaingreen: #01a4a1;
+  --lightcyan: #01a4a1;
   --darkgray: #101010;
   --lightercyan: #01a4a1;
   --lightestcyan: #49e2ef;
@@ -14,14 +14,29 @@
   --background-lighter: #191a1e;
 }
 
+video {
+  object-fit: fill;
+  z-index: 2147483647;
+}
+
+#clients {
+  width: 300%;
+  overflow: hidden;
+  -webkit-transition: margin-left 500ms ease-in-out;
+  -moz-transition: margin-left 500ms ease-in-out;
+  -o-transition: margin-left 500ms ease-in-out;
+  -ms-transition: margin-left 500ms ease-in-out;
+  transition: margin-left 500ms ease-in-out;
+}
+
 .swiper-button-prev {
-  margin-left: -10px !important;
+  margin-left: -11px !important;
   color: black !important;
   border: 30px solid var(--arrowcyan) !important;
   border-radius: 100% !important;
 }
 .swiper-button-next {
-  margin-right: -10px !important;
+  margin-right: -11px !important;
   color: black !important;
   border: 30px solid var(--arrowcyan) !important;
   border-radius: 100% !important;

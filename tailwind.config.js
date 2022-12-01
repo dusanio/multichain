@@ -3,12 +3,12 @@ module.exports = {
   content: ["./*.html"],
   theme: {
     fontFamily: {
-      poppins: ["poppins"],
+      inter: ["inter", "sans-serif"],
     },
     extend: {
       colors: {
         darkcyan: "var(--darkcyan)",
-        multichaingreen: "var(--lightcyan)",
+        lightcyan: "var(--lightcyan)",
         darkgray: "var(--darkgray)",
         lightgray: "var(--lightgray)",
         lightercyan: "var(--lightercyan)",
