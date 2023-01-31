@@ -1,4 +1,4 @@
-<html class="scroll-smooth">
+<html class="scroll-smooth dark">
   <head>
     <meta charset="UTF-8" />
     <title>MultiChain - Advisors Inc.</title>
@@ -19,12 +19,13 @@
       href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
       rel="stylesheet"
     />
+    <script src="/node_modules/flowbite/dist/flowbite.min.js"></script>
   </head>
   <body class="bg-white dark:bg-black">
     <div>
       <div class="flex justify-between items-center pt-6 lg:hidden">
         <img
-          src="images/multichain.png"
+          src="images/multichain2.png"
           class="w-[70px] h-[90px] ml-4 hover:opacity-70"
         />
         <button
@@ -38,6 +39,17 @@
             </p>
           </a>
         </button>
+        <div class="hover:cursor-pointer inline-block mb-4 mr-2">
+          <button
+            type="button"
+            class="theme-toggle dark:text-white text-black text-sm p-2.5"
+          >
+            <img
+              src="images/darkmode.png"
+              class="theme-toggle-dark-icon h-8 mt-4"
+            />
+          </button>
+        </div>
         <div class="mt-1 float-right mr-4" onclick="mobileMenu();">
           <button id="three-lines">
             <img src="images/burger.png" class="w-[40px] h-[40px]" />
@@ -52,21 +64,21 @@
       <div class="hidden mt-10 ml-8" id="mobile-menu">
         <div class="mb-8">
           <p
-            class="text-sm dark:text-white text-black font-bold font-bold hover:text-darkcyan"
+            class="text-sm dark:text-white text-black font-bold font-bold hover:text-lightcyan dark:hover:text-lightcyan"
           >
             <a href="#team">Case Studies</a>
           </p>
         </div>
         <div class="mb-8">
           <p
-            class="text-sm dark:text-white text-black font-bold font-bold hover:text-darkcyan"
+            class="text-sm dark:text-white text-black font-bold font-bold hover:text-lightcyan dark:hover:text-lightcyan"
           >
             <a href="methodology.html"> Our Methodology </a>
           </p>
         </div>
         <div class="mb-8">
           <p
-            class="text-sm dark:text-white text-black font-bold font-bold hover:text-darkcyan"
+            class="text-sm dark:text-white text-black font-bold font-bold hover:text-lightcyan dark:hover:text-lightcyan"
           >
             <a href="https://twitter.com/MultiChainInc" target="_blank"
               >Twitter</a
@@ -75,7 +87,7 @@
         </div>
         <div class="pb-[410px]">
           <p
-            class="text-sm dark:text-white text-black font-bold font-bold hover:text-darkcyan"
+            class="text-sm dark:text-white text-black font-bold font-bold hover:text-lightcyan dark:hover:text-lightcyan"
           >
             <a href="https://discord.gg/Arf4MQSgzx" target="_blank">Discord</a>
           </p>
@@ -93,20 +105,20 @@
             <div class="hidden lg:flex items-center ml-auto p-6 z-50 relative">
               <div>
                 <p
-                  class="lg:text-xs xl:text-base dark:text-white text-black lg:ml-0 xl:ml-16 hover:text-darkcyan"
+                  class="lg:text-xs xl:text-base dark:text-white text-black lg:ml-0 xl:ml-16 hover:text-lightcyan dark:hover:text-lightcyan"
                 >
                   <a href="#team">Case Studies</a>
                 </p>
               </div>
               <div>
                 <p
-                  class="lg:text-xs xl:text-base dark:text-white text-black lg:ml-16 hover:text-darkcyan"
+                  class="lg:text-xs xl:text-base dark:text-white text-black lg:ml-16 hover:text-lightcyan dark:hover:text-lightcyan"
                 >
                   <a href="methodology.html">Our Methodology</a>
                 </p>
               </div>
               <div
-                class="dark:text-white text-black hover:text-lightestcyan inline-block ml-8 mb-6"
+                class="dark:text-[#01a4a1] text-[#01a4a1] hover:text-lightestcyan inline-block ml-8 mb-6"
               >
                 <a href="https://discord.gg/Arf4MQSgzx" target="_blank">
                   <svg
@@ -127,7 +139,7 @@
 
               <!--twitter-->
               <div
-                class="dark:text-white text-black hover:text-lightestcyan inline-block ml-12 mb-6"
+                class="dark:text-[#01a4a1] text-[#01a4a1] hover:text-lightestcyan inline-block ml-12 mb-6"
               >
                 <a href="https://twitter.com/MultiChainInc" target="_blank">
                   <svg
@@ -144,6 +156,17 @@
                     />
                   </svg>
                 </a>
+              </div>
+              <div class="hover:cursor-pointer inline-block ml-10 mb-6 pt-1">
+                <button
+                  type="button"
+                  class="dark:text-white text-black text-sm p-2.5"
+                >
+                  <img
+                    src="images/darkmode.png"
+                    class="theme-toggle h-10 mt-8"
+                  />
+                </button>
               </div>
               <div class="ml-16 mr-10">
                 <a href="contact.html">
@@ -196,7 +219,7 @@
                 </a>
               </div>
 
-              <div class="object flex justify-center">
+              <div class="object flex justify-center mt-10">
                 <img src="images/blockchain.png" class="2xl:w-[800px]" />
               </div>
             </div>
@@ -268,7 +291,7 @@
             </div>
           </div>
         </div>
-        <p
+        <!-- <p
           class="reveal text-transparent bg-clip-text bg-gradient-to-r from-darkcyan flex justify-center to-lightestcyan xl:text-4xl font-bold text-center pt-20 text-3xl"
         >
           Our Success Stories
@@ -448,7 +471,7 @@
 
           <div class="swiper-button-prev"></div>
           <div class="swiper-button-next"></div>
-        </div>
+        </div> -->
         <div class="-translate-y-3/4 -z-4 absolute">
           <img src="images/tan-circle.png" />
         </div>
@@ -807,38 +830,6 @@
                       class="dark:text-white text-black text-center font-bold pt-10 mb-1"
                     >
                       Polygon
-                    </h3>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="flex justify-center h-32">
-                    <img
-                      src="images/fellowship.jpg"
-                      alt="Fellowship DAO"
-                      class="border-double border-8 rounded-full border-darkcyan w-[180px] h-[180px]"
-                    />
-                  </div>
-                  <div class="flex justify-center items-center p-4 h-13">
-                    <h3
-                      class="dark:text-white text-black text-center font-bold pt-10"
-                    >
-                      Fellowship DAO
-                    </h3>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="flex justify-center h-32">
-                    <img
-                      src="images/ape16z.jpg"
-                      alt="Ape16z"
-                      class="border-double border-8 rounded-full border-darkcyan w-[180px] h-[180px]"
-                    />
-                  </div>
-                  <div class="flex justify-center items-center p-4 h-13">
-                    <h3
-                      class="dark:text-white text-black text-center font-bold pt-10"
-                    >
-                      Ape16z
                     </h3>
                   </div>
                 </div>
@@ -2337,7 +2328,7 @@
                         with a background of Core Media Content and Policies.
                       </h3>
                       <a
-                        href="https://twitter.com/Northernapez"
+                        href=" https://twitter.com/0xVok"
                         class="flex justify-center"
                         target="_blank"
                       >
@@ -2499,33 +2490,33 @@
 
               <a href="https://twitter.com/MultiChainInc" target="_blank">
                 <p
-                  class="text-sm dark:text-white text-black font-normal hover:text-darkcyan mt-2"
+                  class="text-sm dark:text-white text-black font-normal hover:text-lightcyan dark:hover:text-lightcyan mt-2"
                 >
                   Twitter
                 </p>
               </a>
               <a href="https://discord.gg/Arf4MQSgzx">
                 <p
-                  class="text-sm dark:text-white text-black font-normal hover:text-darkcyan mt-2"
+                  class="text-sm dark:text-white text-black font-normal hover:text-lightcyan dark:hover:text-lightcyan mt-2"
                 >
                   Discord
                 </p>
               </a>
               <a href="">
                 <p
-                  class="text-sm dark:text-white text-black font-normal hover:text-darkcyan mt-2"
+                  class="text-sm dark:text-white text-black font-normal hover:text-lightcyan dark:hover:text-lightcyan mt-2"
                 >
                   Youtube
                 </p> </a
               ><a href="">
                 <p
-                  class="text-sm dark:text-white text-black font-normal hover:text-darkcyan mt-2"
+                  class="text-sm dark:text-white text-black font-normal hover:text-lightcyan dark:hover:text-lightcyan mt-2"
                 >
                   Medium
                 </p> </a
               ><a href="">
                 <p
-                  class="text-sm dark:text-white text-black font-normal hover:text-darkcyan mt-2"
+                  class="text-sm dark:text-white text-black font-normal hover:text-lightcyan dark:hover:text-lightcyan mt-2"
                 >
                   Spotify
                 </p>
@@ -2542,48 +2533,25 @@
 
               <a href="">
                 <p
-                  class="text-sm dark:text-white text-black font-normal hover:text-darkcyan mt-2"
-                >
-                  Pitch Deck
-                </p>
-              </a>
-              <a href="">
-                <p
-                  class="text-sm dark:text-white text-black font-normal hover:text-darkcyan mt-2"
+                  class="text-sm dark:text-white text-black font-normal hover:text-lightcyan dark:hover:text-lightcyan mt-2"
                 >
                   One-Pager
                 </p> </a
               ><a href="">
                 <p
-                  class="text-sm dark:text-white text-black font-normal hover:text-darkcyan mt-2"
+                  class="text-sm dark:text-white text-black font-normal hover:text-lightcyan dark:hover:text-lightcyan mt-2"
                 >
                   Team
                 </p> </a
               ><a href="">
                 <p
-                  class="text-sm dark:text-white text-black font-normal hover:text-darkcyan mt-2"
+                  class="text-sm dark:text-white text-black font-normal hover:text-lightcyan dark:hover:text-lightcyan mt-2"
                 >
                   Statistics
                 </p>
               </a>
             </div>
-            <div
-              class="mt-8 block xl:inline-block 2xl:mt-0 xl:mt-0 ml-2 xl:ml-10 align-top"
-            >
-              <p
-                class="2xl:text-xl text-transparent bg-clip-text bg-gradient-to-r from-darkcyan to-lightestcyan font-normal text-base"
-              >
-                Products
-              </p>
 
-              <a href="">
-                <p
-                  class="text-sm dark:text-white text-black font-normal hover:text-darkcyan mt-2"
-                >
-                  Refferal Program
-                </p>
-              </a>
-            </div>
             <div
               class="mt-8 block xl:inline-block 2xl:mt-0 xl:mt-0 ml-2 xl:ml-10 align-top"
             >
@@ -2595,22 +2563,36 @@
 
               <a href="">
                 <p
-                  class="text-sm dark:text-white text-black font-normal hover:text-darkcyan mt-2"
+                  class="text-sm dark:text-white text-black font-normal hover:text-lightcyan dark:hover:text-lightcyan mt-2"
                 >
-                  Partnerships
+                  Partnership
+                </p>
+              </a>
+              <a href="https://q1l3w0vzdek.typeform.com/to/GFLNp9Vv">
+                <p
+                  class="text-sm dark:text-white text-black font-normal hover:text-lightcyan dark:hover:text-lightcyan mt-2"
+                >
+                  Join Twitter Spaces
+                </p> </a
+              ><a href="https://q1l3w0vzdek.typeform.com/to/NgF2ZHTs">
+                <p
+                  class="text-sm dark:text-white text-black font-normal hover:text-lightcyan dark:hover:text-lightcyan mt-2"
+                >
+                  Become a client
                 </p>
               </a>
               <a href="">
                 <p
-                  class="text-sm dark:text-white text-black font-normal hover:text-darkcyan mt-2"
+                  class="text-sm dark:text-white text-black font-normal hover:text-lightcyan dark:hover:text-lightcyan mt-2"
                 >
-                  Join Twitter Spaces
-                </p> </a
-              ><a href="">
+                  Join our team
+                </p>
+              </a>
+              <a href="">
                 <p
-                  class="text-sm dark:text-white text-black font-normal hover:text-darkcyan mt-2"
+                  class="text-sm dark:text-white text-black font-normal hover:text-lightcyan dark:hover:text-lightcyan mt-2"
                 >
-                  Become a client
+                  Referral Program
                 </p>
               </a>
             </div>
@@ -2687,7 +2669,6 @@
       var secondSwiper = new Swiper(".mySecondSwiper", {
         spaceBetween: 0,
         centeredSlides: true,
-        slidesPerView: 4,
 
         autoplay: {
           delay: 2500,
