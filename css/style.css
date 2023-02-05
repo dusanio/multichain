@@ -3941,16 +3941,12 @@ svg {
   border-color: var(--lightestcyan);
 }
 
-.hover\:text-darkcyan:hover {
-  color: var(--darkcyan);
+.hover\:text-lightcyan:hover {
+  color: var(--lightcyan);
 }
 
 .hover\:text-lightestcyan:hover {
   color: var(--lightestcyan);
-}
-
-.hover\:text-lightcyan:hover {
-  color: var(--lightcyan);
 }
 
 .hover\:opacity-70:hover {
