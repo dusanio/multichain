@@ -1969,6 +1969,16 @@ html {
   line-height: 1.5rem;
 }
 
+.btn.glass:hover,
+    .btn.glass.btn-active {
+  --glass-opacity: 25%;
+  --glass-border-opacity: 15%;
+}
+
+.btn.glass:focus-visible {
+  outline: 2px solid currentColor;
+}
+
 @-webkit-keyframes button-pop {
   0% {
     transform: scale(var(--btn-focus-scale, 0.95));
@@ -2067,6 +2077,10 @@ body[dir="rtl"] .checkbox:checked,
     body[dir="rtl"] .checkbox[checked="true"],
     body[dir="rtl"] .checkbox[aria-checked=true] {
   background-image: linear-gradient(45deg, transparent 65%, hsl(var(--chkbg)) 65.99%), linear-gradient(-45deg, transparent 75%, hsl(var(--chkbg)) 75.99%), linear-gradient(45deg, hsl(var(--chkbg)) 40%, transparent 40.99%), linear-gradient(-45deg, hsl(var(--chkbg)) 30%, hsl(var(--chkfg)) 30.99%, hsl(var(--chkfg)) 40%, transparent 40.99%), linear-gradient(45deg, hsl(var(--chkfg)) 50%, hsl(var(--chkbg)) 50.99%);
+}
+
+.drawer-toggle:focus-visible ~ .drawer-content .drawer-button.glass {
+  outline: 2px solid currentColor;
 }
 
 .label a:hover {
@@ -2618,6 +2632,29 @@ body[dir="rtl"] .checkbox:checked,
   }
 }
 
+.glass,
+  .glass:hover,
+  .glass.btn-active {
+  border: none;
+  -webkit-backdrop-filter: blur(var(--glass-blur, 40px));
+  backdrop-filter: blur(var(--glass-blur, 40px));
+  background-color: transparent;
+  background-image: linear-gradient(
+        135deg,
+        rgb(255 255 255 / var(--glass-opacity, 30%)) 0%,
+        rgb(0 0 0 / 0%) 100%
+      ),
+      linear-gradient(
+        var(--glass-reflex-degree, 100deg),
+        rgb(255 255 255 / var(--glass-reflex-opacity, 10%)) 25%,
+        rgb(0 0 0 / 0%) 25%
+      );
+  box-shadow: 0 0 0 1px rgb(255 255 255 / var(--glass-border-opacity, 10%))
+        inset,
+      0 0 0 2px rgb(0 0 0 / 5%);
+  text-shadow: 0 1px rgb(0 0 0 / var(--glass-text-shadow-opacity, 5%));
+}
+
 .artboard.phone-1.horizontal,
       .artboard.phone-1.artboard-horizontal {
   width: 568px;
@@ -2737,6 +2774,10 @@ body[dir="rtl"] .checkbox:checked,
   left: 0px;
 }
 
+.bottom-0 {
+  bottom: 0px;
+}
+
 .z-50 {
   z-index: 50;
 }
@@ -2755,6 +2796,34 @@ body[dir="rtl"] .checkbox:checked,
 
 .col-span-2 {
   grid-column: span 2 / span 2;
+}
+
+.col-span-1 {
+  grid-column: span 1 / span 1;
+}
+
+.row-span-2 {
+  grid-row: span 2 / span 2;
+}
+
+.row-span-3 {
+  grid-row: span 3 / span 3;
+}
+
+.row-span-4 {
+  grid-row: span 4 / span 4;
+}
+
+.row-span-5 {
+  grid-row: span 5 / span 5;
+}
+
+.row-span-6 {
+  grid-row: span 6 / span 6;
+}
+
+.row-span-1 {
+  grid-row: span 1 / span 1;
 }
 
 .float-right {
@@ -2917,6 +2986,10 @@ body[dir="rtl"] .checkbox:checked,
   margin-left: 5rem;
 }
 
+.mb-20 {
+  margin-bottom: 5rem;
+}
+
 .block {
   display: block;
 }
@@ -3039,6 +3112,10 @@ body[dir="rtl"] .checkbox:checked,
   height: 100vh;
 }
 
+.h-14 {
+  height: 3.5rem;
+}
+
 .w-\[70px\] {
   width: 70px;
 }
@@ -3121,6 +3198,10 @@ body[dir="rtl"] .checkbox:checked,
   width: 330px;
 }
 
+.w-\[320px\] {
+  width: 320px;
+}
+
 .max-w-\[1140px\] {
   max-width: 1140px;
 }
@@ -3167,6 +3248,10 @@ body[dir="rtl"] .checkbox:checked,
 
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .grid-rows-1 {
@@ -3217,6 +3302,26 @@ body[dir="rtl"] .checkbox:checked,
   gap: 2.5rem;
 }
 
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.gap-5 {
+  gap: 1.25rem;
+}
+
+.gap-1 {
+  gap: 0.25rem;
+}
+
+.gap-3 {
+  gap: 0.75rem;
+}
+
 .scroll-smooth {
   scroll-behavior: smooth;
 }
@@ -3239,6 +3344,14 @@ body[dir="rtl"] .checkbox:checked,
 
 .rounded-\[20px\] {
   border-radius: 20px;
+}
+
+.rounded {
+  border-radius: 0.25rem;
+}
+
+.rounded-2xl {
+  border-radius: 1rem;
 }
 
 .border {
@@ -3292,11 +3405,6 @@ body[dir="rtl"] .checkbox:checked,
   border-color: var(--lightestcyan);
 }
 
-.border-white {
-  --tw-border-opacity: 1;
-  border-color: rgb(255 255 255 / var(--tw-border-opacity));
-}
-
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -3319,6 +3427,15 @@ body[dir="rtl"] .checkbox:checked,
 .bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.bg-primary {
+  --tw-bg-opacity: 1;
+  background-color: hsl(var(--p) / var(--tw-bg-opacity));
+}
+
+.bg-darkgray {
+  background-color: var(--darkgray);
 }
 
 .bg-gradient-to-r {
@@ -3384,6 +3501,10 @@ body[dir="rtl"] .checkbox:checked,
 
 .p-10 {
   padding: 2.5rem;
+}
+
+.p-8 {
+  padding: 2rem;
 }
 
 .py-4 {
@@ -3519,6 +3640,22 @@ body[dir="rtl"] .checkbox:checked,
   padding-right: 2rem;
 }
 
+.pt-12 {
+  padding-top: 3rem;
+}
+
+.pt-\[120px\] {
+  padding-top: 120px;
+}
+
+.pt-3 {
+  padding-top: 0.75rem;
+}
+
+.pb-3 {
+  padding-bottom: 0.75rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -3589,6 +3726,26 @@ body[dir="rtl"] .checkbox:checked,
   font-size: 25px;
 }
 
+.text-\[4px\] {
+  font-size: 4px;
+}
+
+.text-\[20px\] {
+  font-size: 20px;
+}
+
+.text-\[10px\] {
+  font-size: 10px;
+}
+
+.text-\[12px\] {
+  font-size: 12px;
+}
+
+.text-\[11px\] {
+  font-size: 11px;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -3601,10 +3758,6 @@ body[dir="rtl"] .checkbox:checked,
   font-weight: 600;
 }
 
-.font-black {
-  font-weight: 900;
-}
-
 .leading-snug {
   line-height: 1.375;
 }
@@ -3615,6 +3768,14 @@ body[dir="rtl"] .checkbox:checked,
 
 .leading-\[18px\] {
   line-height: 18px;
+}
+
+.leading-\[10px\] {
+  line-height: 10px;
+}
+
+.leading-6 {
+  line-height: 1.5rem;
 }
 
 .text-black {
@@ -3644,6 +3805,11 @@ body[dir="rtl"] .checkbox:checked,
   color: rgb(70 221 236 / var(--tw-text-opacity));
 }
 
+.text-primary {
+  --tw-text-opacity: 1;
+  color: hsl(var(--p) / var(--tw-text-opacity));
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -3669,6 +3835,14 @@ body[dir="rtl"] .checkbox:checked,
   --tw-shadow: 0px -330px 70px 0px rgba(24,162,217,1);
   --tw-shadow-colored: 0px -330px 70px 0px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.duration-100 {
+  transition-duration: 100ms;
+}
+
+.duration-150 {
+  transition-duration: 150ms;
 }
 
 :root {
@@ -3929,16 +4103,26 @@ svg {
   }
 }
 
+.hover\:scale-105:hover {
+  --tw-scale-x: 1.05;
+  --tw-scale-y: 1.05;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.hover\:scale-110:hover {
+  --tw-scale-x: 1.1;
+  --tw-scale-y: 1.1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.hover\:scale-90:hover {
+  --tw-scale-x: .9;
+  --tw-scale-y: .9;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .hover\:cursor-pointer:hover {
   cursor: pointer;
-}
-
-.hover\:border-solid:hover {
-  border-style: solid;
-}
-
-.hover\:border-lightestcyan:hover {
-  border-color: var(--lightestcyan);
 }
 
 .hover\:text-lightcyan:hover {
@@ -3947,6 +4131,11 @@ svg {
 
 .hover\:text-lightestcyan:hover {
   color: var(--lightestcyan);
+}
+
+.hover\:text-primary:hover {
+  --tw-text-opacity: 1;
+  color: hsl(var(--p) / var(--tw-text-opacity));
 }
 
 .hover\:opacity-70:hover {
@@ -4102,6 +4291,10 @@ svg {
     margin-top: 2.5rem;
   }
 
+  .md\:mr-auto {
+    margin-right: auto;
+  }
+
   .md\:block {
     display: block;
   }
@@ -4184,6 +4377,10 @@ svg {
 
   .md\:w-\[376px\] {
     width: 376px;
+  }
+
+  .md\:w-\[650px\] {
+    width: 650px;
   }
 
   .md\:max-w-\[700px\] {
@@ -4385,6 +4582,10 @@ svg {
     margin-right: 0px;
   }
 
+  .lg\:ml-6 {
+    margin-left: 1.5rem;
+  }
+
   .lg\:block {
     display: block;
   }
@@ -4395,6 +4596,10 @@ svg {
 
   .lg\:flex {
     display: flex;
+  }
+
+  .lg\:grid {
+    display: grid;
   }
 
   .lg\:hidden {
@@ -4475,6 +4680,10 @@ svg {
 
   .lg\:w-\[200px\] {
     width: 200px;
+  }
+
+  .lg\:w-\[900px\] {
+    width: 900px;
   }
 
   .lg\:max-w-\[950px\] {
@@ -4778,20 +4987,12 @@ svg {
     margin-top: 25px;
   }
 
-  .xl\:ml-14 {
-    margin-left: 3.5rem;
+  .xl\:ml-8 {
+    margin-left: 2rem;
   }
 
   .xl\:inline-block {
     display: inline-block;
-  }
-
-  .xl\:flex {
-    display: flex;
-  }
-
-  .xl\:hidden {
-    display: none;
   }
 
   .xl\:h-\[164px\] {
@@ -4900,6 +5101,10 @@ svg {
 
   .xl\:w-\[376px\] {
     width: 376px;
+  }
+
+  .xl\:w-\[1140px\] {
+    width: 1140px;
   }
 
   .xl\:max-w-\[1240px\] {
@@ -5028,6 +5233,11 @@ svg {
     font-size: 20px;
   }
 
+  .xl\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
   .xl\:leading-snug {
     line-height: 1.375;
   }
@@ -5086,10 +5296,6 @@ svg {
     margin-top: 100px;
   }
 
-  .\32xl\:ml-\[300px\] {
-    margin-left: 300px;
-  }
-
   .\32xl\:h-\[450px\] {
     height: 450px;
   }
@@ -5100,10 +5306,6 @@ svg {
 
   .\32xl\:h-\[400px\] {
     height: 400px;
-  }
-
-  .\32xl\:h-\[180px\] {
-    height: 180px;
   }
 
   .\32xl\:w-\[600px\] {
@@ -5130,10 +5332,6 @@ svg {
     width: 700px;
   }
 
-  .\32xl\:w-\[500px\] {
-    width: 500px;
-  }
-
   .\32xl\:max-w-\[500px\] {
     max-width: 500px;
   }
@@ -5149,11 +5347,6 @@ svg {
   .\32xl\:py-4 {
     padding-top: 1rem;
     padding-bottom: 1rem;
-  }
-
-  .\32xl\:px-5 {
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
   }
 
   .\32xl\:px-8 {
@@ -5179,18 +5372,6 @@ svg {
 
   .\32xl\:pt-6 {
     padding-top: 1.5rem;
-  }
-
-  .\32xl\:pb-6 {
-    padding-bottom: 1.5rem;
-  }
-
-  .\32xl\:pl-8 {
-    padding-left: 2rem;
-  }
-
-  .\32xl\:pr-8 {
-    padding-right: 2rem;
   }
 
   .\32xl\:text-xl {
@@ -5225,14 +5406,14 @@ svg {
     line-height: 2.25rem;
   }
 
-  .\32xl\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-
   .\32xl\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
+  }
+
+  .\32xl\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 
   .\32xl\:leading-snug {
