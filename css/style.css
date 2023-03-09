@@ -2806,6 +2806,14 @@ body[dir="rtl"] .checkbox:checked,
   left: 0px;
 }
 
+.left-10 {
+  left: 2.5rem;
+}
+
+.left-4 {
+  left: 1rem;
+}
+
 .z-50 {
   z-index: 50;
 }
@@ -3298,6 +3306,10 @@ body[dir="rtl"] .checkbox:checked,
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.list-decimal {
+  list-style-type: decimal;
+}
+
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
@@ -3704,6 +3716,10 @@ body[dir="rtl"] .checkbox:checked,
 
 .pt-28 {
   padding-top: 7rem;
+}
+
+.text-left {
+  text-align: left;
 }
 
 .text-center {
@@ -4510,6 +4526,10 @@ svg {
     max-width: 300px;
   }
 
+  .md\:max-w-\[400px\] {
+    max-width: 400px;
+  }
+
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -4600,6 +4620,11 @@ svg {
 
   .md\:text-\[30px\] {
     font-size: 30px;
+  }
+
+  .md\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 }
 
@@ -4878,6 +4903,10 @@ svg {
 
   .lg\:max-w-\[400px\] {
     max-width: 400px;
+  }
+
+  .lg\:max-w-\[800px\] {
+    max-width: 800px;
   }
 
   .lg\:translate-x-2\/4 {
@@ -5355,6 +5384,10 @@ svg {
 
   .xl\:max-w-\[600px\] {
     max-width: 600px;
+  }
+
+  .xl\:max-w-\[900px\] {
+    max-width: 900px;
   }
 
   .xl\:grid-cols-4 {
