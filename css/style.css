@@ -2786,6 +2786,10 @@ body[dir="rtl"] .checkbox:checked,
   margin-left: 50%;
 }
 
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
 }
@@ -2806,10 +2810,6 @@ body[dir="rtl"] .checkbox:checked,
   left: 0px;
 }
 
-.left-10 {
-  left: 2.5rem;
-}
-
 .left-4 {
   left: 1rem;
 }
@@ -2828,6 +2828,10 @@ body[dir="rtl"] .checkbox:checked,
 
 .z-0 {
   z-index: 0;
+}
+
+.z-\[250\] {
+  z-index: 250;
 }
 
 .col-span-2 {
@@ -2998,8 +3002,8 @@ body[dir="rtl"] .checkbox:checked,
   margin-left: 1.5rem;
 }
 
-.ml-\[152px\] {
-  margin-left: 152px;
+.ml-\[145px\] {
+  margin-left: 145px;
 }
 
 .ml-\[95px\] {
@@ -3016,18 +3020,6 @@ body[dir="rtl"] .checkbox:checked,
 
 .ml-20 {
   margin-left: 5rem;
-}
-
-.ml-\[150px\] {
-  margin-left: 150px;
-}
-
-.ml-\[148px\] {
-  margin-left: 148px;
-}
-
-.ml-\[145px\] {
-  margin-left: 145px;
 }
 
 .block {
@@ -3088,6 +3080,10 @@ body[dir="rtl"] .checkbox:checked,
 
 .h-\[50px\] {
   height: 50px;
+}
+
+.h-2 {
+  height: 0.5rem;
 }
 
 .h-\[360px\] {
@@ -3200,6 +3196,10 @@ body[dir="rtl"] .checkbox:checked,
 
 .w-\[300px\] {
   width: 300px;
+}
+
+.w-\[0\%\] {
+  width: 0%;
 }
 
 .w-\[65px\] {
@@ -3481,6 +3481,10 @@ body[dir="rtl"] .checkbox:checked,
   background-color: transparent;
 }
 
+.bg-darkcyan {
+  background-color: var(--darkcyan);
+}
+
 .bg-\[\#45ddeb\] {
   --tw-bg-opacity: 1;
   background-color: rgb(69 221 235 / var(--tw-bg-opacity));
@@ -3489,6 +3493,10 @@ body[dir="rtl"] .checkbox:checked,
 .bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.bg-lightgray {
+  background-color: var(--lightgray);
 }
 
 .bg-gradient-to-r {
@@ -3718,10 +3726,6 @@ body[dir="rtl"] .checkbox:checked,
   padding-top: 7rem;
 }
 
-.text-left {
-  text-align: left;
-}
-
 .text-center {
   text-align: center;
 }
@@ -3860,9 +3864,8 @@ body[dir="rtl"] .checkbox:checked,
   color: rgb(70 221 236 / var(--tw-text-opacity));
 }
 
-.text-gray-300 {
-  --tw-text-opacity: 1;
-  color: rgb(209 213 219 / var(--tw-text-opacity));
+.text-lightestcyan {
+  color: var(--lightestcyan);
 }
 
 .opacity-100 {
@@ -3975,19 +3978,11 @@ video {
 }
 
 .bgdarklight-right {
-  background: linear-gradient(
-    134.08deg,
-    rgba(217, 217, 217, 0.64) -34.85%,
-    rgba(217, 217, 217, 0) 102.07%
-  );
+  background: linear-gradient(134.08deg, rgba(217, 217, 217, 0.64) -34.85%, rgba(217, 217, 217, 0) 102.07%);
 }
 
 .bgdarklight-left {
-  background: linear-gradient(
-    268.17deg,
-    rgba(217, 217, 217, 0.64) -34.85%,
-    rgba(217, 217, 217, 0) 102.07%
-  );
+  background: linear-gradient(268.17deg, rgba(217, 217, 217, 0.64) -34.85%, rgba(217, 217, 217, 0) 102.07%);
 }
 
 .card-body {
@@ -4010,10 +4005,10 @@ video {
   opacity: 1;
 }
 
-input[type="text"],
-input[type="number"],
-input[type="email"],
-input[type="url"] {
+input[type='text'],
+input[type='number'],
+input[type='email'],
+input[type='url'] {
   background: transparent !important;
   border: none !important;
   border-bottom: 1px solid #000000 !important;
@@ -4125,13 +4120,6 @@ svg {
   display: block;
 }
 
-.blob {
-  border-top-left-radius: 90px 70px;
-  border-top-right-radius: 120px 90px;
-  border-bottom-right-radius: 90px 90px;
-  border-bottom-left-radius: 200px 110px;
-}
-
 .object {
   -webkit-animation: MoveUpDown 4s linear infinite;
           animation: MoveUpDown 4s linear infinite;
@@ -4234,11 +4222,6 @@ svg {
   color: rgb(1 164 161 / var(--tw-text-opacity));
 }
 
-.dark .dark\:text-gray-300 {
-  --tw-text-opacity: 1;
-  color: rgb(209 213 219 / var(--tw-text-opacity));
-}
-
 .dark .dark\:hover\:text-lightcyan:hover {
   color: var(--lightcyan);
 }
@@ -4314,8 +4297,8 @@ svg {
     margin-top: 3rem;
   }
 
-  .md\:ml-24 {
-    margin-left: 6rem;
+  .md\:ml-\[120px\] {
+    margin-left: 120px;
   }
 
   .md\:ml-4 {
@@ -4326,92 +4309,16 @@ svg {
     margin-top: 0.5rem;
   }
 
-  .md\:ml-\[147px\] {
-    margin-left: 147px;
-  }
-
-  .md\:ml-\[72px\] {
-    margin-left: 72px;
-  }
-
-  .md\:ml-\[120px\] {
-    margin-left: 120px;
-  }
-
-  .md\:ml-\[55px\] {
-    margin-left: 55px;
-  }
-
-  .md\:ml-\[94px\] {
-    margin-left: 94px;
-  }
-
-  .md\:mt-10 {
-    margin-top: 2.5rem;
+  .md\:ml-\[162px\] {
+    margin-left: 162px;
   }
 
   .md\:ml-\[80px\] {
     margin-left: 80px;
   }
 
-  .md\:ml-\[152px\] {
-    margin-left: 152px;
-  }
-
-  .md\:ml-\[156px\] {
-    margin-left: 156px;
-  }
-
-  .md\:ml-\[160px\] {
-    margin-left: 160px;
-  }
-
-  .md\:ml-\[162px\] {
-    margin-left: 162px;
-  }
-
-  .md\:ml-32 {
-    margin-left: 8rem;
-  }
-
-  .md\:ml-28 {
-    margin-left: 7rem;
-  }
-
-  .md\:ml-\[120\] {
-    margin-left: 120;
-  }
-
-  .md\:ml-\[114\] {
-    margin-left: 114;
-  }
-
-  .md\:ml-\[110px\] {
-    margin-left: 110px;
-  }
-
-  .md\:ml-\[113px\] {
-    margin-left: 113px;
-  }
-
-  .md\:ml-\[116px\] {
-    margin-left: 116px;
-  }
-
-  .md\:ml-\[124px\] {
-    margin-left: 124px;
-  }
-
   .md\:ml-\[130px\] {
     margin-left: 130px;
-  }
-
-  .md\:ml-\[70px\] {
-    margin-left: 70px;
-  }
-
-  .md\:ml-\[84px\] {
-    margin-left: 84px;
   }
 
   .md\:ml-\[82px\] {
@@ -4422,12 +4329,8 @@ svg {
     margin-left: 114px;
   }
 
-  .md\:mt-20 {
-    margin-top: 5rem;
-  }
-
-  .md\:block {
-    display: block;
+  .md\:mt-10 {
+    margin-top: 2.5rem;
   }
 
   .md\:inline-block {
@@ -4524,10 +4427,6 @@ svg {
 
   .md\:max-w-\[300px\] {
     max-width: 300px;
-  }
-
-  .md\:max-w-\[400px\] {
-    max-width: 400px;
   }
 
   .md\:grid-cols-2 {
@@ -4689,12 +4588,12 @@ svg {
     margin-left: 3.5rem;
   }
 
-  .lg\:ml-10 {
-    margin-left: 2.5rem;
-  }
-
   .lg\:ml-52 {
     margin-left: 13rem;
+  }
+
+  .lg\:ml-10 {
+    margin-left: 2.5rem;
   }
 
   .lg\:ml-\[250px\] {
@@ -4713,72 +4612,28 @@ svg {
     margin-left: 65px;
   }
 
-  .lg\:ml-\[225px\] {
-    margin-left: 225px;
+  .lg\:ml-\[217px\] {
+    margin-left: 217px;
   }
 
   .lg\:ml-\[170px\] {
     margin-left: 170px;
   }
 
-  .lg\:mt-4 {
-    margin-top: 1rem;
+  .lg\:mt-\[30px\] {
+    margin-top: 30px;
   }
 
   .lg\:ml-\[200px\] {
     margin-left: 200px;
   }
 
+  .lg\:mt-4 {
+    margin-top: 1rem;
+  }
+
   .lg\:mr-0 {
     margin-right: 0px;
-  }
-
-  .lg\:ml-\[220px\] {
-    margin-left: 220px;
-  }
-
-  .lg\:ml-\[217px\] {
-    margin-left: 217px;
-  }
-
-  .lg\:mt-10 {
-    margin-top: 2.5rem;
-  }
-
-  .lg\:mt-\[170px\] {
-    margin-top: 170px;
-  }
-
-  .lg\:mt-\[140px\] {
-    margin-top: 140px;
-  }
-
-  .lg\:mt-\[60px\] {
-    margin-top: 60px;
-  }
-
-  .lg\:mt-\[20px\] {
-    margin-top: 20px;
-  }
-
-  .lg\:mt-\[82px\] {
-    margin-top: 82px;
-  }
-
-  .lg\:mt-\[22px\] {
-    margin-top: 22px;
-  }
-
-  .lg\:mt-\[24px\] {
-    margin-top: 24px;
-  }
-
-  .lg\:mt-\[28px\] {
-    margin-top: 28px;
-  }
-
-  .lg\:mt-\[30px\] {
-    margin-top: 30px;
   }
 
   .lg\:block {
@@ -5067,14 +4922,6 @@ svg {
   .lg\:leading-snug {
     line-height: 1.375;
   }
-
-  .lg\:text-lightcyan {
-    color: var(--lightcyan);
-  }
-
-  .dark .lg\:dark\:text-lightcyan {
-    color: var(--lightcyan);
-  }
 }
 
 @media (min-width: 1280px) {
@@ -5166,8 +5013,8 @@ svg {
     margin-top: 7rem;
   }
 
-  .xl\:mr-0 {
-    margin-right: 0px;
+  .xl\:mt-24 {
+    margin-top: 6rem;
   }
 
   .xl\:ml-64 {
@@ -5186,8 +5033,8 @@ svg {
     margin-left: 70px;
   }
 
-  .xl\:ml-\[275px\] {
-    margin-left: 275px;
+  .xl\:ml-\[267px\] {
+    margin-left: 267px;
   }
 
   .xl\:ml-\[208px\] {
@@ -5208,26 +5055,6 @@ svg {
 
   .xl\:mt-\[25px\] {
     margin-top: 25px;
-  }
-
-  .xl\:ml-\[270px\] {
-    margin-left: 270px;
-  }
-
-  .xl\:ml-\[265px\] {
-    margin-left: 265px;
-  }
-
-  .xl\:ml-\[267px\] {
-    margin-left: 267px;
-  }
-
-  .xl\:mt-24 {
-    margin-top: 6rem;
-  }
-
-  .xl\:mt-6 {
-    margin-top: 1.5rem;
   }
 
   .xl\:inline-block {
@@ -5398,10 +5225,6 @@ svg {
     justify-content: center;
   }
 
-  .xl\:gap-20 {
-    gap: 5rem;
-  }
-
   .xl\:rounded-l-lg {
     border-top-left-radius: 0.5rem;
     border-bottom-left-radius: 0.5rem;
@@ -5472,14 +5295,6 @@ svg {
     padding-bottom: 148px;
   }
 
-  .xl\:pt-4 {
-    padding-top: 1rem;
-  }
-
-  .xl\:pt-24 {
-    padding-top: 6rem;
-  }
-
   .xl\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
@@ -5534,14 +5349,6 @@ svg {
   .xl\:leading-snug {
     line-height: 1.375;
   }
-
-  .xl\:text-lightcyan {
-    color: var(--lightcyan);
-  }
-
-  .dark .xl\:dark\:text-lightcyan {
-    color: var(--lightcyan);
-  }
 }
 
 @media (min-width: 1536px) {
@@ -5583,14 +5390,6 @@ svg {
 
   .\32xl\:mt-\[100px\] {
     margin-top: 100px;
-  }
-
-  .\32xl\:ml-auto {
-    margin-left: auto;
-  }
-
-  .\32xl\:mr-auto {
-    margin-right: auto;
   }
 
   .\32xl\:h-\[450px\] {

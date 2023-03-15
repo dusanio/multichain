@@ -62,19 +62,11 @@ video {
 }
 
 .bgdarklight-right {
-  background: linear-gradient(
-    134.08deg,
-    rgba(217, 217, 217, 0.64) -34.85%,
-    rgba(217, 217, 217, 0) 102.07%
-  );
+  background: linear-gradient(134.08deg, rgba(217, 217, 217, 0.64) -34.85%, rgba(217, 217, 217, 0) 102.07%);
 }
 
 .bgdarklight-left {
-  background: linear-gradient(
-    268.17deg,
-    rgba(217, 217, 217, 0.64) -34.85%,
-    rgba(217, 217, 217, 0) 102.07%
-  );
+  background: linear-gradient(268.17deg, rgba(217, 217, 217, 0.64) -34.85%, rgba(217, 217, 217, 0) 102.07%);
 }
 
 .card-body {
@@ -97,10 +89,10 @@ video {
   opacity: 1;
 }
 
-input[type="text"],
-input[type="number"],
-input[type="email"],
-input[type="url"] {
+input[type='text'],
+input[type='number'],
+input[type='email'],
+input[type='url'] {
   background: transparent !important;
   border: none !important;
   border-bottom: 1px solid #000000 !important;
@@ -205,13 +197,6 @@ svg {
 }
 .list .team-card:nth-child(2) {
   display: block;
-}
-
-.blob {
-  border-top-left-radius: 90px 70px;
-  border-top-right-radius: 120px 90px;
-  border-bottom-right-radius: 90px 90px;
-  border-bottom-left-radius: 200px 110px;
 }
 
 .object {
