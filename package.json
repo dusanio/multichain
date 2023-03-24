@@ -22,6 +22,7 @@
   },
   "dependencies": {
     "daisyui": "^2.24.0",
-    "flowbite": "^1.6.3"
+    "flowbite": "^1.6.3",
+    "jquery": "^3.6.4"
   }
 }

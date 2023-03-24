@@ -88,17 +88,17 @@
         id="mobile-menu"
       >
         <div class="mb-8">
-          <p class="text-sm dark:text-white text-black font-bold font-bold hover:text-lightcyan dark:hover:text-lightcyan">
+          <p class="text-sm dark:text-white text-black font-bold hover:text-lightcyan dark:hover:text-lightcyan">
             <a href="case-studies.html">Case Studies</a>
           </p>
         </div>
         <div class="mb-8">
-          <p class="text-sm dark:text-white text-black font-bold font-bold hover:text-lightcyan dark:hover:text-lightcyan">
+          <p class="text-sm dark:text-white text-black font-bold hover:text-lightcyan dark:hover:text-lightcyan">
             <a href="methodology.html"> Our Methodology </a>
           </p>
         </div>
         <div class="mb-8">
-          <p class="text-sm dark:text-white text-black font-bold font-bold hover:text-lightcyan dark:hover:text-lightcyan">
+          <p class="text-sm dark:text-white text-black font-bold hover:text-lightcyan dark:hover:text-lightcyan">
             <a
               href="https://twitter.com/MultiChainInc"
               target="_blank"
@@ -107,7 +107,7 @@
           </p>
         </div>
         <div class="pb-[410px]">
-          <p class="text-sm dark:text-white text-black font-bold font-bold hover:text-lightcyan dark:hover:text-lightcyan">
+          <p class="text-sm dark:text-white text-black font-bold hover:text-lightcyan dark:hover:text-lightcyan">
             <a
               href="https://discord.gg/Arf4MQSgzx"
               target="_blank"
@@ -258,6 +258,15 @@
               <h3 class="dark:text-white text-black text-lg font-bold lg:ml-6 xl:ml-8 mt-6 text-darkcyan">Discord Community Growth</h3>
               <h1 class="dark:text-white text-black text-3xl xl:text-4xl font-bold lg:ml-6 xl:ml-8 text-center pt-2 mb-6 lg:mb-0">160K+</h1>
             </div>
+          </div>
+          <div class="ml-auto border-4 rounded-2xl border-double border-darkcyan mr-auto mt-40 w-[350px] md:w-[600px] lg:w-[800px] xl:w-[1000px]">
+            <video
+              muted
+              autoplay
+              class="rounded-lg"
+            >
+              <source src="images/MULTICHAIN_ADVISORS.mp4" />
+            </video>
           </div>
         </div>
         <div class="-translate-y-3/4 -z-4 absolute">
@@ -845,7 +854,7 @@
               <div class="hidden lg:inline-block">
                 <img
                   src="images/branding.png"
-                  class="xl:w-[450px] xl:h-[414px] lg:w-[400px] xl:h-[320px] 2xl:w-[450px] 2xl:h-[350px]"
+                  class="xl:w-[450px] xl:h-[414px] lg:w-[400px] 2xl:w-[450px] 2xl:h-[350px]"
                 />
               </div>
             </div>
@@ -920,7 +929,7 @@
                   class="xl:w-[564px] xl:h-[410px] lg:w-[400px] lg:h-[300px] 2xl:w-[450px] 2xl:h-[350px]"
                 />
               </div>
-              <div class="inline-block align-top ml-8 xl:ml-10 xl:ml-20">
+              <div class="inline-block align-top ml-8 xl:ml-10">
                 <p class="xl:ml-0 font-bold text-2xl xl:text-[40px] dark:text-white text-black mt-4 2xl:text-[40px] leading-normal">
                   Capital Raise Advisory
                 </p>
@@ -973,7 +982,7 @@
               <a href="contact.html"
                 ><button
                   type="button"
-                  class="dark:text-white text-black bg-gradient-to-r from-darkcyan to-lightestcyan text-lg border border-solid dark:border-white border-black hover:opacity-70 hover:scale-110 duration-150 font-semibold rounded-lg text-sm px-5 py-2.5 2xl:py-4 2xl:px-8 text-center mr-3 md:mr-0"
+                  class="dark:text-white text-black bg-gradient-to-r from-darkcyan to-lightestcyan text-lg border border-solid dark:border-white border-black hover:opacity-70 hover:scale-110 duration-150 font-semibold rounded-lg px-5 py-2.5 2xl:py-4 2xl:px-8 text-center mr-3 md:mr-0"
                 >
                   Let's Connect
                 </button></a
@@ -2228,14 +2237,19 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script>
       var secondSwiper = new Swiper('.mySecondSwiper', {
+        loop: true,
+        freeMode: true,
         spaceBetween: 0,
-        centeredSlides: true,
-        noSwiping: true,
-        noSwipingClass: 'swiper-slide',
+        grabCursor: true,
+        slidesPerView: 7,
+        loop: true,
         autoplay: {
-          delay: 2500,
+          delay: 1,
           disableOnInteraction: true,
         },
+        freeMode: true,
+        speed: 5000,
+        freeModeMomentum: false,
         breakpoints: {
           320: {
             slidesPerView: 1,
@@ -2249,15 +2263,19 @@
     </script>
     <script>
       const swiper = new Swiper('.swiper', {
-        // Optional parameters
         loop: true,
-        direction: 'horizontal',
-        noSwiping: true,
-        noSwipingClass: 'swiper-slide',
-
-        // If we need pagination
-
-        // Navigation arrows
+        freeMode: true,
+        spaceBetween: 0,
+        grabCursor: true,
+        slidesPerView: 7,
+        loop: true,
+        autoplay: {
+          delay: 1,
+          disableOnInteraction: true,
+        },
+        freeMode: true,
+        speed: 5000,
+        freeModeMomentum: false,
         navigation: {
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev',

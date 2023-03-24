@@ -14,11 +14,6 @@
   --background-lighter: #191a1e;
 }
 
-video {
-  object-fit: fill;
-  z-index: 2147483647;
-}
-
 #clients {
   width: 300%;
   overflow: hidden;
