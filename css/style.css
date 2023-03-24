@@ -3556,6 +3556,14 @@ body[dir="rtl"] .checkbox:checked,
   transition-duration: 100ms;
 }
 
+.duration-300 {
+  transition-duration: 300ms;
+}
+
+.duration-200 {
+  transition-duration: 200ms;
+}
+
 :root {
   --darkcyan: #128dba;
   --lightcyan: #01a4a1;
