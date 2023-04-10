@@ -2703,6 +2703,11 @@ body[dir="rtl"] .checkbox:checked,
   float: right;
 }
 
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .ml-4 {
   margin-left: 1rem;
 }
@@ -2933,12 +2938,12 @@ body[dir="rtl"] .checkbox:checked,
   height: 3.5rem;
 }
 
-.h-28 {
-  height: 7rem;
-}
-
 .h-48 {
   height: 12rem;
+}
+
+.h-28 {
+  height: 7rem;
 }
 
 .w-\[70px\] {
@@ -2965,6 +2970,10 @@ body[dir="rtl"] .checkbox:checked,
 
 .w-\[300px\] {
   width: 300px;
+}
+
+.w-28 {
+  width: 7rem;
 }
 
 .w-\[350px\] {
@@ -3050,12 +3059,12 @@ body[dir="rtl"] .checkbox:checked,
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.list-disc {
-  list-style-type: disc;
-}
-
 .list-decimal {
   list-style-type: decimal;
+}
+
+.list-disc {
+  list-style-type: disc;
 }
 
 .grid-cols-1 {
@@ -3193,16 +3202,12 @@ body[dir="rtl"] .checkbox:checked,
   background-color: rgb(230 230 230 / var(--tw-bg-opacity));
 }
 
-.bg-lightgray {
-  background-color: var(--lightgray);
+.bg-lightcyan {
+  background-color: var(--lightcyan);
 }
 
 .bg-transparent {
   background-color: transparent;
-}
-
-.bg-lightcyan {
-  background-color: var(--lightcyan);
 }
 
 .bg-gradient-to-r {
@@ -3391,16 +3396,16 @@ body[dir="rtl"] .checkbox:checked,
   padding-left: 0.5rem;
 }
 
+.pt-28 {
+  padding-top: 7rem;
+}
+
 .pl-8 {
   padding-left: 2rem;
 }
 
 .pr-8 {
   padding-right: 2rem;
-}
-
-.pt-28 {
-  padding-top: 7rem;
 }
 
 .text-center {
@@ -3528,17 +3533,13 @@ body[dir="rtl"] .checkbox:checked,
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-darkcyan {
-  color: var(--darkcyan);
+.text-\[\#46ddec\] {
+  --tw-text-opacity: 1;
+  color: rgb(70 221 236 / var(--tw-text-opacity));
 }
 
 .text-lightcyan {
   color: var(--lightcyan);
-}
-
-.text-\[\#46ddec\] {
-  --tw-text-opacity: 1;
-  color: rgb(70 221 236 / var(--tw-text-opacity));
 }
 
 .text-lightestcyan {
@@ -3554,6 +3555,21 @@ body[dir="rtl"] .checkbox:checked,
 .shadow-lightcyan {
   --tw-shadow-color: var(--lightcyan);
   --tw-shadow: var(--tw-shadow-colored);
+}
+
+.invert {
+  --tw-invert: invert(100%);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.saturate-200 {
+  --tw-saturate: saturate(2);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.sepia {
+  --tw-sepia: sepia(100%);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 .transition {
@@ -3833,10 +3849,6 @@ svg {
   color: var(--lightestcyan);
 }
 
-.hover\:text-darkcyan:hover {
-  color: var(--darkcyan);
-}
-
 .hover\:opacity-70:hover {
   opacity: 0.7;
 }
@@ -3889,20 +3901,36 @@ svg {
   color: rgb(1 164 161 / var(--tw-text-opacity));
 }
 
-.dark .dark\:text-lightcyan {
-  color: var(--lightcyan);
-}
-
 .dark .dark\:text-transparent {
   color: transparent;
 }
 
-.dark .dark\:hover\:text-lightcyan:hover {
+.dark .dark\:text-lightcyan {
   color: var(--lightcyan);
 }
 
-.dark .dark\:hover\:text-darkcyan:hover {
-  color: var(--darkcyan);
+.dark .dark\:invert {
+  --tw-invert: invert(100%);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.dark .dark\:invert-0 {
+  --tw-invert: invert(0);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.dark .dark\:saturate-0 {
+  --tw-saturate: saturate(0);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.dark .dark\:sepia-0 {
+  --tw-sepia: sepia(0);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.dark .dark\:hover\:text-lightcyan:hover {
+  color: var(--lightcyan);
 }
 
 .dark .dark\:hover\:text-lightestcyan:hover {
@@ -4360,10 +4388,6 @@ svg {
 
   .lg\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .lg\:items-start {
-    align-items: flex-start;
   }
 
   .lg\:py-2 {
