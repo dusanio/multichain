@@ -1,4 +1,4 @@
-<html class="scroll-smooth">
+<html class="scroll-smooth dark">
   <head>
     <meta charset="UTF-8" />
     <title>MultiChain - Advisors Inc.</title>
@@ -21,9 +21,37 @@
       rel="stylesheet"
     />
     <script src="/node_modules/flowbite/dist/flowbite.min.js"></script>
+    <style>
+      #video-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 500;
+      }
+
+      #fullscreen-video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      #website-content {
+        position: relative;
+        z-index: 600;
+        display: none;
+        transition: opacity 0.5s ease; /* Add a smooth opacity transition */
+      }
+    </style>
   </head>
   <body class="bg-white dark:bg-black">
-    <div>
+    <div id="video-container">
+      <video id="fullscreen-video" autoplay muted>
+        <source src="/images/MULTICHAIN_ADVISORS.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <div id="website-content">
       <div class="flex justify-between items-center pt-6 lg:hidden">
         <a href="https://multichainadv.com/"
           ><img
@@ -249,7 +277,7 @@
             <h1
               class="dark:text-white text-black text-3xl xl:text-4xl font-bold text-center pt-2 mb-6"
             >
-              $10M+
+              $15M+
             </h1>
           </div>
 
@@ -301,6 +329,22 @@
               250K
             </h1>
           </div>
+          <!-- <div class="lg:inline-block sm:block">
+            <img
+              src="images/moneybag.png"
+              class="mx-auto w-28 invert dark:invert-0"
+            />
+            <h3
+              class="dark:text-white text-black lg:text-xs xl:text-lg font-bold"
+            >
+              Funds Raised for Clients
+            </h3>
+            <h1
+              class="dark:text-white text-black text-3xl xl:text-4xl font-bold text-center pt-2 mb-6"
+            >
+              $15M+
+            </h1>
+          </div> -->
         </div>
         <div class="-translate-y-3/4 -z-4 absolute">
           <img src="images/tan-circle.png" />
@@ -341,20 +385,6 @@
                   class="text-sm dark:text-white text-black text-center font-bold pt-2"
                 >
                   Sharky-Fi
-                </h3>
-              </div>
-              <div>
-                <div class="flex justify-center h-32">
-                  <img
-                    src="images/meltlabs.jpg"
-                    alt="MeltLabs"
-                    class="border-double border-8 rounded-full border-darkcyan w-[120px] h-[120px]"
-                  />
-                </div>
-                <h3
-                  class="text-sm dark:text-white text-black text-center font-bold pt-2"
-                >
-                  MeltLabs
                 </h3>
               </div>
               <div>
@@ -514,20 +544,6 @@
               <div>
                 <div class="flex justify-center h-32">
                   <img
-                    src="images/gwardians.png"
-                    alt="Gwardians"
-                    class="border-double border-8 rounded-full border-darkcyan w-[120px] h-[120px]"
-                  />
-                </div>
-                <h3
-                  class="text-sm dark:text-white text-black text-center font-bold pt-2"
-                >
-                  Gwardians
-                </h3>
-              </div>
-              <div>
-                <div class="flex justify-center h-32">
-                  <img
                     src="images/doge-capital.png"
                     alt="Doge Capital"
                     class="border-double border-8 rounded-full border-darkcyan w-[120px] h-[120px]"
@@ -556,15 +572,57 @@
               <div>
                 <div class="flex justify-center h-32">
                   <img
-                    src="images/motley.png"
-                    alt="Motley DAO"
+                    src="images/gameward.jpeg"
+                    alt="GameWard"
                     class="border-double border-8 rounded-full border-darkcyan w-[120px] h-[120px]"
                   />
                 </div>
                 <h3
                   class="text-sm dark:text-white text-black text-center font-bold pt-2"
                 >
-                  Motley DAO
+                  GameWard
+                </h3>
+              </div>
+              <div>
+                <div class="flex justify-center h-32">
+                  <img
+                    src="images/samoyedcoin.jpeg"
+                    alt="SAMO"
+                    class="border-double border-8 rounded-full border-darkcyan w-[120px] h-[120px]"
+                  />
+                </div>
+                <h3
+                  class="text-sm dark:text-white text-black text-center font-bold pt-2"
+                >
+                  SAMO (Coin & NFT)
+                </h3>
+              </div>
+              <div>
+                <div class="flex justify-center h-32">
+                  <img
+                    src="images/alchemy.jpeg"
+                    alt="Alchemy"
+                    class="border-double border-8 rounded-full border-darkcyan w-[120px] h-[120px]"
+                  />
+                </div>
+                <h3
+                  class="text-sm dark:text-white text-black text-center font-bold pt-2"
+                >
+                  Alchemy
+                </h3>
+              </div>
+              <div>
+                <div class="flex justify-center h-32">
+                  <img
+                    src="images/ziggy.png"
+                    alt="Ziggy"
+                    class="border-double border-8 rounded-full border-darkcyan w-[120px] h-[120px]"
+                  />
+                </div>
+                <h3
+                  class="text-sm dark:text-white text-black text-center font-bold pt-2"
+                >
+                  Ziggy
                 </h3>
               </div>
               <div>
@@ -607,20 +665,6 @@
                   class="text-sm dark:text-white text-black text-center font-bold pt-2"
                 >
                   ShiFuMi
-                </h3>
-              </div>
-              <div>
-                <div class="flex justify-center h-32">
-                  <img
-                    src="images/night-market.jpeg"
-                    alt="Night Market"
-                    class="border-double border-8 rounded-full border-darkcyan w-[120px] h-[120px]"
-                  />
-                </div>
-                <h3
-                  class="text-sm dark:text-white text-black text-center font-bold pt-2"
-                >
-                  Night Market
                 </h3>
               </div>
               <div>
@@ -752,6 +796,48 @@
               <div>
                 <div class="flex justify-center h-32">
                   <img
+                    src="images/subber.jpeg"
+                    alt="Subber"
+                    class="border-double border-8 rounded-full border-darkcyan w-[120px] h-[120px]"
+                  />
+                </div>
+                <h3
+                  class="text-sm dark:text-white text-black text-center font-bold pt-2"
+                >
+                  Subber
+                </h3>
+              </div>
+              <div>
+                <div class="flex justify-center h-32">
+                  <img
+                    src="images/sec3.png"
+                    alt="Sec3"
+                    class="border-double border-8 rounded-full border-darkcyan w-[120px] h-[120px]"
+                  />
+                </div>
+                <h3
+                  class="text-sm dark:text-white text-black text-center font-bold pt-2"
+                >
+                  Sec3
+                </h3>
+              </div>
+              <div>
+                <div class="flex justify-center h-32">
+                  <img
+                    src="images/ottersec.jpeg"
+                    alt="OtterSec"
+                    class="border-double border-8 rounded-full border-darkcyan w-[120px] h-[120px]"
+                  />
+                </div>
+                <h3
+                  class="text-sm dark:text-white text-black text-center font-bold pt-2"
+                >
+                  OtterSec
+                </h3>
+              </div>
+              <div>
+                <div class="flex justify-center h-32">
+                  <img
                     src="images/orbyt.jpeg"
                     alt="Magic Eden"
                     class="border-double border-8 rounded-full border-darkcyan w-[120px] h-[120px]"
@@ -766,48 +852,6 @@
               <div>
                 <div class="flex justify-center h-32">
                   <img
-                    src="images/clutchy.jpeg"
-                    alt="Clutchy"
-                    class="border-double border-8 rounded-full border-darkcyan w-[120px] h-[120px]"
-                  />
-                </div>
-                <h3
-                  class="text-sm dark:text-white text-black text-center font-bold pt-2"
-                >
-                  Clutchy
-                </h3>
-              </div>
-              <div>
-                <div class="flex justify-center h-32">
-                  <img
-                    src="images/omega-alpha.jpeg"
-                    alt="Omega Alpha"
-                    class="border-double border-8 rounded-full border-darkcyan w-[120px] h-[120px]"
-                  />
-                </div>
-                <h3
-                  class="text-sm dark:text-white text-black text-center font-bold pt-2"
-                >
-                  Omega Alpha
-                </h3>
-              </div>
-              <div>
-                <div class="flex justify-center h-32">
-                  <img
-                    src="images/solana-studio.jpeg"
-                    alt="Solana Studio"
-                    class="border-double border-8 rounded-full border-darkcyan w-[120px] h-[120px]"
-                  />
-                </div>
-                <h3
-                  class="text-sm dark:text-white text-black text-center font-bold pt-2"
-                >
-                  Solana Studio
-                </h3>
-              </div>
-              <div>
-                <div class="flex justify-center h-32">
-                  <img
                     src="images/buddy-link.png"
                     alt="Buddy Link"
                     class="border-double border-8 rounded-full border-darkcyan w-[120px] h-[120px]"
@@ -817,20 +861,6 @@
                   class="text-sm dark:text-white text-black text-center font-bold pt-2"
                 >
                   Buddy Link
-                </h3>
-              </div>
-              <div>
-                <div class="flex justify-center h-32">
-                  <img
-                    src="images/onelink-solutions.jpeg"
-                    alt="Onelink Solutions"
-                    class="border-double border-8 rounded-full border-darkcyan w-[120px] h-[120px]"
-                  />
-                </div>
-                <h3
-                  class="text-sm dark:text-white text-black text-center font-bold pt-2"
-                >
-                  Onelink Solutions
                 </h3>
               </div>
               <div>
@@ -859,13 +889,13 @@
           <p class="reveal dark:text-white text-black font-bold text-center">
             Swipe through some of our testimonials
           </p>
-          <div class="flex justify-center items-center pt-10 mx-4">
-            <div
-              class="carousel carousel-center max-w-4xl space-x-4 bg-transparent rounded-box"
-            >
-              <div id="wisewhales" class="flex flex-col carousel-item">
+          <div
+            class="mt-10 swiper max-w-[330px] md:max-w-[650px] lg:max-w-[850px] xl:max-w-[950px] flex items-center justify-center mx-auto overflow-hidden"
+          >
+            <div class="swiper-wrapper mx-auto">
+              <div class="swiper-slide max-w-[330px] mx-auto">
                 <div
-                  class="max-w-[330px] md:max-w-[400px] bg-gradient-to-br from-lightcyan to-darkcyan dark:bg-gradient-to-br dark:from-darkgray dark:to-darkgray rounded-2xl"
+                  class="bg-gradient-to-br from-lightcyan to-darkcyan dark:bg-gradient-to-br dark:from-darkgray dark:to-darkgray rounded-2xl"
                 >
                   <div class="p-4">
                     <img
@@ -893,9 +923,9 @@
                   </div>
                 </div>
               </div>
-              <div id="xswipe" class="flex flex-col carousel-item">
+              <div class="swiper-slide max-w-[330px]">
                 <div
-                  class="max-w-[330px] bg-gradient-to-t from-darkcyan to-lightcyan dark:bg-gradient-to-br dark:from-darkgray dark:to-darkgray rounded-2xl"
+                  class="bg-gradient-to-t from-darkcyan to-lightcyan dark:bg-gradient-to-br dark:from-darkgray dark:to-darkgray rounded-2xl"
                 >
                   <div class="p-4">
                     <img
@@ -929,9 +959,9 @@
                   </div>
                 </div>
               </div>
-              <div id="smartseasociety" class="flex flex-col carousel-item">
+              <div class="swiper-slide max-w-[330px]">
                 <div
-                  class="max-w-[330px] bg-gradient-to-bl from-lightcyan to-darkcyan dark:bg-gradient-to-br dark:from-darkgray dark:to-darkgray p-4 rounded-2xl"
+                  class="bg-gradient-to-bl from-lightcyan to-darkcyan dark:bg-gradient-to-br dark:from-darkgray dark:to-darkgray p-4 rounded-2xl"
                 >
                   <img
                     src="images/smart-sea-society.jpg"
@@ -966,9 +996,9 @@
                   </h4>
                 </div>
               </div>
-              <div id="rentii" class="flex flex-col carousel-item">
+              <div class="swiper-slide max-w-[330px]">
                 <div
-                  class="max-w-[330px] bg-gradient-to-tr from-lightcyan to-darkcyan dark:bg-gradient-to-br dark:from-darkgray dark:to-darkgray p-4 rounded-2xl"
+                  class="bg-gradient-to-tr from-lightcyan to-darkcyan dark:bg-gradient-to-br dark:from-darkgray dark:to-darkgray p-4 rounded-2xl"
                 >
                   <img
                     src="images/rentii.png"
@@ -1000,9 +1030,9 @@
                   </h4>
                 </div>
               </div>
-              <div id="oakparadise" class="flex flex-col carousel-item">
+              <div class="swiper-slide max-w-[330px]">
                 <div
-                  class="max-w-[330px] bg-gradient-to-tl from-lightcyan to-darkcyan dark:bg-gradient-to-br dark:from-darkgray dark:to-darkgray p-4 rounded-2xl"
+                  class="bg-gradient-to-tl from-lightcyan to-darkcyan dark:bg-gradient-to-br dark:from-darkgray dark:to-darkgray p-4 rounded-2xl"
                 >
                   <img
                     src="images/oak-paradise.jpg"
@@ -1035,9 +1065,9 @@
                   </h4>
                 </div>
               </div>
-              <div id="sharky" class="flex flex-col carousel-item">
+              <div class="swiper-slide max-w-[330px]">
                 <div
-                  class="max-w-[330px] bg-gradient-to-t from-lightcyan to-darkcyan dark:bg-gradient-to-br dark:from-darkgray dark:to-darkgray p-4 rounded-2xl"
+                  class="bg-gradient-to-t from-lightcyan to-darkcyan dark:bg-gradient-to-br dark:from-darkgray dark:to-darkgray p-4 rounded-2xl"
                 >
                   <img
                     src="images/sharky-fi.jpg"
@@ -1073,39 +1103,9 @@
                 </div>
               </div>
             </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
           </div>
-          <!-- <div class="flex justify-center w-full py-2 gap-2">
-            <a
-              href="#wisewhales"
-              class="dark:bg-darkgray bg-darkcyan text-white border-white btn btn-xs"
-              >1</a
-            >
-            <a
-              href="#xswipe"
-              class="dark:bg-darkgray bg-darkcyan text-white border-white btn btn-xs"
-              >2</a
-            >
-            <a
-              href="#smartseasociety"
-              class="dark:bg-darkgray bg-darkcyan text-white border-white btn btn-xs"
-              >3</a
-            >
-            <a
-              href="#rentii"
-              class="dark:bg-darkgray bg-darkcyan text-white border-white btn btn-xs"
-              >4</a
-            >
-            <a
-              href="#oakparadise"
-              class="dark:bg-darkgray bg-darkcyan text-white border-white btn btn-xs"
-              >5</a
-            >
-            <a
-              href="#sharky"
-              class="dark:bg-darkgray bg-darkcyan text-white border-white btn btn-xs"
-              >6</a
-            >
-          </div> -->
         </div>
         <div class="-translate-y-2/4 -z-4 absolute right-0">
           <img src="images/tan-circle-right.png" />
@@ -1419,113 +1419,86 @@
               What Else Can We Offer?
             </p>
 
-            <div class="flex justify-center max-w-[1140px] ml-auto mr-auto">
+            <div
+              class="flex justify-center items-center max-w-[330px] md:max-w-[650px] lg:max-w-[950px] xl:max-w-[1140px] mx-auto"
+            >
               <div
-                class="z-50 relative reveal grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10 mt-20"
+                class="z-50 relative reveal grid grid-cols-1 md:grid-cols-2 gap-10 mt-20"
               >
-                <div
-                  class="w-[314px] h-[300px] pb-10 md:w-[350px] reveal rounded-[30px] bg-gradient-to-br from-lightcyan to-darkcyan dark:bg-gradient-to-br dark:from-darkgray dark:to-darkgray"
-                >
-                  <div class="flex justify-center mt-10">
+                <div class="reveal max-w-[600px] mx-auto">
+                  <div class="flex justify-start mt-10">
                     <p
-                      class="font-bold text-white dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-darkcyan dark:to-lightestcyan text-2xl md:text-3xl"
+                      class="font-bold text-black dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-darkcyan dark:to-lightestcyan text-2xl md:text-3xl"
                     >
-                      Collab Management
+                      Finance (CFO as a service)
                     </p>
                   </div>
                   <p
-                    class="pt-10 text-white font-normal text-base ml-auto text-center mr-auto xl:w-[350px] px-8"
+                    class="pt-10 text-black dark:text-white font-normal text-base ml-auto mr-auto"
                   >
-                    Using our extensive network of influencers, partners, and
-                    200+ DAOs, we connect you to key players to grow your
-                    project
+                    Utilize the expertise of multiple CPAs and ex-finance
+                    professionals to ensure your financial health.
+                  </p>
+                  <p
+                    class="pt-4 text-black dark:text-white font-normal text-base ml-auto mr-auto"
+                  >
+                    From financial planning & analysis, budgeting, compliance,
+                    cost cutting to business advisory services (financing, M&A,
+                    divestiture) we got you covered.
                   </p>
                 </div>
-                <div
-                  class="w-[314px] h-[300px] pb-10 md:w-[350px] reveal rounded-[30px] bg-gradient-to-b from-lightcyan to-darkcyan dark:bg-gradient-to-br dark:from-darkgray dark:to-darkgray"
-                >
-                  <div class="flex justify-center mt-10">
+                <div class="reveal max-w-[600px] mx-auto">
+                  <div class="flex justify-start mt-10">
                     <p
-                      class="font-bold text-white dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-darkcyan dark:to-lightestcyan text-2xl md:text-3xl"
+                      class="font-bold text-black dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-darkcyan dark:to-lightestcyan text-2xl md:text-3xl"
                     >
-                      Partnership Strategy
+                      BDaaS (BD as a Service)
                     </p>
                   </div>
                   <p
-                    class="pt-10 text-white font-normal text-base ml-auto text-center mr-auto xl:w-[350px] px-8"
+                    class="pt-10 text-black dark:text-white font-normal text-base ml-auto mr-auto"
                   >
-                    We link your project up with top launchpads, presale payment
-                    processors, Web3 CRMs, investment groups
+                    Take your business to the next level with the help of
+                    experienced BD professionals.
+                  </p>
+                  <p
+                    class="pt-4 text-black dark:text-white font-normal text-base ml-auto mr-auto"
+                  >
+                    We help you with BD strategy formation, market research &
+                    analysis, lead generation & qualification, sales campaigns
+                    formation & provide sales support & training.
                   </p>
                 </div>
-                <div
-                  class="w-[314px] h-[300px] pb-10 md:w-[350px] reveal rounded-[30px] bg-gradient-to-bl from-lightcyan to-darkcyan dark:bg-gradient-to-br dark:from-darkgray dark:to-darkgray"
-                >
-                  <div class="flex justify-center mt-10">
+                <div class="reveal max-w-[600px] mx-auto">
+                  <div class="flex justify-start mt-10">
                     <p
-                      class="font-bold text-white dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-darkcyan dark:to-lightestcyan text-2xl md:text-3xl"
+                      class="font-bold text-black dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-darkcyan dark:to-lightestcyan text-2xl md:text-3xl"
                     >
-                      Presale Management
+                      Twitter Spaces Sponsorship
                     </p>
                   </div>
                   <p
-                    class="pt-10 text-white font-normal text-base ml-auto text-center mr-auto xl:w-[350px] px-8"
+                    class="pt-10 text-black dark:text-white font-normal text-base ml-auto mr-auto"
                   >
-                    We help craft a bullish proposal and pitch your project to a
-                    potential presale investors to ensure a strong backing to
-                    your project
+                    Showcase your project on the front stage of the biggest &
+                    the longest running Twitter Spaces on Solana, with
+                    bluechips, OGs & hundreds of listeners attending weekly.
                   </p>
                 </div>
-                <div
-                  class="w-[314px] h-[300px] pb-10 md:w-[350px] reveal rounded-[30px] bg-gradient-to-tr from-lightcyan to-darkcyan dark:bg-gradient-to-br dark:from-darkgray dark:to-darkgray"
-                >
-                  <div class="flex justify-center mt-10">
+                <div class="reveal max-w-[600px] mx-auto">
+                  <div class="flex justify-start mt-10">
                     <p
-                      class="font-bold text-white dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-darkcyan dark:to-lightestcyan text-2xl md:text-3xl"
+                      class="font-bold text-black dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-darkcyan dark:to-lightestcyan text-2xl md:text-3xl"
                     >
-                      Social Media Strategy
+                      Postmint Collab management
                     </p>
                   </div>
                   <p
-                    class="pt-10 text-white font-normal text-base ml-auto text-center mr-auto xl:w-[350px] px-8"
+                    class="pt-10 text-black dark:text-white font-normal text-base ml-auto mr-auto"
                   >
-                    With knowledge on the best social media practices, we help
-                    create a genuine, organic, and engaged online community
-                  </p>
-                </div>
-                <div
-                  class="w-[314px] h-[300px] pb-10 md:w-[350px] reveal rounded-[30px] bg-gradient-to-t from-lightcyan to-darkcyan dark:bg-gradient-to-br dark:from-darkgray dark:to-darkgray"
-                >
-                  <div class="flex justify-center mt-10">
-                    <p
-                      class="font-bold text-white dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-darkcyan dark:to-lightestcyan text-2xl md:text-3xl"
-                    >
-                      Twitter Spaces Booking
-                    </p>
-                  </div>
-                  <p
-                    class="pt-10 text-white font-normal text-base ml-auto text-center mr-auto xl:w-[350px] px-8"
-                  >
-                    We help get your project on the front stage of the biggest
-                    Twitter Spaces airing every week to hundreds of listeners
-                  </p>
-                </div>
-                <div
-                  class="w-[314px] h-[300px] pb-10 md:w-[350px] reveal rounded-[30px] bg-gradient-to-tl from-lightcyan to-darkcyan dark:bg-gradient-to-br dark:from-darkgray dark:to-darkgray"
-                >
-                  <div class="flex justify-center mt-10">
-                    <p
-                      class="font-bold text-white dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-darkcyan dark:to-lightestcyan text-2xl md:text-3xl"
-                    >
-                      Marketing Calendars
-                    </p>
-                  </div>
-                  <p
-                    class="pt-10 text-white font-normal text-base ml-auto text-center mr-auto xl:w-[350px] px-8"
-                  >
-                    We help schedule your marketing engagements to ensure
-                    maximum coverage and reach to keep eyes on your project in
-                    this fast paced space
+                    Get access to the best WL & presale opportunities for your
+                    DAO + additional allocation from MultiChain clients. Utilize
+                    our extensive network of influencers, partners & DAOs.
                   </p>
                 </div>
               </div>
@@ -1553,11 +1526,38 @@
           </p>
           <div class="z-50 relative pt-20">
             <div
-              class="team grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-10 max-w-[800px] ml-auto mr-auto"
+              class="team grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-5 max-w-[1140px] ml-auto mr-auto"
             >
               <label
                 class="swap swap-flip text-9xl hover:scale-105 duration-150"
               >
+                <span class="reveal indicator-item w-8 h-8 z-10">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    version="1.1"
+                    x="0px"
+                    y="0px"
+                    width="28"
+                    height="28"
+                    viewBox="0 0 40 40"
+                    style="enable-background: new 0 0 40 40"
+                    xml:space="preserve"
+                  >
+                    <style type="text/css">
+                      .st0 {
+                        fill: #01a4a1;
+                      }
+                    </style>
+                    <g>
+                      <path
+                        class="st0"
+                        d="M32.2,7.9v20.2c0,2.1-1.7,3.8-3.8,3.8h-13c-2.1,0-3.8-1.7-3.8-3.8v-3.3l2.8,0.6V28c0,0.6,0.5,1.1,1.1,1.1h12.8   c0.6,0,1.1-0.5,1.1-1.1V8.1c0-0.6-0.5-1.1-1.1-1.1H15.5c-0.6,0-1.1,0.5-1.1,1.1v7.5l-2.8-0.2v-2.5c-5.6,2.6-4.3,3.9-1.2,4.6   c0.4,0.1,0.8,0.2,1.2,0.2c0.9,0.1,1.9,0.2,2.8,0.3c0.6,0.1,1.2,0.1,1.8,0.1c2,0.1,3.5,0.1,3.5,0.1v-3.1c0-0.5,0.6-0.4,0.8-0.2   l5.8,4l2.3,1.6c0.2,0.2,0.2,0.5,0,0.8l-2.3,1.6l-2.8,2l-2.9,2c-0.1,0.1-0.3,0.2-0.4,0.2c-0.1,0-0.4,0-0.4-0.3v-2.5   c-1.5-0.3-2.9-0.5-4.2-0.8c-0.4-0.1-0.7-0.2-1.1-0.2c-1-0.2-2-0.5-2.8-0.7c-0.7-0.2-1.3-0.4-1.9-0.6c-14.4-5.1,1.9-11.1,1.9-11.1   V7.9c0-2.1,1.7-3.8,3.8-3.8h13C30.5,4.1,32.2,5.8,32.2,7.9z"
+                      />
+                    </g>
+                  </svg>
+                </span>
+
                 <input type="checkbox" />
 
                 <div class="swap-on">
@@ -1647,13 +1647,67 @@
                     class="rounded-3xl team-card reveal bg-gradient-to-br from-lightcyan to-darkcyan dark:bg-gradient-to-br dark:from-darkgray dark:to-darkgray w-fit h-64 p-8 ml-auto mr-auto"
                   >
                     <div class="flex justify-center h-24">
-                      <img src="images/northern-ape.png" class="rounded-full" />
+                      <img src="images/northernape.png" class="rounded-full" />
                     </div>
                     <div class="text-center">
                       <h3 class="text-white font-bold text-sm pt-4">
                         Northern Ape
                       </h3>
                       <h3 class="text-white text-xs">Chief of Staff</h3>
+                    </div>
+                  </div>
+                </div>
+              </label>
+              <label
+                class="swap swap-flip text-9xl hover:scale-105 duration-150"
+              >
+                <input type="checkbox" />
+
+                <div class="swap-on">
+                  <div
+                    class="rounded-3xl team-card reveal bg-gradient-to-br from-lightcyan to-darkcyan dark:bg-gradient-to-br dark:from-darkgray dark:to-darkgray w-fit h-64 p-8"
+                  >
+                    <div class="text-center">
+                      <h3 class="text-white text-xs">
+                        A decade in marketing and sales experience previously
+                        overseeing 7 figure budgets with an expertise in brand
+                        strategy and media rollouts.
+                      </h3>
+                      <a
+                        href="https://twitter.com/ballistic_NFT"
+                        target="_blank"
+                        class="flex justify-center"
+                      >
+                        <svg
+                          class="w-8 h-8 mt-4 flex"
+                          xmlns="http://www.w3.org/2000/svg"
+                          xml:space="preserve"
+                          viewBox="0 0 248 204"
+                        >
+                          <path
+                            fill="#fff"
+                            d="M221.95 51.29c.15 2.17.15 4.34.15 6.53 0 66.73-50.8 143.69-143.69 143.69v-.04c-27.44.04-54.31-7.82-77.41-22.64 3.99.48 8 .72 12.02.73 22.74.02 44.83-7.61 62.72-21.66-21.61-.41-40.56-14.5-47.18-35.07 7.57 1.46 15.37 1.16 22.8-.87-23.56-4.76-40.51-25.46-40.51-49.5v-.64c7.02 3.91 14.88 6.08 22.92 6.32C11.58 63.31 4.74 33.79 18.14 10.71c25.64 31.55 63.47 50.73 104.08 52.76-4.07-17.54 1.49-35.92 14.61-48.25 20.34-19.12 52.33-18.14 71.45 2.19 11.31-2.23 22.15-6.38 32.07-12.26-3.77 11.69-11.66 21.62-22.2 27.93 10.01-1.18 19.79-3.86 29-7.95-6.78 10.16-15.32 19.01-25.2 26.16z"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swap-off">
+                  <div
+                    class="rounded-3xl team-card reveal bg-gradient-to-br from-lightcyan to-darkcyan dark:bg-gradient-to-br dark:from-darkgray dark:to-darkgray w-fit h-64 p-8 ml-auto mr-auto"
+                  >
+                    <div class="flex justify-center h-24">
+                      <img
+                        src="images/papichulogrim.png"
+                        class="rounded-full"
+                      />
+                    </div>
+                    <div class="text-center">
+                      <h3 class="text-white font-bold text-sm pt-4">
+                        PapiChuloGrim
+                      </h3>
+                      <h3 class="text-white text-xs">Marketing Lead</h3>
                     </div>
                   </div>
                 </div>
@@ -1821,7 +1875,7 @@
 
                 <div class="swap-on">
                   <div
-                    class="rounded-3xl team-card reveal bg-gradient-to-br from-lightcyan to-darkcyan dark:bg-gradient-to-br dark:from-darkgray dark:to-darkgray w-fit h-64 p-8"
+                    class="rounded-3xl team-card reveal bg-gradient-to-br from-lightcyan to-darkcyan dark:bg-gradient-to-br dark:from-darkgray dark:to-darkgray w-40 h-64 p-8"
                   >
                     <div class="text-center">
                       <h3 class="text-white text-xs">
@@ -1857,7 +1911,7 @@
                       <img src="images/fr1ghtz.jpeg" class="rounded-full" />
                     </div>
                     <div class="text-center">
-                      <h3 class="text-white font-bold text-sm pt-4">FR1GHT</h3>
+                      <h3 class="text-white font-bold text-sm pt-4">FR1GHTz</h3>
                       <h3 class="text-white text-xs">
                         Strategy<br />
                         Associate
@@ -1905,7 +1959,7 @@
                     class="rounded-3xl team-card reveal bg-gradient-to-br from-lightcyan to-darkcyan dark:bg-gradient-to-br dark:from-darkgray dark:to-darkgray w-fit h-64 p-8 ml-auto mr-auto"
                   >
                     <div class="flex justify-center h-24">
-                      <img src="images/ston_licon.png" class="rounded-full" />
+                      <img src="images/stonlicon.png" class="rounded-full" />
                     </div>
                     <div class="text-center">
                       <h3 class="text-white font-bold text-sm pt-4">
@@ -1958,7 +2012,7 @@
                     class="rounded-3xl team-card reveal bg-gradient-to-br from-lightcyan to-darkcyan dark:bg-gradient-to-br dark:from-darkgray dark:to-darkgray w-fit h-64 p-8 ml-auto mr-auto"
                   >
                     <div class="flex justify-center h-24">
-                      <img src="images/aladin.png" class="rounded-full" />
+                      <img src="images/aladdin.png" class="rounded-full" />
                     </div>
                     <div class="text-center">
                       <h3 class="text-white font-bold text-sm pt-4">Aladin</h3>
@@ -2039,7 +2093,7 @@
                         creative marketing & digital platform strategies
                       </h3>
                       <a
-                        href="https://twitter.com/DegenJoon"
+                        href="https://twitter.com/BigBrokeJoon"
                         target="_blank"
                         class="flex justify-center"
                       >
@@ -2063,64 +2117,16 @@
                     class="rounded-3xl team-card reveal bg-gradient-to-br from-lightcyan to-darkcyan dark:bg-gradient-to-br dark:from-darkgray dark:to-darkgray w-fit h-64 p-8 ml-auto mr-auto"
                   >
                     <div class="flex justify-center h-24">
-                      <img src="images/DegenJoon.png" class="rounded-full" />
+                      <img src="images/bigbrokejoon.png" class="rounded-full" />
                     </div>
                     <div class="text-center">
                       <h3 class="text-white font-bold text-sm pt-4">
-                        DegenJoon
+                        BigBrokeJoon
                       </h3>
                       <h3 class="text-white text-xs">
                         Strategy<br />
                         Associate
                       </h3>
-                    </div>
-                  </div>
-                </div>
-              </label>
-              <label
-                class="swap swap-flip text-9xl hover:scale-105 duration-150"
-              >
-                <input type="checkbox" />
-
-                <div class="swap-on">
-                  <div
-                    class="rounded-3xl team-card reveal bg-gradient-to-br from-lightcyan to-darkcyan dark:bg-gradient-to-br dark:from-darkgray dark:to-darkgray w-fit h-64 p-8"
-                  >
-                    <div class="text-center">
-                      <h3 class="text-white text-xs">
-                        Experienced in implementing brand building strategies in
-                        Web3, backed by years of IRL experience
-                      </h3>
-                      <a
-                        href="https://twitter.com/chrlyaz"
-                        target="_blank"
-                        class="flex justify-center"
-                      >
-                        <svg
-                          class="w-8 h-8 mt-4 flex"
-                          xmlns="http://www.w3.org/2000/svg"
-                          xml:space="preserve"
-                          viewBox="0 0 248 204"
-                        >
-                          <path
-                            fill="#fff"
-                            d="M221.95 51.29c.15 2.17.15 4.34.15 6.53 0 66.73-50.8 143.69-143.69 143.69v-.04c-27.44.04-54.31-7.82-77.41-22.64 3.99.48 8 .72 12.02.73 22.74.02 44.83-7.61 62.72-21.66-21.61-.41-40.56-14.5-47.18-35.07 7.57 1.46 15.37 1.16 22.8-.87-23.56-4.76-40.51-25.46-40.51-49.5v-.64c7.02 3.91 14.88 6.08 22.92 6.32C11.58 63.31 4.74 33.79 18.14 10.71c25.64 31.55 63.47 50.73 104.08 52.76-4.07-17.54 1.49-35.92 14.61-48.25 20.34-19.12 52.33-18.14 71.45 2.19 11.31-2.23 22.15-6.38 32.07-12.26-3.77 11.69-11.66 21.62-22.2 27.93 10.01-1.18 19.79-3.86 29-7.95-6.78 10.16-15.32 19.01-25.2 26.16z"
-                          />
-                        </svg>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="swap-off">
-                  <div
-                    class="rounded-3xl team-card reveal bg-gradient-to-br from-lightcyan to-darkcyan dark:bg-gradient-to-br dark:from-darkgray dark:to-darkgray w-fit h-64 p-8 ml-auto mr-auto"
-                  >
-                    <div class="flex justify-center h-24">
-                      <img src="images/charly.png" class="rounded-full" />
-                    </div>
-                    <div class="text-center">
-                      <h3 class="text-white font-bold text-sm pt-4">Charly</h3>
-                      <h3 class="text-white text-xs">Brand Strategist</h3>
                     </div>
                   </div>
                 </div>
@@ -2164,110 +2170,11 @@
                     class="rounded-3xl team-card reveal bg-gradient-to-br from-lightcyan to-darkcyan dark:bg-gradient-to-br dark:from-darkgray dark:to-darkgray w-fit h-64 p-8 ml-auto mr-auto"
                   >
                     <div class="flex justify-center h-24">
-                      <img src="images/PAPI.G.jpg" class="rounded-full" />
+                      <img src="images/papi_g.png" class="rounded-full" />
                     </div>
                     <div class="text-center">
                       <h3 class="text-white font-bold text-sm pt-4">Papi.G</h3>
                       <h3 class="text-white text-xs">Collab Analyst</h3>
-                    </div>
-                  </div>
-                </div>
-              </label>
-              <label
-                class="swap swap-flip text-9xl hover:scale-105 duration-150"
-              >
-                <input type="checkbox" />
-
-                <div class="swap-on">
-                  <div
-                    class="rounded-3xl team-card reveal bg-gradient-to-br from-lightcyan to-darkcyan dark:bg-gradient-to-br dark:from-darkgray dark:to-darkgray w-fit h-64 p-8"
-                  >
-                    <div class="text-center">
-                      <h3 class="text-white text-xs">
-                        Reputable ETH alpha caller & ETH liaison to connect
-                        clients to ETH communities.
-                      </h3>
-                      <a
-                        href="https://twitter.com/DiabloBuilder"
-                        target="_blank"
-                        class="flex justify-center"
-                      >
-                        <svg
-                          class="w-8 h-8 mt-4 flex"
-                          xmlns="http://www.w3.org/2000/svg"
-                          xml:space="preserve"
-                          viewBox="0 0 248 204"
-                        >
-                          <path
-                            fill="#fff"
-                            d="M221.95 51.29c.15 2.17.15 4.34.15 6.53 0 66.73-50.8 143.69-143.69 143.69v-.04c-27.44.04-54.31-7.82-77.41-22.64 3.99.48 8 .72 12.02.73 22.74.02 44.83-7.61 62.72-21.66-21.61-.41-40.56-14.5-47.18-35.07 7.57 1.46 15.37 1.16 22.8-.87-23.56-4.76-40.51-25.46-40.51-49.5v-.64c7.02 3.91 14.88 6.08 22.92 6.32C11.58 63.31 4.74 33.79 18.14 10.71c25.64 31.55 63.47 50.73 104.08 52.76-4.07-17.54 1.49-35.92 14.61-48.25 20.34-19.12 52.33-18.14 71.45 2.19 11.31-2.23 22.15-6.38 32.07-12.26-3.77 11.69-11.66 21.62-22.2 27.93 10.01-1.18 19.79-3.86 29-7.95-6.78 10.16-15.32 19.01-25.2 26.16z"
-                          />
-                        </svg>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="swap-off">
-                  <div
-                    class="rounded-3xl team-card reveal bg-gradient-to-br from-lightcyan to-darkcyan dark:bg-gradient-to-br dark:from-darkgray dark:to-darkgray w-fit h-64 p-8 ml-auto mr-auto"
-                  >
-                    <div class="flex justify-center h-24">
-                      <img src="images/Diablo.png" class="rounded-full" />
-                    </div>
-                    <div class="text-center">
-                      <h3 class="text-white font-bold text-sm pt-4">Diablo</h3>
-                      <h3 class="text-white text-xs">ETH Expert</h3>
-                    </div>
-                  </div>
-                </div>
-              </label>
-              <label
-                class="swap swap-flip text-9xl hover:scale-105 duration-150"
-              >
-                <input type="checkbox" />
-
-                <div class="swap-on">
-                  <div
-                    class="rounded-3xl team-card reveal bg-gradient-to-br from-lightcyan to-darkcyan dark:bg-gradient-to-br dark:from-darkgray dark:to-darkgray w-fit h-64 p-8"
-                  >
-                    <div class="text-center">
-                      <h3 class="text-white text-xs">
-                        Specializes in partnerships, collabs & presale with
-                        blue-chip projects and Web3 influencers.
-                      </h3>
-                      <a
-                        href="https://twitter.com/Vxnom_Sol"
-                        target="_blank"
-                        class="flex justify-center"
-                      >
-                        <svg
-                          class="w-8 h-8 mt-4 flex"
-                          xmlns="http://www.w3.org/2000/svg"
-                          xml:space="preserve"
-                          viewBox="0 0 248 204"
-                        >
-                          <path
-                            fill="#fff"
-                            d="M221.95 51.29c.15 2.17.15 4.34.15 6.53 0 66.73-50.8 143.69-143.69 143.69v-.04c-27.44.04-54.31-7.82-77.41-22.64 3.99.48 8 .72 12.02.73 22.74.02 44.83-7.61 62.72-21.66-21.61-.41-40.56-14.5-47.18-35.07 7.57 1.46 15.37 1.16 22.8-.87-23.56-4.76-40.51-25.46-40.51-49.5v-.64c7.02 3.91 14.88 6.08 22.92 6.32C11.58 63.31 4.74 33.79 18.14 10.71c25.64 31.55 63.47 50.73 104.08 52.76-4.07-17.54 1.49-35.92 14.61-48.25 20.34-19.12 52.33-18.14 71.45 2.19 11.31-2.23 22.15-6.38 32.07-12.26-3.77 11.69-11.66 21.62-22.2 27.93 10.01-1.18 19.79-3.86 29-7.95-6.78 10.16-15.32 19.01-25.2 26.16z"
-                          />
-                        </svg>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="swap-off">
-                  <div
-                    class="rounded-3xl team-card reveal bg-gradient-to-br from-lightcyan to-darkcyan dark:bg-gradient-to-br dark:from-darkgray dark:to-darkgray w-fit h-64 p-8 ml-auto mr-auto"
-                  >
-                    <div class="flex justify-center h-24">
-                      <img src="images/Vxnom.png" class="rounded-full" />
-                    </div>
-                    <div class="text-center">
-                      <h3 class="text-white font-bold text-sm pt-4">Vxnom</h3>
-                      <h3 class="text-white text-xs">
-                        Partnership &<br />
-                        Collab Manager
-                      </h3>
                     </div>
                   </div>
                 </div>
@@ -2331,58 +2238,8 @@
                   >
                     <div class="text-center">
                       <h3 class="text-white text-xs">
-                        Collab & BD manager for a variety of clients connecting
-                        to SOL & ETH communities.
-                      </h3>
-                      <a
-                        href="https://twitter.com/RicTposHard"
-                        target="_blank"
-                        class="flex justify-center"
-                      >
-                        <svg
-                          class="w-8 h-8 mt-4 flex"
-                          xmlns="http://www.w3.org/2000/svg"
-                          xml:space="preserve"
-                          viewBox="0 0 248 204"
-                        >
-                          <path
-                            fill="#fff"
-                            d="M221.95 51.29c.15 2.17.15 4.34.15 6.53 0 66.73-50.8 143.69-143.69 143.69v-.04c-27.44.04-54.31-7.82-77.41-22.64 3.99.48 8 .72 12.02.73 22.74.02 44.83-7.61 62.72-21.66-21.61-.41-40.56-14.5-47.18-35.07 7.57 1.46 15.37 1.16 22.8-.87-23.56-4.76-40.51-25.46-40.51-49.5v-.64c7.02 3.91 14.88 6.08 22.92 6.32C11.58 63.31 4.74 33.79 18.14 10.71c25.64 31.55 63.47 50.73 104.08 52.76-4.07-17.54 1.49-35.92 14.61-48.25 20.34-19.12 52.33-18.14 71.45 2.19 11.31-2.23 22.15-6.38 32.07-12.26-3.77 11.69-11.66 21.62-22.2 27.93 10.01-1.18 19.79-3.86 29-7.95-6.78 10.16-15.32 19.01-25.2 26.16z"
-                          />
-                        </svg>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="swap-off">
-                  <div
-                    class="rounded-3xl team-card reveal bg-gradient-to-br from-lightcyan to-darkcyan dark:bg-gradient-to-br dark:from-darkgray dark:to-darkgray w-fit h-64 p-8 ml-auto mr-auto"
-                  >
-                    <div class="flex justify-center h-24">
-                      <img src="images/RicHard.png" class="rounded-full" />
-                    </div>
-                    <div class="text-center">
-                      <h3 class="text-white font-bold text-sm pt-4">RicHard</h3>
-                      <h3 class="text-white text-xs">
-                        Collab Manager, <br />
-                        BD Manager
-                      </h3>
-                    </div>
-                  </div>
-                </div>
-              </label>
-              <label
-                class="swap swap-flip text-9xl hover:scale-105 duration-150"
-              >
-                <input type="checkbox" />
-
-                <div class="swap-on">
-                  <div
-                    class="rounded-3xl team-card reveal bg-gradient-to-br from-lightcyan to-darkcyan dark:bg-gradient-to-br dark:from-darkgray dark:to-darkgray w-fit h-64 p-8"
-                  >
-                    <div class="text-center">
-                      <h3 class="text-white text-xs">
-                        Collab Analyst/Alpha Hunter
+                        Working as a collab manager on Solana for over a year,
+                        handles partnerships for clients
                       </h3>
                       <a
                         href="https://twitter.com/ballistic_NFT"
@@ -2409,14 +2266,179 @@
                     class="rounded-3xl team-card reveal bg-gradient-to-br from-lightcyan to-darkcyan dark:bg-gradient-to-br dark:from-darkgray dark:to-darkgray w-fit h-64 p-8 ml-auto mr-auto"
                   >
                     <div class="flex justify-center h-24">
-                      <img src="images/moh1sh.png" class="rounded-full" />
+                      <img
+                        src="images/ballistic_nft.png"
+                        class="rounded-full"
+                      />
                     </div>
                     <div class="text-center">
-                      <h3 class="text-white font-bold text-sm pt-4">moh1sh</h3>
+                      <h3 class="text-white font-bold text-sm pt-4">
+                        Ballistic_NFT
+                      </h3>
                       <h3 class="text-white text-xs">
                         Collab Analyst &<br />
                         Alpha Hunter
                       </h3>
+                    </div>
+                  </div>
+                </div>
+              </label>
+              <label
+                class="swap swap-flip text-9xl hover:scale-105 duration-150"
+              >
+                <input type="checkbox" />
+
+                <div class="swap-on">
+                  <div
+                    class="rounded-3xl team-card reveal bg-gradient-to-br from-lightcyan to-darkcyan dark:bg-gradient-to-br dark:from-darkgray dark:to-darkgray w-fit h-64 p-8"
+                  >
+                    <div class="text-center">
+                      <h3 class="text-white text-xs">
+                        Experienced community manager, Collab expert & Discord
+                        security specialist.
+                      </h3>
+                      <a
+                        href="https://twitter.com/GlassicalFunk"
+                        target="_blank"
+                        class="flex justify-center"
+                      >
+                        <svg
+                          class="w-8 h-8 mt-4 flex"
+                          xmlns="http://www.w3.org/2000/svg"
+                          xml:space="preserve"
+                          viewBox="0 0 248 204"
+                        >
+                          <path
+                            fill="#fff"
+                            d="M221.95 51.29c.15 2.17.15 4.34.15 6.53 0 66.73-50.8 143.69-143.69 143.69v-.04c-27.44.04-54.31-7.82-77.41-22.64 3.99.48 8 .72 12.02.73 22.74.02 44.83-7.61 62.72-21.66-21.61-.41-40.56-14.5-47.18-35.07 7.57 1.46 15.37 1.16 22.8-.87-23.56-4.76-40.51-25.46-40.51-49.5v-.64c7.02 3.91 14.88 6.08 22.92 6.32C11.58 63.31 4.74 33.79 18.14 10.71c25.64 31.55 63.47 50.73 104.08 52.76-4.07-17.54 1.49-35.92 14.61-48.25 20.34-19.12 52.33-18.14 71.45 2.19 11.31-2.23 22.15-6.38 32.07-12.26-3.77 11.69-11.66 21.62-22.2 27.93 10.01-1.18 19.79-3.86 29-7.95-6.78 10.16-15.32 19.01-25.2 26.16z"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swap-off">
+                  <div
+                    class="rounded-3xl team-card reveal bg-gradient-to-br from-lightcyan to-darkcyan dark:bg-gradient-to-br dark:from-darkgray dark:to-darkgray w-fit h-64 p-8 ml-auto mr-auto"
+                  >
+                    <div class="flex justify-center h-24">
+                      <img
+                        src="images/glassical-funk.png"
+                        class="rounded-full"
+                      />
+                    </div>
+                    <div class="text-center">
+                      <h3 class="text-white font-bold text-sm pt-4">
+                        GlassicalFunk
+                      </h3>
+                      <h3 class="text-white text-xs">Intern</h3>
+                    </div>
+                  </div>
+                </div>
+              </label>
+              <label
+                class="swap swap-flip text-9xl hover:scale-105 duration-150"
+              >
+                <input type="checkbox" />
+
+                <div class="swap-on">
+                  <div
+                    class="rounded-3xl team-card reveal bg-gradient-to-br from-lightcyan to-darkcyan dark:bg-gradient-to-br dark:from-darkgray dark:to-darkgray w-fit h-64 p-8"
+                  >
+                    <div class="text-center">
+                      <h3 class="text-white text-xs">
+                        Social media strategy, content creation, and platform
+                        building for the Multichain brand.
+                      </h3>
+                      <a
+                        href="https://twitter.com/glennhodlNFT"
+                        target="_blank"
+                        class="flex justify-center"
+                      >
+                        <svg
+                          class="w-8 h-8 mt-4 flex"
+                          xmlns="http://www.w3.org/2000/svg"
+                          xml:space="preserve"
+                          viewBox="0 0 248 204"
+                        >
+                          <path
+                            fill="#fff"
+                            d="M221.95 51.29c.15 2.17.15 4.34.15 6.53 0 66.73-50.8 143.69-143.69 143.69v-.04c-27.44.04-54.31-7.82-77.41-22.64 3.99.48 8 .72 12.02.73 22.74.02 44.83-7.61 62.72-21.66-21.61-.41-40.56-14.5-47.18-35.07 7.57 1.46 15.37 1.16 22.8-.87-23.56-4.76-40.51-25.46-40.51-49.5v-.64c7.02 3.91 14.88 6.08 22.92 6.32C11.58 63.31 4.74 33.79 18.14 10.71c25.64 31.55 63.47 50.73 104.08 52.76-4.07-17.54 1.49-35.92 14.61-48.25 20.34-19.12 52.33-18.14 71.45 2.19 11.31-2.23 22.15-6.38 32.07-12.26-3.77 11.69-11.66 21.62-22.2 27.93 10.01-1.18 19.79-3.86 29-7.95-6.78 10.16-15.32 19.01-25.2 26.16z"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swap-off">
+                  <div
+                    class="rounded-3xl team-card reveal bg-gradient-to-br from-lightcyan to-darkcyan dark:bg-gradient-to-br dark:from-darkgray dark:to-darkgray w-fit h-64 p-8 ml-auto mr-auto"
+                  >
+                    <div class="flex justify-center h-24">
+                      <img src="images/glennhodl.jpg" class="rounded-full" />
+                    </div>
+                    <div class="text-center">
+                      <h3 class="text-white font-bold text-sm pt-4">
+                        glennhodl
+                      </h3>
+                      <h3 class="text-white text-xs">
+                        Social Media &<br />
+                        Communications <br />
+                        Analyst
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+              </label>
+              <label
+                class="swap swap-flip text-9xl hover:scale-105 duration-150"
+              >
+                <input type="checkbox" />
+
+                <div class="swap-on">
+                  <div
+                    class="rounded-3xl team-card reveal bg-gradient-to-br from-lightcyan to-darkcyan dark:bg-gradient-to-br dark:from-darkgray dark:to-darkgray w-fit h-64 p-8"
+                  >
+                    <div class="text-center">
+                      <h3 class="text-white text-xs">
+                        Specializes in Financial analysis, Business development,
+                        and people management.
+                      </h3>
+                      <a
+                        href="https://twitter.com/Haroutkozakjian"
+                        target="_blank"
+                        class="flex justify-center"
+                      >
+                        <svg
+                          class="w-8 h-8 mt-4 flex"
+                          xmlns="http://www.w3.org/2000/svg"
+                          xml:space="preserve"
+                          viewBox="0 0 248 204"
+                        >
+                          <path
+                            fill="#fff"
+                            d="M221.95 51.29c.15 2.17.15 4.34.15 6.53 0 66.73-50.8 143.69-143.69 143.69v-.04c-27.44.04-54.31-7.82-77.41-22.64 3.99.48 8 .72 12.02.73 22.74.02 44.83-7.61 62.72-21.66-21.61-.41-40.56-14.5-47.18-35.07 7.57 1.46 15.37 1.16 22.8-.87-23.56-4.76-40.51-25.46-40.51-49.5v-.64c7.02 3.91 14.88 6.08 22.92 6.32C11.58 63.31 4.74 33.79 18.14 10.71c25.64 31.55 63.47 50.73 104.08 52.76-4.07-17.54 1.49-35.92 14.61-48.25 20.34-19.12 52.33-18.14 71.45 2.19 11.31-2.23 22.15-6.38 32.07-12.26-3.77 11.69-11.66 21.62-22.2 27.93 10.01-1.18 19.79-3.86 29-7.95-6.78 10.16-15.32 19.01-25.2 26.16z"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swap-off">
+                  <div
+                    class="rounded-3xl team-card reveal bg-gradient-to-br from-lightcyan to-darkcyan dark:bg-gradient-to-br dark:from-darkgray dark:to-darkgray w-fit h-64 p-8 ml-auto mr-auto"
+                  >
+                    <div class="flex justify-center h-24">
+                      <img
+                        src="images/haroutkozakijan.jpg"
+                        class="rounded-full"
+                      />
+                    </div>
+                    <div class="text-center">
+                      <h3 class="text-white font-bold text-sm pt-4">
+                        Haroutkozakjian
+                      </h3>
+                      <h3 class="text-white text-xs">Intern</h3>
                     </div>
                   </div>
                 </div>
@@ -2723,63 +2745,19 @@
       referrerpolicy="no-referrer"
     ></script>
     <script src="menu.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script>
-      var secondSwiper = new Swiper(".mySecondSwiper", {
-        loop: true,
-        freeMode: true,
-        spaceBetween: 0,
-        grabCursor: true,
-        slidesPerView: 7,
-        loop: true,
-        autoplay: {
-          delay: 1,
-          disableOnInteraction: true,
-        },
-        freeMode: true,
-        speed: 5000,
-        freeModeMomentum: false,
-        breakpoints: {
-          320: {
-            slidesPerView: 1,
-            spaceBetween: 20,
-          },
-          1024: {
-            slidesPerView: 3,
-          },
-        },
-      });
-    </script>
-    <script>
+    <script type="module">
+      import Swiper from "https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.mjs";
+
       const swiper = new Swiper(".swiper", {
-        loop: true,
-        freeMode: true,
-        spaceBetween: 0,
-        grabCursor: true,
-        slidesPerView: 7,
-        loop: true,
-        autoplay: {
-          delay: 1,
-          disableOnInteraction: true,
-        },
-        freeMode: true,
-        speed: 5000,
-        freeModeMomentum: false,
+        spaceBetween: 40,
+        slidesPerView: "auto",
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         },
-        breakpoints: {
-          320: {
-            slidesPerView: 1,
-            spaceBetween: 20,
-          },
-          1024: {
-            slidesPerView: 3,
-          },
-        },
       });
-
+    </script>
+    <script>
       $(document).ready(function () {
         $(window).bind("scroll", fetchMore);
       });
@@ -2797,5 +2775,6 @@
     </script>
     <script src="scroll_indicator.js"></script>
     <script src="darkmode.js"></script>
+    <script src="video.js"></script>
   </body>
 </html>

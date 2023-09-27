@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+.badge-primary {
+  background: darkcyan;
+  border: none;
+}
+
 :root {
   --darkcyan: #128dba;
   --lightcyan: #01a4a1;
@@ -25,43 +30,34 @@
 }
 
 .swiper-button-prev {
-  margin-left: -11px !important;
-  color: black !important;
-  border: 30px solid var(--arrowcyan) !important;
-  border-radius: 100% !important;
+  left: -10px !important;
+  color: var(--arrowcyan) !important;
 }
 .swiper-button-next {
-  margin-right: -11px !important;
-  color: black !important;
-  border: 30px solid var(--arrowcyan) !important;
-  border-radius: 100% !important;
+  right: -10px !important;
+  color: var(--arrowcyan) !important;
 }
 .swiper-button-prev::after {
-  font-size: 20px !important;
+  font-size: 30px !important;
 }
 .swiper-button-next::after {
-  font-size: 20px !important;
-}
-
-.swiper-pagination-bullet {
-  width: 65px !important;
-  height: 8px !important;
-  border-radius: 0 !important;
-  color: white !important;
-  background: white !important;
-  opacity: 100% !important;
-}
-.swiper-pagination-bullet-active {
-  color: var(--arrowcyan) !important;
-  background: var(--arrowcyan) !important;
+  font-size: 30px !important;
 }
 
 .bgdarklight-right {
-  background: linear-gradient(134.08deg, rgba(217, 217, 217, 0.64) -34.85%, rgba(217, 217, 217, 0) 102.07%);
+  background: linear-gradient(
+    134.08deg,
+    rgba(217, 217, 217, 0.64) -34.85%,
+    rgba(217, 217, 217, 0) 102.07%
+  );
 }
 
 .bgdarklight-left {
-  background: linear-gradient(268.17deg, rgba(217, 217, 217, 0.64) -34.85%, rgba(217, 217, 217, 0) 102.07%);
+  background: linear-gradient(
+    268.17deg,
+    rgba(217, 217, 217, 0.64) -34.85%,
+    rgba(217, 217, 217, 0) 102.07%
+  );
 }
 
 .card-body {
@@ -84,37 +80,22 @@
   opacity: 1;
 }
 
-input[type='text'],
-input[type='number'],
-input[type='email'],
-input[type='url'] {
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="url"] {
   background: transparent !important;
   border: none !important;
   border-bottom: 1px solid #000000 !important;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   .swiper-button-prev {
     display: none !important;
   }
 
   .swiper-button-next {
     display: none !important;
-  }
-}
-
-@media (max-width: 768px) {
-  .swiper-pagination-bullet {
-    width: 40px !important;
-    height: 8px !important;
-    border-radius: 0 !important;
-    color: white !important;
-    background: white !important;
-    opacity: 100% !important;
-  }
-  .swiper-pagination-bullet-active {
-    color: var(--arrowcyan) !important;
-    background: var(--arrowcyan) !important;
   }
 }
 
